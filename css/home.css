@@ -335,61 +335,6 @@ body{
 
 /* Gallery */
 
-.gal-heading
-{
-    font-family: 'ikaros-sans';
-    font-size :40px;
-    margin-top:100px;
-}
-
-.gallery p
-{
-    font-family: 'Typold Book';
-    font-size: 15px;
-}
-
-.gallery-container
-{
-    height: 300vh;
-    display:inline-block;
-    background-color: white;
-}
-.gallery{
-    position: sticky;
-    bottom: 0px;
-    top:0px;
-    
-}
-
-.gallery-images
-{
-    height: 50vh;
-    width: 50vh;
-    background-color: var(--light-grey);
-    border: white 1px solid;
-    display: inline-block;
-}
-
-.gallery-header
-{
-    width: 800px;
-    padding: 50px;
-}
-
-.row-1
-{
-    transition: transform 300ms ease-out;
-    flex-direction: row-reverse;
-    display: flex;
-    position: relative;
-    right: 0;
-}
-
-.row-2
-{
-    transition: transform 300ms ease-out;
-    display: flex;
-}
 
 
 /*TEASRER CSS STARTS*/

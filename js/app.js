@@ -38,22 +38,22 @@ function showTime() {
 
 /* GALLERY STARTS */
 
-let row1 = document.getElementsByClassName('row-1')[0]
-let row2 = document.getElementsByClassName('row-2')[0]
-let body= document.querySelector("body")
+// let row1 = document.getElementsByClassName('row-1')[0]
+// let row2 = document.getElementsByClassName('row-2')[0]
+// let body= document.querySelector("body")
 
-let gallery = document.getElementsByClassName("gallery")[0]
-row1.style= 'transform:translateX(calc(100vw - '+row1.offsetWidth+'px))'
+// let gallery = document.getElementsByClassName("gallery")[0]
+// row1.style= 'transform:translateX(calc(100vw - '+row1.offsetWidth+'px))'
 
-const initReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
-let currReading;
-let i =0;
-window.addEventListener("scroll",(e)=>
-{
-     currReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
-     row1.style = "transform: translateX(calc(100vw - " + (row1.offsetWidth- initReading + currReading) +"px))";
-     row2.style = "transform: translateX("+(- initReading + currReading)+"px)";
-});
+// const initReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
+// let currReading;
+// let i =0;
+// window.addEventListener("scroll",(e)=>
+// {
+//      currReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
+//      row1.style = "transform: translateX(calc(100vw - " + (row1.offsetWidth- initReading + currReading) +"px))";
+//      row2.style = "transform: translateX("+(- initReading + currReading)+"px)";
+// });
 
 
 /* GALLERY END*/
