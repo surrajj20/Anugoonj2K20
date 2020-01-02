@@ -1,0 +1,405 @@
+/* FONT FACES */
+@font-face
+{
+    font-family: ikaros-sans;
+    src: url("..\\fonts\\Ikaros sans\\Ikaros Regular.otf");
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: ikaros-sans-light;
+    src: url("..\\fonts\\Ikaros sans\\Ikaros Light.otf");
+    font-weight: lighter;
+} 
+    
+    
+@font-face
+{
+    font-family: 'Typold Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typold Book'), url('..\\fonts\\Typold\\The Northern Block Ltd - Typold Book.woff') format('woff');
+}
+    
+   
+/* Colors */
+
+:root
+{
+    --pink-color : #c9108c;
+    --blue-color : #3636b3;
+    --background-black : #08080a;
+    --dark-grey :  #393939;
+    --light-grey : #cfcfcf;
+
+}
+
+/* Styles  */
+
+/* Hero Section */
+*{
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.hero-sec
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("..\\images\\hero-section-bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.hero-sec .overlay
+{
+    position: absolute;
+    left: 0;
+    top:0;
+    background: black;
+    opacity: .82;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.hero-content
+{
+    position: relative;
+    z-index: 2;
+    color: white;
+    top:50%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.hero-sec h1
+{
+    font-family: 'ikaros-sans';
+    font-size: 80px;
+    font-weight: 300; 
+    margin-bottom: 15px;
+}
+
+.hero-sec h1 span { color : var(--pink-color)}
+
+.hero-sec p
+{
+    font-family: "typold book";
+    font-size: 22px;
+}
+
+/* Hero section count down */
+.hero-content .countdown
+{
+  line-height: 50px;
+  margin-top: 137px;
+  margin-left: -20px;
+  margin-bottom: -129px;
+}
+
+.cd-line-1, .cd-line-3
+{
+  font-family: 'ikaros-sans-light';
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.cd-line-1 { margin-left:20px;} 
+.cd-line-2
+{
+    font-family: 'ikaros-sans';
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 3.5px;
+}
+.cd-line-3 {margin-right: 20px; text-align: right;}
+
+#rectangle-cd
+{
+    position: absolute;
+    z-index: -1;
+    width: 174px;
+    height: 30px;
+    right: 102px;
+    top: 209px;
+    background-color: var(--dark-grey);
+}
+
+.splitter-line
+{
+    height: 3px;
+    width: 575px;
+    background-color: var(--light-grey);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%,-50%) rotate(-66deg);
+    z-index: 3;
+
+}
+
+/*TOP ANIMATION STARTS*/
+
+#logo {
+    /* position: relative;
+    left:4%;
+    top:-40%; */
+    /*-webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
+    -webkit-animation: fill 0.5s ease forwards 2s;
+            animation: fill 0.5s ease forwards 2s;
+            /*SHADOW OF THE TEXT STARTS*/    
+            -webkit-filter: drop-shadow( 0px 0px 40px white);
+            filter: drop-shadow( 0px 0px 40px white)
+            /*SHADOW OF THE TEXT ENDS*/  
+  }
+  
+  #logo path:nth-child(1) {
+    stroke-dasharray: 400;
+    stroke-dashoffset:400;
+    -webkit-animation: line-anim 4s ease forwards;
+            animation: line-anim 4s ease forwards;
+  }
+
+   #text-2 {/*
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
+    -webkit-animation: fill1 0.5s ease forwards 2s;
+            animation: fill1 0.5s ease forwards 2s;
+            /*SHADOW OF THE TEXT STARTS*/    
+            -webkit-filter: drop-shadow( 0px 0px 40px #c9108c);
+            filter: drop-shadow( 0px 0px 40px #c9108c)
+            /*SHADOW OF THE TEXT ENDS*/  
+  }
+  
+  #text-2 path:nth-child(1) {
+    stroke-dasharray: 400;
+    stroke-dashoffset:400;
+    -webkit-animation: line-anim 4s ease forwards;
+            animation: line-anim 4s ease forwards;
+  }
+  
+  @-webkit-keyframes line-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes line-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @-webkit-keyframes fill {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: white;
+    }
+  }
+  
+  @keyframes fill {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: white;
+    }
+  }
+
+  @-webkit-keyframes fill1 {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: #c9108c;
+    }
+  }
+  
+  @keyframes fill1 {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: #c9108c;
+    }
+  }
+
+  /*GLOW EFFECTS STARTS*/
+
+  .pulse::before {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: neon-pulse;
+            animation-name: neon-pulse;
+  }
+  /*GLOW EFFECT ENDS */
+  @-webkit-keyframes neon-pulse {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes neon-pulse {
+    50% {
+      opacity: 0;
+    }
+  }  
+
+/*TOP ANIMATION ENDS*/
+
+#text{
+    /*position: relative;
+    left:-60%;
+    top:50%*/
+    margin-left:7%; 
+} 
+
+/* ABOUT ANUGOONJ */
+.images img{
+    height: auto;
+    width: 50%;
+    position: relative;
+    left:80%;
+    top:-75%
+}
+
+/* FootFall */
+
+#colorlib-counter {
+  position: relative;
+  clear: both; 
+  margin-bottom: 2em; }
+
+.colorlib-counters {
+  padding: 1em 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center; }
+  .colorlib-counters .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  /* background: rgba(0, 0, 0, 0.4);*/ }
+  .colorlib-counters .icon {
+    width: 100px;
+    height: 100px;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .colorlib-counters .icon i {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+      font-size: 50px;
+      color: #2c98f0;
+      background: #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+  .colorlib-counters .counter-wrap {
+    border: 1px solid red !important; }
+  .colorlib-counters .colorlib-counter {
+    font-size: 40px;
+    display: block;
+    color: #b80960;
+    font-family: "Quicksand", Arial, sans-serif;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: .3em; }
+  .colorlib-counters .colorlib-counter-label {
+    color: rgba(223, 217, 221, 0.7);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-bottom: 2em;
+    display: block; }
+
+
+/* Gallery */
+
+.gal-heading
+{
+    font-family: 'ikaros-sans';
+    font-size :40px;
+    margin-top:100px;
+}
+
+.gallery p
+{
+    font-family: 'Typold Book';
+    font-size: 15px;
+}
+
+.gallery-container
+{
+    height: 300vh;
+    display:inline-block;
+    background-color: white;
+}
+.gallery{
+    position: sticky;
+    bottom: 0px;
+    top:0px;
+    
+}
+
+.gallery-images
+{
+    height: 50vh;
+    width: 50vh;
+    background-color: var(--light-grey);
+    border: white 1px solid;
+    display: inline-block;
+}
+
+.gallery-header
+{
+    width: 800px;
+    padding: 50px;
+}
+
+.row-1
+{
+    transition: transform 300ms ease-out;
+    flex-direction: row-reverse;
+    display: flex;
+    position: relative;
+    right: 0;
+}
+
+.row-2
+{
+    transition: transform 300ms ease-out;
+    display: flex;
+}
+
+
+/*TEASRER CSS STARTS*/
+
+
+#youtube{
+  height:100% ;
+  border-radius: 50px;
+  width:100%; 
+  box-shadow:1px 1px 2px black, 0 0 55px blue, 0 0 5px darkblue
+}
+
+/*TEASER CSS ENDS*/

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Anugoonj'20</title>
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body onload=showTime()>
+    <section class="hero-sec">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <div class="left">
+
+                <svg class="pulse" id="logo" xmlns="http://www.w3.org/2000/svg" width="459.89" height="111.899"
+                    viewBox="0 0 459.89 111.899" fill="none">
+                    <path id="Path_2" data-name="Path 2"
+                        d="M53.79-12.1,58.96,0H70.95L37.51-77.33,4.18,0H15.84l5.39-12.1ZM49.17-22.11H25.85L37.51-48.95Zm80.19-7.26C128.15-43.45,117.26-55,103.51-55a25.3,25.3,0,0,0-15.07,5.28V-55H78.43V0H88.44V-33.66c2.53-6.6,8.03-11,15.07-11,7.48,0,13.75,5.17,15.84,12.54V-.11h10.01Zm58.52-25.52h-8.8v31.9c-2.2,7.37-8.36,12.54-15.84,12.54s-13.75-5.17-15.84-12.54v-31.9H137.39v29.15a29.32,29.32,0,0,0,3.74,12.43C145.86-5.39,154-.11,163.24-.11a24.849,24.849,0,0,0,15.84-5.83V-.11h9.35V-54.89Zm52.69,0v6.16a26,26,0,0,0-16.83-6.16c-14.74,0-26.73,12.21-26.73,27.28a29.232,29.232,0,0,0,3.74,14.08,31.233,31.233,0,0,0,7.15,8.14A26.841,26.841,0,0,0,223.74-.11a24.679,24.679,0,0,0,16.39-6.05c.33,0,.11-.11.44-.11V4.07a17.094,17.094,0,0,1-16.39,12.76A17.3,17.3,0,0,1,207.9,4.4l-5.94,10.23a26.586,26.586,0,0,0,22.22,12.21,26.6,26.6,0,0,0,16.39-5.83A27.622,27.622,0,0,0,250.91-.66V-54.89ZM223.74-10.23a16.2,16.2,0,0,1-10.56-3.63,17.591,17.591,0,0,1-5.61-8.25,18.556,18.556,0,0,1-.88-5.5A17.233,17.233,0,0,1,223.74-45.1c8.69,0,15.62,6.71,16.83,15.18-.33,5.5-.44,6.49-.55,7.26a19.572,19.572,0,0,1-5.5,8.47A16.057,16.057,0,0,1,223.74-10.23ZM207.9,4.07V4.4l.22-.33Zm76.89-58.96c-14.74,0-26.73,12.21-26.73,27.39,0,15.29,11.99,27.39,26.73,27.39,14.63,0,26.62-12.1,26.62-27.39C311.41-42.68,299.42-54.89,284.79-54.89Zm0,44.77A17.208,17.208,0,0,1,267.74-27.5a17.208,17.208,0,0,1,17.05-17.38A17.186,17.186,0,0,1,301.73-27.5,17.186,17.186,0,0,1,284.79-10.12Zm59.95-44.77c-14.74,0-26.73,12.21-26.73,27.39C318.01-12.21,330-.11,344.74-.11c14.63,0,26.62-12.1,26.62-27.39C371.36-42.68,359.37-54.89,344.74-54.89Zm0,44.77A17.208,17.208,0,0,1,327.69-27.5a17.208,17.208,0,0,1,17.05-17.38A17.186,17.186,0,0,1,361.68-27.5,17.186,17.186,0,0,1,344.74-10.12Zm85.8-19.25C429.33-43.45,418.44-55,404.69-55a25.3,25.3,0,0,0-15.07,5.28V-55H379.61V0h10.01V-33.66c2.53-6.6,8.03-11,15.07-11,7.48,0,13.75,5.17,15.84,12.54V-.11h10.01Zm.99,56.76c13.64-.88,25.41-10.23,27.5-25.63V-54.89h-11V1.76c0,7.37-7.37,14.63-16.5,14.63Zm16.5-98.78a5.447,5.447,0,0,0,5.5,5.5,5.516,5.516,0,0,0,5.5-5.5,5.589,5.589,0,0,0-5.5-5.5A5.516,5.516,0,0,0,448.03-71.39Z"
+                        transform="translate(-1.14 82.376)" stroke="white" stroke-width="5" />
+                </svg>
+                <svg id="text-2" xmlns="http://www.w3.org/2000/svg" width="228.84" height="81.33"
+                    viewBox="0 0 228.84 81.33" fill="none">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M48.4-37.18a20.709,20.709,0,0,0,3.63-6.38l.44-1.1a25.742,25.742,0,0,0,1.32-8.14c0-13.53-10.67-24.42-23.76-24.42-13.2,0-23.76,10.89-23.76,24.42v.55h9.35v-.55A14.464,14.464,0,0,1,30.03-67.54,14.442,14.442,0,0,1,44.33-52.8a14.931,14.931,0,0,1-2.31,8.14l-.44.77L5.5-9.57V.11H53.79V-9.57H19.25ZM87.78-77.11c-14.85,0-26.95,12.43-26.95,27.72v21.56C60.83-12.54,72.93,0,87.78,0c14.96,0,27.06-12.54,27.06-27.83V-49.39C114.84-64.68,102.74-77.11,87.78-77.11Zm0,66.99c-9.35,0-17.16-7.92-17.16-17.71V-49.39c0-9.68,7.81-17.6,17.16-17.6a17.28,17.28,0,0,1,17.16,17.6v21.56C104.94-18.04,97.46-10.12,87.78-10.12ZM163.9-37.18a20.709,20.709,0,0,0,3.63-6.38l.44-1.1a25.742,25.742,0,0,0,1.32-8.14c0-13.53-10.67-24.42-23.76-24.42-13.2,0-23.76,10.89-23.76,24.42v.55h9.35v-.55a14.464,14.464,0,0,1,14.41-14.74,14.442,14.442,0,0,1,14.3,14.74,14.931,14.931,0,0,1-2.31,8.14l-.44.77L121-9.57V.11h48.29V-9.57H134.75Zm39.38-39.93c-14.85,0-26.95,12.43-26.95,27.72v21.56C176.33-12.54,188.43,0,203.28,0c14.96,0,27.06-12.54,27.06-27.83V-49.39C230.34-64.68,218.24-77.11,203.28-77.11Zm0,66.99c-9.35,0-17.16-7.92-17.16-17.71V-49.39c0-9.68,7.81-17.6,17.16-17.6a17.28,17.28,0,0,1,17.16,17.6v21.56C220.44-18.04,212.96-10.12,203.28-10.12Z"
+                        transform="translate(-3.5 79.22)" stroke="#c9108c" stroke-width="4" />
+                </svg>
+                <p id="text">The Fest of your life is back!</p>
+            </div>
+
+            <div class="countdown">
+                <div id="rectangle-cd"></div>
+                <div class="cd-line-1">Start counting...</div>
+                <div class="cd-line-2"><span id="days">11</span id="days"> days, <span id="hours"></span> hrs, <span
+                        id="minutes"></span> min, <span id="seconds"></span> sec</div>
+                <div class="cd-line-3">to go.</div>
+            </div>
+        </div>
+        <div class="splitter-line"></div>
+    </section>
+
+    <!-- ABOUT US-->
+
+    <section>
+        <div class="row" style="background-color:#08080a; color: white ; padding-top:4% ;font-size:1em;">
+            <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                <h1 class="project-heading mt-2 mb-2 text-center">ABOUT US</h1>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                <br>
+            </div>
+            <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center colorlib-counters" id="colorlib-counter">
+                <div class="colorlib-narrow-content">
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
+                            <span class="colorlib-counter js-counter" data-from="0" data-to="250" data-speed="5000"
+                                data-refresh-interval="10"></span>
+                            <span class="colorlib-counter-label">FOOTFALL</span>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
+                            <span class="colorlib-counter js-counter" data-from="0" data-to="500" data-speed="5000"
+                                data-refresh-interval="8"></span>
+                            <span class="colorlib-counter-label">EVENTS</span>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
+                            <span class="colorlib-counter js-counter" data-from="0" data-to="4000" data-speed="5000"
+                                data-refresh-interval="2"></span>
+                            <span class="colorlib-counter-label">PARTICIPANTS</span>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
+                            <span class="colorlib-counter js-counter" data-from="0" data-to="7500" data-speed="5000"
+                                data-refresh-interval="1"></span>
+                            <span class="colorlib-counter-label">STUDNETS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY STARTS-->
+
+    <section class="gallery-container">
+        <div class="gallery">
+            <div class="row-1">
+                <div class="gallery-header">
+                    <div class="gal-heading">Gallery</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing</p>
+                </div>
+                <img class="gallery-images" src="images/Gallery/image1.JPG" />
+                <img class="gallery-images" src="images/Gallery/image2.jpg" />
+                <img class="gallery-images" src="images/Gallery/image3.jpg" />
+                <img class="gallery-images" src="images/Gallery/image4.jpg" />
+                <img class="gallery-images" src="images/Gallery/image5.jpg" />
+
+            </div>
+            <div class="row-2">
+                <img class="gallery-images" src="images/Gallery/image6.jpg" />
+                <img class="gallery-images" src="images/Gallery/image7.jpg" />
+                <img class="gallery-images" src="images/Gallery/image9.jpg" />
+                <img class="gallery-images" src="images/Gallery/image10.jpg" />
+                <img class="gallery-images" src="images/Gallery/image11.jpg" />
+                <img class="gallery-images" src="images/Gallery/image.jpg" />
+            </div>
+        </div>
+    </section>
+
+    <!--GALLERY ENDS-->
+
+    <!--TEASER STARTS-->
+    <section style="background-color:#00000a">
+        <div class="container" style="height:640px ; padding-top:4em ; padding-bottom: 4em">
+                <iframe id="youtube" src="https://www.youtube.com/embed/6T8stXj7Dzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </iframe>
+        </div>
+    </section>
+
+
+    <!--TEASER ENDS-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Counters -->
+    <script src="js/jquery.countTo.js"></script>
+
+
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
