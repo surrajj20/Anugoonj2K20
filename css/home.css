@@ -45,6 +45,7 @@
 
 body{
   overflow-x: hidden;
+  background-color: #08080a;
 }
 
 .hero-sec
@@ -333,67 +334,27 @@ body{
     display: block; }
 
 
-/* Gallery */
+/* GALLERY STARTS */
 
-.gal-heading
-{
-    font-family: 'ikaros-sans';
-    font-size :40px;
-    margin-top:100px;
+.fit-image{
+  height: 100%;
+  width: 100%;
+}
+.grid{
+  padding:5px;
+}
+.grid img{
+  padding:7px 7px;
+  transition: 0.8s ease;
+}
+.grid img:hover{
+  box-shadow: 10px 10px 10px 10px #cfcfcf;
+  transition: 0.8s ease;
 }
 
-.gallery p
-{
-    font-family: 'Typold Book';
-    font-size: 15px;
-}
-
-.gallery-container
-{
-    height: 300vh;
-    display:inline-block;
-    background-color: white;
-}
-.gallery{
-    position: sticky;
-    bottom: 0px;
-    top:0px;
-    
-}
-
-.gallery-images
-{
-    height: 50vh;
-    width: 50vh;
-    background-color: var(--light-grey);
-    border: white 1px solid;
-    display: inline-block;
-}
-
-.gallery-header
-{
-    width: 800px;
-    padding: 50px;
-}
-
-.row-1
-{
-    transition: transform 300ms ease-out;
-    flex-direction: row-reverse;
-    display: flex;
-    position: relative;
-    right: 0;
-}
-
-.row-2
-{
-    transition: transform 300ms ease-out;
-    display: flex;
-}
-
+/*GALLERY ENDS*/
 
 /*TEASRER CSS STARTS*/
-
 
 #youtube{
   height:100% ;
@@ -401,6 +362,5 @@ body{
   width:100%; 
   box-shadow:1px 1px 2px black, 0 0 55px blue, 0 0 5px darkblue
 }
-
 
 /*TEASER CSS ENDS*/
