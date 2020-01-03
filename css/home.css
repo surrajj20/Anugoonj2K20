@@ -348,7 +348,7 @@ body{
   transition: 0.8s ease;
 }
 .grid img:hover{
-  box-shadow: 10px 10px 10px 10px #cfcfcf;
+  box-shadow: 10px 10px 10px 10px blue;
   transition: 0.8s ease;
 }
 
