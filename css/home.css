@@ -376,8 +376,8 @@ body{
   .colorlib-counters .colorlib-counter {
     font-size: 40px;
     display: block;
-    color: #b80960;
-    font-family: "Quicksand", Arial, sans-serif;
+    color:var(--pink-color);
+    font-family: "Typold book", Arial, sans-serif;
     width: 100%;
     font-weight: 700;
     margin-bottom: .3em; }
