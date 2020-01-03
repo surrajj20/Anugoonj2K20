@@ -421,12 +421,14 @@ body{
 
 .teaser-sec
 {
-  height: 100vh;
+  
+  text-align: center;
+  padding: 50px 0;
 }
 
 .teaser-sec video
 {
-  height: 100%;
-  width: 100%;
+  width: 90%;
+  box-shadow: #373737 -5px -5px 62px 0px;
 }
 /*TEASER CSS ENDS*/
