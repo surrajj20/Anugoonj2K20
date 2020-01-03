@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- on scroll animations 'OUR EVENTS' -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/team.css" rel="stylesheet" type="text/css">
@@ -75,7 +78,7 @@
                 <br>
             </div>
             <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center colorlib-counters" id="colorlib-counter">
-                <div class="colorlib-narrow-content">
+                <div class="colorlib-narrow-content" >
                     <div class="row">
                     </div>
                     <div class="row">
@@ -104,12 +107,58 @@
             </div>
         </div>
     </section>
+<!--ABOUT US ENDS-->
+
+<!-- EVENTS INTRO starts -->
+<section class="section-events">
+    
+</section>
+<div class="container">
+    
+    <div data-aos="fade-down" class="row headingRow">
+        <div class="col" id="headingText">
+            <h1 class="eventsHeading">EVENTS</h1>
+        </div>
+    </div>
+    
+    <div class="row photosAndContents">
+        <div class="col-6" id="gallery">
+            <!-- gallery ka code 
+                pink kar rakha hai area-->
+            </div>
+            <div class="col-6 eventsIntro" data-aos="zoom-out">
+                
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium magni nihil architecto delectus atque? Quibusdam quasi vero aut voluptatem accusamus ut, magnam totam vitae voluptatum labore omnis aliquid quidem eum?
+            </div>
+        </div>
+        
+        <div class="row ">
+            <div class="col" id="buttonGoToEvents">
+                <button type="button" class="btn btn-danger btn-lg goToEvents" id="redButton" >Go to events</button>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <!-- <script src="aos.js"></script> -->
+    <script >
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <!-- EVENTS INTRO ends -->
+
 
     <!-- GALLERY STARTS-->
 
     <section>
         <a name="Gallery">
-            <h1 class="text-center pt-5 mb-4" style="color:#c9108c">GALLERY</h1>
+            <h1 class="text-center pt-5 mb-5" style="color:#c9108c">GALLERY</h1>
             <div class="container">
                 <div class="grid">
                     <div class="row">
@@ -255,6 +304,64 @@
     </section>
 
     <!--OUR TEAM ENDS-->
+
+    <!-- FOOTER STARTS -->
+    <section>
+    <div id="footer" class="container">
+        <div class="row">
+            <div class="col-3" id="pehlaPart">
+                
+                <h2 class="colorChange">ANUGOONJ</h2>
+            </div>
+            
+            <div class=" col-3">
+                
+                <ul id="list">
+                    <li><a class="removedecor" href="#">Home</a></li>
+                    <li><a class="removedecor" href="#">Schedule</a></li>
+                    <li><a class="removedecor" href="#">Events</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="col-3" id="rh">
+                <h2 class="colorChange">Address</h2>
+                <p class="adress">Guru Gobind singh Indraprastha University </p>
+                <p class="adress">Sec-16c,Dwarka, New Delhi</p>
+            </div>
+            
+            
+            <div class="col-3">
+                <div class="footer-icons">
+                    <div class='demopadding'>
+                        <ul class="nav my-auto" style="font-size: 4rem;">
+                            <li class="nav-item col-lg-2 col-md-2 col-sm-2 col-xs-2 mr-2 ml-2 text-center">
+                                <a class="nav-link" href="https://www.facebook.com/profile.php?id=100004778597873"
+                                    target="_blank">
+                                    <span class="fa fa-facebook" aria-hidden="true"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item col-lg-2 col-md-2 col-sm-2 col-xs-2 mr-2 ml-2 text-center" id="insta">
+                                <a class="nav-link" href="https://www.instagram.com/sg_3105/" target="_blank">
+                                    <span class="fa fa-instagram instagram" aria-hidden="true"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item col-lg-2 col-md-2 col-sm-2 col-xs-2 mr-2 ml-2 text-center"
+                                id="linkedin">
+                                <a class="nav-link" href="https://www.linkedin.com/in/shlok-garg-0b216b191"
+                                    target="_blank">
+                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- FOOTER ENDS -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
