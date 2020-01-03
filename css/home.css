@@ -108,7 +108,7 @@ body{
 .cd-line-1, .cd-line-3
 {
   font-family: 'ikaros-sans-light';
-  font-size: 25px;
+  font-size: 1.6em;
   font-weight: lighter;
 }
 
@@ -116,7 +116,7 @@ body{
 .cd-line-2
 {
     font-family: 'ikaros-sans';
-    font-size: 36px;
+    font-size: 2.3em;
     font-weight: 300;
     letter-spacing: 3.5px;
 }
@@ -144,6 +144,62 @@ body{
     transform-origin: center;
     transform: translate(-50%,-50%) rotate(-66deg);
     z-index: 3;
+
+}
+
+/* HERO SECTION MEDIA QURREIES  */
+
+@media(max-width:600px)
+{
+  .splitter-line{display: none;}
+  
+  .hero-content{
+    font-size:10px;
+    display: block;
+    top:0;
+    height: 100%;
+    transform: unset;;
+  }
+  #text
+  {
+    margin: 0!important;;
+    display: none;
+  }
+
+  .left
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+  .cd-line-1,.cd-line-3
+  {
+    margin: 0;
+    text-align: left;
+  }
+  .cd-line-2
+  {
+    letter-spacing: 0.5px;
+  }
+
+  .hero-content .countdown{
+    line-height: normal;
+    margin: auto;
+
+    position: absolute;
+    bottom: 0;
+    width: 312px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  #rectangle-cd
+  {
+    display: none;
+  }
+
 
 }
 
