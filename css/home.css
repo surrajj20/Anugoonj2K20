@@ -419,4 +419,14 @@ body{
   box-shadow:1px 1px 2px black, 0 0 55px blue, 0 0 5px darkblue
 }
 
+.teaser-sec
+{
+  height: 100vh;
+}
+
+.teaser-sec video
+{
+  height: 100%;
+  width: 100%;
+}
 /*TEASER CSS ENDS*/
