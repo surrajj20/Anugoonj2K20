@@ -52,27 +52,27 @@ body{
 {
     height: 100vh;
     width: 100vw;
-    background-image: url("..\\images\\hero-section-bg.jpg");
-    background-size: cover;
-    background-position: bottom;
 }
 
-.hero-sec .overlay
-{
-    position: absolute;
-    left: 0;
-    top:0;
-    background: black;
-    opacity: .82;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-}
+.hero-sec::before
+{ 
+  top:0;
+  left:0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("..\\images\\hero-section-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  filter: brightness(17%); 
+ } 
+
+
 
 .hero-content
 {
     position: relative;
-    z-index: 2;
     color: white;
     top:50%;
     transform: translateY(-50%);
@@ -143,8 +143,6 @@ body{
     left: 50%;
     transform-origin: center;
     transform: translate(-50%,-50%) rotate(-66deg);
-    z-index: 3;
-
 }
 
 /* HERO SECTION MEDIA QURREIES  */
@@ -339,7 +337,11 @@ body{
   position: relative;
   top:100%;
   clear: both; 
-  margin-bottom: 2em; }
+  margin-bottom: 2em; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .colorlib-counters {
   padding: 1em 0;
@@ -432,10 +434,52 @@ body{
   box-shadow: 2px 2px 3px darkslategray;
   transition: 0.2s;
 }
-
-#gallery{
-  background: pink;
+#events-gallery img{
+  box-shadow: 1px 1px 2px black, 0 0 16px grey, 0 0 5px grey;
 }
+.events-row-2{
+  height:50%;
+}
+.events-row-3{
+  height:100%;
+}
+
+
+@media(max-width:520px)
+{
+   .eventsHeading{
+     position: relative;
+     left:-50px;
+   }
+   .eventsIntro{
+     margin-left: 20px;
+      width: 300px;
+      display: flex;
+      /* flex-wrap: nowrap;*/ 
+   }
+   #gallery{
+     /* width:0%; */
+     padding-left: 30px;
+   }
+}
+@media(max-width:350px){
+   .eventsIntro{
+       margin-left: 0px;
+       padding-left: 30px;
+       max-width: 200%;
+       display: flex;
+       flex-grow: 2;
+   }
+   #gallery{
+     display: none;
+   }
+   #redButton{
+     /* padding-right: 50px; */
+     position: relative;
+     right: 40px;
+   }
+}
+
 
 /* OUR EVENTS ends */
 
@@ -470,6 +514,19 @@ body{
 
 /*TEASER CSS ENDS*/
 
+.teaser-sec
+{
+  
+  text-align: center;
+  padding: 50px 0;
+}
+
+.teaser-sec video
+{
+  width: 90%;
+  box-shadow: #373737 -5px -5px 62px 0px;
+}
+
 /* FOOTER STARTS */
 #footer{
   background: #08080a;
@@ -480,13 +537,13 @@ body{
   color: rgba(223, 217, 221, 0.7);;
 }
 
-.instagram{
-  height: 10px;
-  width: 120px;
+/* .instagramLogo{
+  /* height: 10px;
+  width: 20px;
   /* padding-left: 20px; */
-  padding-right: 80px;
-  /* margin-left: 40px; */
-}
+  /* padding-right: 80px;
+  margin-left: 40px; 
+} */
 
 #footer-list{
   /* text-decoration: none; */
@@ -503,7 +560,7 @@ a:hover{
 }
 
 
-@media(max-width:565px)
+@media(max-width:800px)
 {
   .removedecor{
       position: relative;
@@ -515,6 +572,31 @@ a:hover{
       position: relative;
       right: 10px;
   }
+
+
+  .facebookLogo{
+    /* height: 20px; */
+    margin-left: 0px ;
+    position: relative;
+
+  }
+  .instagramLogo{
+    position: relative;
+    top: -10px;
+    /* left: -10px; */
+  }
+  .linkedinLogo{
+    position: relative;
+    top: 45px;
+    right: 70px;
+
+  }
+  .iconList{
+    display: flex;
+    flex-direction: column;
+    height:300px;
+
+  }
 }
 
 @media(max-width:405px){
@@ -522,6 +604,259 @@ a:hover{
       font-size: 23px;
       /* font-weight: bold; */
   }
+} 
+/*  */
+@media(max-width:650px){
+  /* .linkedinLogo{
+    position: relative;
+    /* top: 5px; */
+    /* right: 60px; */
+  /* } */ 
+  .facebookLogo{
+    position: relative;
+    right:380px;
+    top: 120px;
+  }
+  .linkedinLogo{
+    position: relative;
+    right:380px;
+    top: 120px;
+  }
+  .instagramLogo{
+    position: relative;
+    right:260px;
+    top: 10px;
+  }
+  
+}
+@media(max-width:600px){
+  /* .linkedinLogo{
+    position: relative;
+    /* top: 5px; */
+    /* right: 60px; */
+  /* } */ 
+  .facebookLogo{
+    position: relative;
+    right:380px;
+    top: 120px;
+  }
+  .linkedinLogo{
+    position: relative;
+    right:440px;
+    top: 120px;
+  }
+  .instagramLogo{
+    position: relative;
+    right:260px;
+    top: 10px;
+  }
+  
+}
+  @media(max-width:500px){
+    /* .linkedinLogo{
+      position: relative;
+      /* top: 5px; */
+      /* right: 60px; */
+    /* } */ 
+    .facebookLogo{
+      position: relative;
+      right:330px;
+      top: 120px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:380px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:220px;
+      top: 10px;
+    }
+    
+  }
+    
+   
+
+
+@media(max-width: 450px)
+{
+  .facebookLogo{
+    position: relative;
+    right:320px;
+    top: 120px;
+  }
+  .linkedinLogo{
+    position: relative;
+    right:360px;
+    top: 120px;
+  }
+  .instagramLogo{
+    position: relative;
+    right:220px;
+    top: 10px;
+  }
+  
+}
+@media(max-width: 380px)
+{
+  .facebookLogo{
+    position: relative;
+    right:300px;
+    top: 120px;
+  }
+  .instagramLogo{
+    position: relative;
+    right:200px;
+    top: 10px;
+  }
+  .linkedinLogo{
+    position: relative;
+    right:320px;
+    top: 120px;
+  }
+}
+/*TEASER CSS ENDS*/
+
+/* Nav bar starts */
+
+nav
+{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+
+.nav-after-image, nav::after
+{
+    transform-origin: right;
+    position: fixed;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    transform: scaleX(0);
+}
+
+nav::after
+{
+    content: "";
+    background-color: var(--pink-color) ;
+    transition: transform .6s cubic-bezier(.535, .005, 0, 1) .2s;
+    z-index: 10;
+    
+}
+.nav-after-image
+{
+    background-color: var(--dark-grey);
+    transition: transform .6s cubic-bezier(.535, .005, 0, 1) .1s;
+    z-index: 11;
+    
+}
+
+.nav-open .nav-after-image
+{
+    transform: scaleX(1);
+    transition: transform .7s cubic-bezier(.535, .005, 0, 1) .2s;
+}
+
+.nav-open::after
+{
+    transform: scaleX(1);
+    transition: transform .7s cubic-bezier(.535, .005, 0, 1) .1s;
+}
+
+.nav-inner-content
+{
+  margin: 20px 20px;
+  width: 80%;
+  position: fixed;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .2s ease-in-out .2s;
+  z-index: 12;
+  right: 0;
+  text-align: right;
+    
+}
+
+.nav-open .nav-inner-content
+{
+    opacity: 1;
+}
+
+#hamburger
+{
+  cursor: pointer;
+  position: absolute;
+  top:40px;
+  right: 40px;
+  padding: 10px;
+  transition: all .2s ease-in ;
+  z-index: 2;
+}
+#hamburger:hover
+{
+  background-color: #fff1;
+}
+#hamburger > div
+{
+  width: 24px;
+  height: 2px;
+  margin: 4px;
+  background-color: #fff;
+}
+
+.nav-links
+{
+  position: absolute;
+    right: 150px;
+    top: 40vh;
+    font-size: 43px;
+    font-family: 'Typold book';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 6px;
+    transform: translateY(-20%);
+    
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.nav-links  li:hover
+{
+  color:var(--pink-color);
+}
+
+@media (max-width:700px)
+{
+  .nav-after-image, nav::after
+{
+  width: 100%;
+}
+.nav-links
+{
+  right: 30px;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+.nav-links >li
+{
+  padding: 4px;
+  margin: 1px;
+}
+
+#hamburger
+{top: 20px;
+  right: 20px;}
 
 }
 /* FOOTER ENDS */
