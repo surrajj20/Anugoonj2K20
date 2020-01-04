@@ -14,7 +14,7 @@ h1 {
   color: white;
   -webkit-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
   -moz-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
-  /*text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);*/
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
   word-spacing: 16px;
 }
 
@@ -31,7 +31,7 @@ p {
   top: 0;
   bottom: 0;
   width: 100%;
-  background: url('images/background1.jpeg');
+  background: url("../images/background1.jpeg");
   background-size: cover;
 }
 
