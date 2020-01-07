@@ -1,3 +1,5 @@
+/*event page code start*/
+
 ;(function () {
 	
 	'use strict';
