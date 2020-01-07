@@ -2,59 +2,59 @@
 
 <head>
     <title>Anugoonj'20</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
     <link href="css/events.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="container-fluid event-div">
-        <h1 class="event-word">S</h1><br>
-        <h1 class="event-word">T</h1><br>
-        <h1 class="event-word">N</h1><br>
-        <h1 class="event-word">E</h1><br>
-        <h1 class="event-word">V</h1><br>
-        <h1 class="event-word">E</h1>
-    </div>
+    <h1 class="event-word container mt-5">Event<span style="color:#c9108c">s</span></h1>
 
     <!--NAVBAR STARTS-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container text-center">
+        <div class="row">
+        <button type="button" class="btn btn-lg active" onclick="btn(0)"><a href="#dance"><span style="font-size:50px">D</span>ancing</a></button>
+        <button type="button" class="btn btn-lg" onclick="btn(1)"><a href="#singing"><span style="font-size:50px">S</span>inging</a></button>
+        <button type="button" class="btn btn-lg" onclick="btn(2)"><a href="#acting"><span style="font-size:50px">A</span>cting</a></button>
+        <button type="button" class="btn btn-lg" onclick="btn(3)"><a href="#literary"><span style="font-size:50px">L</span>iterary</a></button>
+        <button type="button" class="btn btn-lg" onclick="btn(4)"><a href="#bands"><span style="font-size:50px">B</span>ands</a></button>
+        <button type="button" class="btn btn-lg" onclick="btn(5)"><a href="#workshops"><span style="font-size:50px">W</span>orkshpos</a></button>
+        <button type="button" class="btn btn-lg" onclick="btn(6)"><a href="#misc"><span style="font-size:50px">M</span>isc.</a></button>
+        <button type="button" class="btn btn-lg" onclick="btn(7)"><a href="#pronights"><span style="font-size:50px">P</span>roNights</span></a></button>
+    </div>
+    </div>
+    <!-- <nav class="pt-1 navbar navbar-expand-lg text-dark bg-light" style="font-size: 2em ;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Dance<span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav list">
+                <li class="nav-item mr-2">
+                    <a class="nav-link active" href="#">Dancing<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#">Singing</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#">Acting</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#">Literary</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#">Bands</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#">Workshops</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#">Pro Nights</a>
                 </li>
                 <li class="nav-item">
@@ -62,48 +62,462 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <!--NAVBAR ENDS-->
 
-    <div class="row text-center mt-5">
-        <div class="offset-lg-1 offset-md-1 offset-sm-2 offset-xs-2 mr-4 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-            <div class="row">
-                <div class="card bg-dark text-white">
-                    <img src="images/Gallery/image6.jpg" class="card-img">
-                    <div class="card-img-overlay text-center">
-                        <h5 class="card-title">TITLE</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.</p>
+    <!--MAIN SECTION STARTS-->
+
+    <section>
+        <a  name="dance">
+        <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">D</span>ance</h1>
+        <div class="row mt-5 text-center justify-content-center" style="width:100%">
+            <div
+                class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image7.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                    <div class="row">
+                        <div class="card bg-dark text-white">
+                            <img src="images/Gallery/image.jpg" class="card-img">
+                            <div class="card-img-overlay text-center">
+                                <h2 class="card-title">TITLE</h2>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                        <div class="row">
+                            <div class="card bg-dark text-white">
+                                <img src="images/Gallery/image.jpg" class="card-img">
+                                <div class="card-img-overlay text-center">
+                                    <h2 class="card-title">TITLE</h2>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </a>
+    </section>
+
+    <section>
+        <a  name="singing">
+        <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">S</span>inging</h1>
+        <div class="row text-center mt-5 justify-content-center" style="width:100%">
+            <div
+                class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image7.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mr-4 col-lg-3 col-md-3 col-sm-3 col-xs-3">
-            <div class="row">
-                <div class="card bg-dark text-white">
-                    <img src="images/Gallery/image7.jpg" class="card-img">
-                    <div class="card-img-overlay text-center">
-                        <h5 class="card-title">TITLE</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.</p>
+    </a>
+    </section>
+
+    <section>
+        <a  name="acting">
+        <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">A</span>cting</h1>
+        <div class="row mt-5 text-center justify-content-center" style="width:100%">
+                <div
+                    class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                    <div class="row">
+                        <div class="card bg-dark text-white">
+                            <img src="images/Gallery/image6.jpg" class="card-img">
+                            <div class="card-img-overlay text-center">
+                                <h2 class="card-title">TITLE</h2>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                    <div class="row">
+                        <div class="card bg-dark text-white">
+                            <img src="images/Gallery/image7.jpg" class="card-img">
+                            <div class="card-img-overlay text-center">
+                                <h2 class="card-title">TITLE</h2>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                    <div class="row">
+                        <div class="card bg-dark text-white">
+                            <img src="images/Gallery/image.jpg" class="card-img">
+                            <div class="card-img-overlay text-center">
+                                <h2 class="card-title">TITLE</h2>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                        <div class="row">
+                            <div class="card bg-dark text-white">
+                                <img src="images/Gallery/image.jpg" class="card-img">
+                                <div class="card-img-overlay text-center">
+                                    <h2 class="card-title">TITLE</h2>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                            <div class="row">
+                                <div class="card bg-dark text-white">
+                                    <img src="images/Gallery/image.jpg" class="card-img">
+                                    <div class="card-img-overlay text-center">
+                                        <h2 class="card-title">TITLE</h2>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+    </a>
+    </section>
+
+    <section>
+        <a name="literary">
+        <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">L</span>iterary</h1>
+        <div class="row text-center mt-5 justify-content-center" style="width:100%">
+            <div
+                class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image7.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-            <div class="row">
-                <div class="card bg-dark text-white">
-                    <img src="images/Gallery/image.jpg" class="card-img">
-                    <div class="card-img-overlay text-center">
-                        <h5 class="card-title">TITLE</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.</p>
+    </a>
+    </section>
+
+    <section>
+        <a name="bands">
+        <h1 class="heading container mt-5 text-center "><span style="color:#c9108c">B</span>ands</h1>
+        <div class="row text-center mt-5 justify-content-center" style="width:100%">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image7.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 ml-5 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </a>
+    </section>
+
+    <section>
+        <a name="workshops">
+        <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">W</span>orkshops</h1>
+        <div class="row text-center mt-5 justify-content-center" style="width:100%">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image7.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    </section>
+
+    <section>
+        <a name="misc">
+        <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">M</span>isc.</h1>
+        <div class="row text-center mt-5 justify-content-center" style="width:100%">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image7.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    </section>
+
+    <section>
+        <a name="pronights">
+        <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">P</span>roNights</h1>
+        <div class="row text-center mt-5 justify-content-center" style="width:100%">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image6.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image7.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/Gallery/image.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title">TITLE</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    </section>
+
+    <!--MAIN SECTION ENDS-->
+
+    <!--FOOTER STARTS-->
+
+    <section>
+        <div id="footer" class="container mt-5">
+            <div class="row">
+                <div class="col-3" id="pehlaPart">
+
+                    <h2 class="colorChange">ANUGOONJ</h2>
+                </div>
+
+                <div class=" col-3">
+
+                    <ul id="list">
+                        <li><a class="removedecor" href="#">Home</a></li>
+                        <li><a class="removedecor" href="#">Schedule</a></li>
+                        <li><a class="removedecor" href="#">Events</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-3" id="rh">
+                    <h2 class="colorChange">Address</h2>
+                    <p class="adress">Guru Gobind Singh Indraprastha University </p>
+                    <p class="adress">Sec-16C,Dwarka, New Delhi</p>
+                </div>
+
+
+                <div class="col-3">
+                    <div class="footer-icons">
+                        <div class='demopadding'>
+                            <ul class="nav my-auto iconList" style="font-size: 4rem;">
+                                <li class="nav-item col-lg-2 col-md-2 col-sm-2 col-xs-2 mr-2 ml-2 text-center">
+                                    <a class="nav-link" href="https://www.facebook.com/anugoonj2k1x/" target="_blank">
+                                        <img class="facebookLogo"
+                                            src="https://img.icons8.com/doodle/48/000000/facebook-new.png">
+                                    </a>
+                                </li>
+                                <li class="nav-item col-lg-2 col-md-2 col-sm-2 col-xs-2 mr-2 ml-2 text-center"
+                                    id="insta">
+                                    <a class="nav-link" href="https://www.instagram.com/anugoonj_official/"
+                                        target="_blank">
+                                        <img class="instagramLogo"
+                                            src="https://img.icons8.com/offices/40/000000/instagram-new.png">
+                                    </a>
+                                </li>
+                                <li class="nav-item col-lg-2 col-md-2 col-sm-2 col-xs-2 mr-2 ml-2 text-center"
+                                    id="linkedin">
+                                    <a class="nav-link" href="#" target="_blank">
+                                        <img class="linkedinLogo"
+                                            src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!--FOOTER ENDS-->
+
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

@@ -110,9 +110,6 @@
 				$('body').addClass('offcanvas');	
 			}
 		});
-
-
-
 	};
 
 	// Click outside of offcanvass
@@ -305,6 +302,18 @@
 		stickyFunction();
 		owlCrouselFeatureSlide();
 	});
-
-
 }());
+
+
+/*EVENTS PAGE STARTS*/
+
+var ele=document.getElementsByClassName('btn')
+
+function btn(position) {
+	for (var i = 0; i < ele.length; i++) {
+	  ele[i].classList.remove('active')
+	}
+	ele[position].classList.add('active')
+  }
+
+/*EVENTS PAGE ENDS*/
