@@ -358,3 +358,23 @@ $(document).ready(function() {
 });
 
 /* SCROLL TO TOP ENDS*/
+
+/* EVENTS INFO STARTS */
+
+document.getElementById('closeButton').addEventListener('click', function(e) {
+    e.preventDefault();
+    this.parentNode.style.visibility = 'hidden';
+	this.style.visibility="hidden"
+	document.body.classList.remove('stop-scrolling')
+	document.getElementById('back2Top').style.visibility="visible"
+}, false);
+
+function mybtn(){
+	document.body.classList.add('stop-scrolling')
+	document.getElementById('back-div').style.visibility="visible"
+	document.getElementById('closeButton').style.visibility="visible"
+	document.getElementById('back2Top').style.visibility="hidden"
+    document.getElementById('back-div').style.zIndex="5"
+}
+
+/* EVENTS INFO ENDS*/
