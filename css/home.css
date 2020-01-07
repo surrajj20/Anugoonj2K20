@@ -146,7 +146,7 @@ body{
     transform: translate(-50%,-50%) rotate(-66deg);
 }
 
-/* HERO SECTION MEDIA QURREIES  */
+/* HERO SECTION MEDIA QUERIES  */
 
 @media(max-width:600px)
 {
