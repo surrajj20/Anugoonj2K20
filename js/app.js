@@ -59,7 +59,7 @@ function showTime() {
 /* GALLERY END*/
 
 
-// NAV BAR 
+/*NAV ENDS*/
 const nav = document.querySelector('nav');
 const main = document.querySelector('body');
 function closeNav()
@@ -79,3 +79,5 @@ function openNav()
     nav.classList.add('nav-open');
     },100);
 }
+
+/* NAV ENDS*/

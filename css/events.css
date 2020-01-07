@@ -1,0 +1,14 @@
+.event-word{
+    display:inline-block;
+    transform:rotate(-90deg);
+    font-size: 8vh;
+    position: relative;
+    top:16%;
+}
+.event-div{
+    height:100% ; 
+    background-color: grey ; 
+    text-align: center ; 
+    width:10em ; 
+    float:left
+}
