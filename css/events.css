@@ -1,14 +1,178 @@
+body{
+    background-color: #08080a;
+}
 .event-word{
-    display:inline-block;
-    transform:rotate(-90deg);
-    font-size: 8vh;
-    position: relative;
-    top:16%;
+    color:#fff;
 }
-.event-div{
-    height:100% ; 
-    background-color: grey ; 
-    text-align: center ; 
-    width:10em ; 
-    float:left
+.heading{
+    color:#fff;
+    font-size: 400%;;
 }
+.events-card:hover{
+    transform: scale(1.4);
+    z-index: 1;
+    cursor: pointer;
+}
+.bg-light{
+    background-color: transparent !important;
+}
+.btn{
+    outline: none;
+}
+.btn a:hover{
+    color: #3636b3;
+}
+.btn .active:hover{
+    color:#fff;
+}
+.active a{
+    color:#fff !important;
+}
+.btn a{
+    color:grey;
+}
+
+/*FOOTER STARTS*/
+#footer{
+    background: #08080a;
+    color: white;
+    max-width: 100%;
+  }
+  .colorChange{
+    color: rgba(223, 217, 221, 0.7);;
+  }
+  #footer-list{
+    list-style: none;
+  }
+  .removedecor{
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    color: grey;
+    text-decoration: none;
+  }
+  @media(max-width:800px)
+  {
+    .removedecor{
+        position: relative;
+        top: 60px;
+        right: 90px;
+  
+    }
+    #rh-footer{
+        position: relative;
+        right: 10px;
+    }
+    .facebookLogo{
+      margin-left: 0px ;
+      position: relative;
+    }
+    .instagramLogo{
+      position: relative;
+      top: -10px;
+    }
+    .linkedinLogo{
+      position: relative;
+      top: 45px;
+      right: 70px;
+    }
+    .iconList{
+      display: flex;
+      flex-direction: column;
+      height:300px;
+    }
+  }
+  @media(max-width:405px){
+     h2{
+        font-size: 23px;
+    }
+  } 
+  @media(max-width:650px){ 
+    .facebookLogo{
+      position: relative;
+      right:380px;
+      top: 120px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:380px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:260px;
+      top: 10px;
+    }
+  }
+  @media(max-width:600px){
+    .facebookLogo{
+      position: relative;
+      right:380px;
+      top: 120px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:440px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:260px;
+      top: 10px;
+    }
+  }
+    @media(max-width:500px){
+      .facebookLogo{
+        position: relative;
+        right:330px;
+        top: 120px;
+      }
+      .linkedinLogo{
+        position: relative;
+        right:380px;
+        top: 120px;
+      }
+      .instagramLogo{
+        position: relative;
+        right:220px;
+        top: 10px;
+      }
+    }
+  @media(max-width: 450px)
+  {
+    .facebookLogo{
+      position: relative;
+      right:320px;
+      top: 120px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:360px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:220px;
+      top: 10px;
+    }
+  }
+  @media(max-width: 380px)
+  {
+    .facebookLogo{
+      position: relative;
+      right:300px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:200px;
+      top: 10px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:320px;
+      top: 120px;
+    }
+  }
+  /*FOOTER ENDS*/
