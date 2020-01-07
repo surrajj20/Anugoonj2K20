@@ -1,0 +1,198 @@
+.heading{
+    color: white;
+    margin-top: 2%;
+}
+span{
+    color: #c9108c;
+}
+
+
+/* FOOTER STARTS */
+#footer{
+    background: #08080a;
+    color: white;
+    max-width: 100%;
+  }
+  .colorChange{
+    color: rgba(223, 217, 221, 0.7);;
+  }
+  
+  /* .instagramLogo{
+    /* height: 10px;
+    width: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 80px;
+    margin-left: 40px; 
+  } */
+  
+  #footer-list{
+    /* text-decoration: none; */
+    list-style: none;
+  }
+  
+  .removedecor{
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    color: grey;
+    text-decoration: none;
+  }
+  
+  
+  @media(max-width:800px)
+  {
+    .removedecor{
+        position: relative;
+        top: 60px;
+        right: 90px;
+  
+    }
+    #rh-footer{
+        position: relative;
+        right: 10px;
+    }
+  
+  
+    .facebookLogo{
+      /* height: 20px; */
+      margin-left: 0px ;
+      position: relative;
+  
+    }
+    .instagramLogo{
+      position: relative;
+      top: -10px;
+      /* left: -10px; */
+    }
+    .linkedinLogo{
+      position: relative;
+      top: 45px;
+      right: 70px;
+  
+    }
+    .iconList{
+      display: flex;
+      flex-direction: column;
+      height:300px;
+  
+    }
+  }
+  
+  @media(max-width:405px){
+     h2{
+        font-size: 23px;
+        /* font-weight: bold; */
+    }
+  } 
+  /*  */
+  @media(max-width:650px){
+    /* .linkedinLogo{
+      position: relative;
+      /* top: 5px; */
+      /* right: 60px; */
+    /* } */ 
+    .facebookLogo{
+      position: relative;
+      right:380px;
+      top: 120px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:380px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:260px;
+      top: 10px;
+    }
+    
+  }
+  @media(max-width:600px){
+    /* .linkedinLogo{
+      position: relative;
+      /* top: 5px; */
+      /* right: 60px; */
+    /* } */ 
+    .facebookLogo{
+      position: relative;
+      right:380px;
+      top: 120px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:440px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:260px;
+      top: 10px;
+    }
+    
+  }
+    @media(max-width:500px){
+      /* .linkedinLogo{
+        position: relative;
+        /* top: 5px; */
+        /* right: 60px; */
+      /* } */ 
+      .facebookLogo{
+        position: relative;
+        right:330px;
+        top: 120px;
+      }
+      .linkedinLogo{
+        position: relative;
+        right:380px;
+        top: 120px;
+      }
+      .instagramLogo{
+        position: relative;
+        right:220px;
+        top: 10px;
+      }
+      
+    }
+      
+     
+  
+  
+  @media(max-width: 450px)
+  {
+    .facebookLogo{
+      position: relative;
+      right:320px;
+      top: 120px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:360px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:220px;
+      top: 10px;
+    }
+    
+  }
+  @media(max-width: 380px)
+  {
+    .facebookLogo{
+      position: relative;
+      right:300px;
+      top: 120px;
+    }
+    .instagramLogo{
+      position: relative;
+      right:200px;
+      top: 10px;
+    }
+    .linkedinLogo{
+      position: relative;
+      right:320px;
+      top: 120px;
+    }
+  }
