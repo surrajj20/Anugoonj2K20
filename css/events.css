@@ -178,3 +178,34 @@ a .row .events-card:hover{
     }
   }
   /*FOOTER ENDS*/
+
+
+  /* SCROLL TO TOP STARTS */
+
+  #back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background-color: #08080a;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+/* SCROLL TO TOP ENDS */
