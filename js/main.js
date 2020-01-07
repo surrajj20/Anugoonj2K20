@@ -316,4 +316,14 @@ function btn(position) {
 	ele[position].classList.add('active')
   }
 
+function inc_size(x){
+	x.style.transform="scale(1.4)"
+	x.style.transition="0.4s"
+}
+
+function dec_size(x){
+	x.style.transform="scale(1)"
+	x.style.transition="0.4s"
+}
+
 /*EVENTS PAGE ENDS*/

@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     background-color: #08080a;
 }
@@ -8,8 +11,7 @@ body{
     color:#fff;
     font-size: 400%;;
 }
-.events-card:hover{
-    transform: scale(1.4);
+a .row .events-card:hover{
     z-index: 1;
     cursor: pointer;
 }
