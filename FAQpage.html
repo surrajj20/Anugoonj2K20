@@ -6,12 +6,40 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+        
 
     </head>
     <body style="background-color: white;">
 
+      <nav style="display: none;">
+        <div class="nav-overlay">
+        </div>
+        <div class="nav-after-image">
+        </div>
+        <div class="nav-inner-content">
+            <div class='cross' onclick="closeNav()">
+                <div class="cross-l1"></div>
+                <div class="cross-l2"></div>
+            </div>
+            <ul class='nav-links'>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="events.html" target="_blank">EVENTS</a></li>
+                <li><a href="projects_underconstruction.html">SCHEDULE</a></li>
+                <li><a href="projects_underconstruction.html">SPONSORS</a></li>
+                <li><a href="FAQpage.html" target="_blank">FAQ</a></li>
+                <li><a href="projects_underconstruction.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- ::after -->
+    </nav>
+
+
       <div class= container>
+          <div id='hamburger' onclick="openNav()">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
       <div class="heading">
        <h1> FAQ<span>'s</span> </h1>
       </div>
@@ -194,7 +222,7 @@
                   </section>
                   <!-- FOOTER ENDS -->
       
-
+                  <script src="js/nav.js" ></script>
     </body>
 
 </html>

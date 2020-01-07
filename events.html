@@ -54,15 +54,15 @@
 
     <div class="container text-center">
         <div class="row">
-        <button type="button" class="btn btn-lg active" onclick="btn(0)"><a href="#dance"><span style="font-size:50px">D</span>ancing</a></button>
-        <button type="button" class="btn btn-lg" onclick="btn(1)"><a href="#singing"><span style="font-size:50px">S</span>inging</a></button>
-        <button type="button" class="btn btn-lg" onclick="btn(2)"><a href="#acting"><span style="font-size:50px">A</span>cting</a></button>
-        <button type="button" class="btn btn-lg" onclick="btn(3)"><a href="#literary"><span style="font-size:50px">L</span>iterary</a></button>
-        <button type="button" class="btn btn-lg" onclick="btn(4)"><a href="#bands"><span style="font-size:50px">B</span>ands</a></button>
-        <button type="button" class="btn btn-lg" onclick="btn(5)"><a href="#workshops"><span style="font-size:50px">W</span>orkshpos</a></button>
-        <button type="button" class="btn btn-lg" onclick="btn(6)"><a href="#misc"><span style="font-size:50px">M</span>isc.</a></button>
-        <button type="button" class="btn btn-lg" onclick="btn(7)"><a href="#pronights"><span style="font-size:50px">P</span>roNights</span></a></button>
-    </div>
+            <button type="button" class="btn btn-lg active" onclick="btn(0)"><a href="#dance"><span style="font-size:50px">D</span>ancing</a></button>
+            <button type="button" class="btn btn-lg" onclick="btn(1)"><a href="#singing"><span style="font-size:50px">S</span>inging</a></button>
+            <button type="button" class="btn btn-lg" onclick="btn(2)"><a href="#acting"><span style="font-size:50px">A</span>cting</a></button>
+            <button type="button" class="btn btn-lg" onclick="btn(3)"><a href="#literary"><span style="font-size:50px">L</span>iterary</a></button>
+            <button type="button" class="btn btn-lg" onclick="btn(4)"><a href="#bands"><span style="font-size:50px">B</span>ands</a></button>
+            <button type="button" class="btn btn-lg" onclick="btn(5)"><a href="#workshops"><span style="font-size:50px">W</span>orkshpos</a></button>
+            <button type="button" class="btn btn-lg" onclick="btn(6)"><a href="#misc"><span style="font-size:50px">M</span>isc.</a></button>
+            <button type="button" class="btn btn-lg" onclick="btn(7)"><a href="#pronights"><span style="font-size:50px">P</span>roNights</span></a></button>
+        </div>
     </div>
     <!-- <nav class="pt-1 navbar navbar-expand-lg text-dark bg-light" style="font-size: 2em ;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -103,11 +103,15 @@
 
     <!--MAIN SECTION STARTS-->
 
+    <!-- SCROLL TO TOP STARTS -->
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <!-- SCROLL TO TOP ENDS -->
+
     <section>
         <a name="dance">
         <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">D</span>ance</h1>
-        <div class="row mt-5 text-center justify-content-center" style="width:100%">
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+        <div class="row mt-5 text-center justify-content-center" style="width:100%" >
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down" onmouseover="inc_size(this)" onmouseout="dec_size(this)" onclick="full_size(this)">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -118,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image7.jpg" class="card-img">
@@ -129,7 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image.jpg" class="card-img">
@@ -140,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-5 ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+            <div class="mt-5 ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                     <div class="row">
                         <div class="card bg-dark text-white">
                             <img src="images/Gallery/image.jpg" class="card-img">
@@ -151,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+                <div class="mt-5 ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                         <div class="row">
                             <div class="card bg-dark text-white">
                                 <img src="images/Gallery/image.jpg" class="card-img">
@@ -170,7 +174,7 @@
         <a name="singing">
         <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">S</span>inging</h1>
         <div class="row text-center mt-5 justify-content-center" style="width:100%">
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -181,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image7.jpg" class="card-img">
@@ -192,7 +196,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image.jpg" class="card-img">
@@ -211,7 +215,7 @@
         <a name="acting">
         <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">A</span>cting</h1>
         <div class="row mt-5 text-center justify-content-center" style="width:100%">
-                <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+                <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                     <div class="row">
                         <div class="card bg-dark text-white">
                             <img src="images/Gallery/image6.jpg" class="card-img">
@@ -222,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+                <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                     <div class="row">
                         <div class="card bg-dark text-white">
                             <img src="images/Gallery/image7.jpg" class="card-img">
@@ -233,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+                <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                     <div class="row">
                         <div class="card bg-dark text-white">
                             <img src="images/Gallery/image.jpg" class="card-img">
@@ -244,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+                <div class="mt-5 ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                         <div class="row">
                             <div class="card bg-dark text-white">
                                 <img src="images/Gallery/image.jpg" class="card-img">
@@ -255,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+                    <div class="mt-5 ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                             <div class="row">
                                 <div class="card bg-dark text-white">
                                     <img src="images/Gallery/image.jpg" class="card-img">
@@ -274,7 +278,7 @@
         <a name="literary">
         <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">L</span>iterary</h1>
         <div class="row text-center mt-5 justify-content-center" style="width:100%">
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -285,7 +289,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image7.jpg" class="card-img">
@@ -296,7 +300,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image.jpg" class="card-img">
@@ -315,7 +319,7 @@
         <a name="bands">
         <h1 class="heading container mt-5 text-center "><span style="color:#c9108c">B</span>ands</h1>
         <div class="row text-center mt-5 justify-content-center" style="width:100%">
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -326,7 +330,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image7.jpg" class="card-img">
@@ -337,7 +341,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image.jpg" class="card-img">
@@ -348,7 +352,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-5 ml-5 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="mt-5 ml-5 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -367,7 +371,7 @@
         <a name="workshops">
         <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">W</span>orkshops</h1>
         <div class="row text-center mt-5 justify-content-center" style="width:100%">
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -378,7 +382,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image7.jpg" class="card-img">
@@ -389,7 +393,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image.jpg" class="card-img">
@@ -408,7 +412,7 @@
         <a name="misc">
         <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">M</span>isc.</h1>
         <div class="row text-center mt-5 justify-content-center" style="width:100%">
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -419,18 +423,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
-                <div class="row">
-                    <div class="card bg-dark text-white">
-                        <img src="images/Gallery/image7.jpg" class="card-img">
-                        <div class="card-img-overlay text-center">
-                            <h2 class="card-title">TITLE</h2>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image.jpg" class="card-img">
@@ -449,7 +442,7 @@
         <a name="pronights">
         <h1 class="heading container mt-5 text-center"><span style="color:#c9108c">P</span>roNights</h1>
         <div class="row text-center mt-5 justify-content-center" style="width:100%">
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-right">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-right">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image6.jpg" class="card-img">
@@ -460,7 +453,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-down">
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-down">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image7.jpg" class="card-img">
@@ -471,7 +464,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" data-aos="fade-up">
+            <div class="ml-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  onmouseover="inc_size(this)" onmouseout="dec_size(this)" data-aos="fade-up">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/Gallery/image.jpg" class="card-img">
@@ -551,10 +544,11 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- <script src="aos.js" type="text/javascript"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-            AOS.init();
+            AOS.init({
+                duration:1000
+            });
           </script>
 
 </body>
