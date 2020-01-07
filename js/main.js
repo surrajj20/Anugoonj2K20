@@ -371,7 +371,7 @@ document.getElementById('closeButton').addEventListener('click', function(e) {
 
 function mybtn(){
 	document.body.classList.add('stop-scrolling')
-    document.getElementById('back-div').style.visibility="visible"
+	document.getElementById('back-div').style.visibility="visible"
 	document.getElementById('closeButton').style.visibility="visible"
 	document.getElementById('back2Top').style.visibility="hidden"
     document.getElementById('back-div').style.zIndex="5"

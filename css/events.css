@@ -470,9 +470,7 @@ a .row .events-card:hover{
 
 /* SCROLL TO TOP ENDS */
 
-
-
-
+/* EVENTS INFO STARTS */
 
 #closeButton {
   position: absolute;
@@ -496,15 +494,14 @@ a .row .events-card:hover{
   width: 100%;   
 }
 
+/* EVENTS INFO ENDS */
 
 
+/* STOP SCROLL STARTS */
 
-
-
-
-
-/*STOP SCROLL*/
 .stop-scrolling { 
   height: 100%; 
   overflow: hidden; 
 } 
+
+/* STOP SCROLL ENDS */
