@@ -209,3 +209,42 @@ a .row .events-card:hover{
 }
 
 /* SCROLL TO TOP ENDS */
+
+
+
+
+
+#closeButton {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: blue;
+  opacity: 1;
+  border: none;
+  color: black;
+  visibility: hidden;
+}
+#back-div{
+  overflow: scroll;
+  position: fixed;
+  top:0;
+  left:0;
+  visibility: hidden;
+  margin: 5px 5px 5px 5px;
+  background-color: rgba(128,128,128,0.8);
+  height: 100%;
+  width: 100%;   
+}
+
+
+
+
+
+
+
+
+/*STOP SCROLL*/
+.stop-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 
