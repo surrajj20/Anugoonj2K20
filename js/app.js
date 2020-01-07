@@ -59,7 +59,7 @@ function showTime() {
 /* GALLERY END*/
 
 
-/*NAV ENDS*/
+/*NAV START*/
 const nav = document.querySelector('nav');
 const main = document.querySelector('body');
 function closeNav()
