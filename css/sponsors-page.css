@@ -32,6 +32,9 @@
     --light-grey : #cfcfcf;
 
 }
+body{
+  background-color: #08080a;
+}
 
 /*NAV BAR STARTS */
 .nav-inner-content ul{
