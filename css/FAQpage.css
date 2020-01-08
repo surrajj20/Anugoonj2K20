@@ -34,34 +34,73 @@
 }
 
 /* Main Styles */
+
+
 .heading{
-    color: #08080a;
-    margin-top:5%;
-    margin-bottom:5%;
-  }
-span{
-    color: #c9108c;
+  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size :40px;
+  color: #08080a;
+  margin-left: 25px;
+  font-family: 'Ikaros-sans';
+  letter-spacing: 2px;
 }
+
+.heading span{
+  color: #c9108c;
+}
+
+
+@media(min-width:900px){
+  .heading
+  {
+    margin-left:5%;
+    font-size: 55px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
 
 *{
   margin:0;
   padding:0;
 }
 
-h1
-{
-  margin-left: 25px;
-}
 
 .question
 {
   text-align: left;
   display: block;
   color:var(--pink-color);
+  font-size: 18px;
+  /* font-weight: 500; */
+}
+
+.collapsed
+{
+  color:var(--dark-grey);
+}
+
+.question:hover, .question:focus
+{
+  text-decoration: none;
+  color: var(--pink-color);
 }
 .answer
 {
   margin:12px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+@media(max-width:600px)
+{
+  .question, .answer
+  {
+    font-size: unset;
+  }
 }
 
 
@@ -164,6 +203,7 @@ nav
     width: 100%;
     height: 100vh;
     z-index: 3;
+    top:0;
 }
 .nav-after-image, nav::after
 {
@@ -201,17 +241,66 @@ nav::after
 }
 .nav-inner-content
 {
+  top: 0;
   margin: 20px 20px;
   position: fixed;
   height: 100%;
   opacity: 0;
-  transition: opacity .2s ease-in-out .2s;
+  transition: opacity .2s ease-in-out .2s; 
   z-index: 12;
   right: 0;
   text-align: right;
   width: calc(80% - 40px);
     
 }
+
+.nav-inner-content li
+{
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+#nav-l1
+{
+  transition: opacity .2s ease-in-out .3s, transform .2s ease-in-out .3s ;
+} 
+
+#nav-l2
+{
+  transition: opacity .2s ease-in-out .33s, transform .2s ease-in-out .33s ;
+} 
+
+#nav-l3
+{
+  transition: opacity .2s ease-in-out .36s, transform .2s ease-in-out .36s ;
+} 
+
+#nav-l4
+{
+  transition: opacity .2s ease-in-out .39s, transform .2s ease-in-out .39s ;
+} 
+
+#nav-l5
+{
+  transition: opacity .2s ease-in-out .42s, transform .2s ease-in-out .42s ;
+} 
+
+#nav-l6
+{
+  transition: opacity .2s ease-in-out .45s, transform .2s ease-in-out .45s ;
+} 
+
+
+.nav-open .nav-inner-content li
+{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
+
 .nav-open .nav-inner-content
 {
     opacity: 1;
@@ -256,12 +345,18 @@ nav::after
   position: absolute;
     right: 150px;
     top: 40vh;
-    font-size: 43px;
-    font-family: 'Typold book';
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Ikaros-sans';
+    opacity: 0;
+    transition: opacity .2s ease-in ;
+    color: rgb(255, 255, 255); 
     letter-spacing: 6px;
     transform: translateY(-20%);
+}
+
+.nav-open .nav-links
+{
+  opacity: 1;
 }
 .nav-links a{
   color:white;
@@ -272,7 +367,7 @@ nav::after
 }
 .nav-links li {
   cursor: pointer;
-  transition: all .4s ease-in-out;
+  transition: color .4s ease-in-out;
 }
 .nav-links  li:hover
 {
