@@ -35,9 +35,16 @@
 
 /* Main Styles */
 .heading{
-    color: #08080a;
-    margin-top:5%;
-    margin-bottom:5%;
+
+  
+  color: #08080a;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 25px;
+  font-size: 55px;
+  font-family: 'Ikaros-sans';
+  letter-spacing: 2px;
+
   }
 span{
     color: #c9108c;
@@ -48,10 +55,6 @@ span{
   padding:0;
 }
 
-h1
-{
-  margin-left: 25px;
-}
 
 .question
 {
