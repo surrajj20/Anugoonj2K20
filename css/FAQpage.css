@@ -48,6 +48,22 @@ span{
   padding:0;
 }
 
+h1
+{
+  margin-left: 25px;
+}
+
+.question
+{
+  text-align: left;
+  display: block;
+  color:var(--pink-color);
+}
+.answer
+{
+  margin:12px;
+}
+
 
 /* FOOTER STARTS */
 footer

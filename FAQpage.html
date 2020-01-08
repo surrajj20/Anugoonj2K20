@@ -1,26 +1,24 @@
 <html>
-    <head>
+	<head>
 
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      
-        <title>Anugoon'20 FAQ</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/FAQpage.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    </head>
+		<title>Anugoon'20 FAQ</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/FAQpage.css" />
+
+	</head>
     <body style="background-color: white;">
 
-      <nav style="display: none;">
-        <div class="nav-overlay">
-        </div>
-        <div class="nav-after-image">
-        </div>
+        <nav style="display: none;">
+        <div class="nav-overlay"></div>
+        <div class="nav-after-image"></div>
         <div class="nav-inner-content">
             <div class='cross' onclick="closeNav()">
                 <div class="cross-l1"></div>
@@ -35,158 +33,137 @@
                 <li><a href="projects_underconstruction.html">CONTACT US</a></li>
             </ul>
         </div>
-        <!-- ::after -->
     </nav>
 
+    <div id='hamburger' onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
-      <div class= container>
-          <div id='hamburger' onclick="openNav()">
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
-      <div class="heading">
-       <h1> FAQ<span>'s</span> </h1>
-      </div>
-        <div class="accordion" id="accordionExample">
-            <div class="card" style="border-color:white;">
-              <div class="card-header " style="background-color:white;" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #08080a;">
-                    Q 1: What kind of events are going to take place over here?
-                  </button>
-                </h2>
-              </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body" style="background-color:white; color: #c9108c;">
+    <div class="heading">
+        <h1> FAQ<span>'s</span> </h1>
+    </div>
+<div class= container>
+        
+        <div class="accordion" style='padding-bottom: 80px;' id="accordionExample">
+            <!-- Question 1 -->
+
+            <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+            Q 1: What kind of events are going to take place over here?
+            </button>
+
+            <div id="collapseOne" class="answer collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card" style="border-color:white;">
-              <div class="card-header" style="background-color: white;" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#08080a">
-                    Q 2: Who can get entry during this fest?
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body" style="background-color: white; color: #c9108c;">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card" style="border-color:white;">
-              <div class="card-header" style="background-color: white;" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #08080a;">
-                    Q 3: what are the things that are not allowed in the collage during the fest?
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body" style="background-color: white; color: #c9108c;">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card" style="border-color: white;">
-                <div class="card-header "style="background-color: white;"; id="headingFour">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:#08080a">
-                      Q 4: What kind of events are going to take place over here?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                  <div class="card-body "style="background-color: white; color: #c9108c;">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card" style="border-color:white;">
-                <div class="card-header" style="background-color: white"; id="headingFive">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:#08080a;">
-                      Q 5: what are the things that are not allowed in the collage during the fest?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                  <div class="card-body " style="background-color: white; color: #c9108c;">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card" style="border-color: white;">
-                <div class="card-header" style="background-color: white;" id="headingSix">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: #08080a">
-                      Q 6: Who can get entry during this fest?
-                    </button>
-                  </h2>
-                </div>
-
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                  <div class="card-body" style="background-color: white; color: #c9108c;">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-
-              <div class="card" style="border-color:white;">
-                <div class="card-header" style="background-color: white;" id="headingSeven">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="color:#08080a;">
-                      Q 7: what are the things that are not allowed in the collage during the fest?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                  <div class="card-body " style="background-color: white; color: #c9108c;">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-
-              <div class="card"style="border-color: white;">
-                <div class="card-header" style="background-color: white;" id="headingEight">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" style="color:#08080a;">
-                      Q 8: Who can get entry during this fest?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-                  <div class="card-body" style="background-color: white; color: #c9108c;">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-            </div>
             </div>
 
+
+
+            <!-- Question 2 -->
+
+            <button class="btn btn-link question collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+            Q 2: Who can get entry during this fest?
+            </button>
+
+            <div id="collapseTwo" class="answer collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+         
+
+
+            <!-- Question 3 -->
+
+            <button class="btn btn-link question collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+            Q 3: What are the things that are not allowed in the collage during the fest?
+            </button>
+
+            <div id="collapseThree" class="answer collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+
+
+
+            <!-- Question 4 -->
+
+            <button class="btn btn-link question collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >
+                Q 4: What kind of events are going to take place over here?
+            </button>
+         
+            <div id="collapseFour" class="answer collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+
+
+
+            <!-- Question 5 -->
+            
+            <button class="btn btn-link question collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Q 5: What are the things that are not allowed in the collage during the fest?
+            </button>
+
+            <div id="collapseFive" class="answer collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+
+
+            <!-- Question 6 -->
+
+            <button class="btn btn-link question collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" >
+                Q 6: Who can get entry during this fest?
+            </button>
+
+            <div id="collapseSix" class="answer collapse" aria-labelledby="headingSix" data-parent="#accordionExample"> 
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+              
+
+            <!-- Question 7 -->
+
+            <button class="btn btn-link question collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" >
+                Q 7: What are the things that are not allowed in the collage during the fest?
+            </button>
+
+            <div id="collapseSeven" class="answer collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+
+
+            <!-- Question 8 -->
+
+            <button class="btn btn-link question collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" >
+                Q 8: Who can get entry during this fest?
+            </button>
+                
+            <div id="collapseEight" class="answer collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+
+        </div>
+    </div>
+            
+
+            
+    <!-- FOOTER STARTS -->
     <footer>
-      <div class="footer-logo">Anugoonj</div>
+        <div class="footer-logo">Anugoonj</div>
 
-      <ul class="mini-nav">
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='events.html'>Events</a></li>
-        <li><a href='#'>Schedule</a></li>   
-      </ul>
+        <ul class="mini-nav">
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='events.html'>Events</a></li>
+            <li><a href='#'>Schedule</a></li>   
+        </ul>
 
-      <div class="Address-block">
-        <h4>Address</h4>
-        <p>Guru Gobind Singh Indraprastha University<br>Sector 16c, Dwarka, New Delhi - 110078 </p>
-      </div>
+        <div class="Address-block">
+            <h4>Address</h4>
+            <p>Guru Gobind Singh Indraprastha University<br>Sector 16c, Dwarka, New Delhi - 110078 </p>
+        </div>
 
-      <div class="icon-tray">
-        <img src="images/icons/facebook.png">
-        <img src="images/icons/instagram.png">
-        <img src="images/icons/twitter.png">
-      </div>
+        <div class="icon-tray">
+            <img src="images/icons/facebook.png">
+            <img src="images/icons/instagram.png">
+            <img src="images/icons/twitter.png">
+        </div>
+
     </footer>
   <!-- FOOTER ENDS -->
 
