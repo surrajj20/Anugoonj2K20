@@ -319,7 +319,7 @@ function btn(position) {
   }
 
 function inc_size(x){
-	x.style.transform="scale(1.4)"
+	x.style.transform="scale(1.3)"
 	x.style.transition="0.4s"
 }
 
@@ -367,10 +367,17 @@ document.getElementById('closeButton').addEventListener('click', function(e) {
 	this.style.visibility="hidden"
 	document.body.classList.remove('stop-scrolling')
 	document.getElementById('back2Top').style.visibility="visible"
+	
+	var total_ele = document.getElementsByClassName('events-class');
+	for (var i = 0; i < total_ele.length; i ++) {
+    total_ele[i].style.visibility = 'hidden';
+	}
 }, false);
 
-function mybtn(){
+function mybtn(eventname){
+	document.getElementById(eventname).style.visibility="visible"
 	document.body.classList.add('stop-scrolling')
+	console.log(eventname)
 	document.getElementById('back-div').style.visibility="visible"
 	document.getElementById('closeButton').style.visibility="visible"
 	document.getElementById('back2Top').style.visibility="hidden"

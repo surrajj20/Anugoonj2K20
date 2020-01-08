@@ -281,6 +281,9 @@ a .row .events-card:hover{
 .btn{
     outline: none;
 }
+.btn:active{
+  outline:none;
+}
 .btn a:hover{
     color: #3636b3;
 }
@@ -476,22 +479,53 @@ a .row .events-card:hover{
   position: absolute;
   top: 5px;
   right: 0;
-  background-color: blue;
   opacity: 1;
+  z-index:1000;
+  font-size: 310%;
   border: none;
-  color: black;
+  color: #FF8000;
   visibility: hidden;
+  background-color: rgba(0,0,0,0.95);
+  padding-right:25px;
+}
+#closeButton:active{
+  outline:none;
 }
 #back-div{
+  color:#fff;
   overflow: scroll;
   position: fixed;
   top:0;
   left:0;
   visibility: hidden;
   margin: 5px 5px 5px 5px;
-  background-color: rgba(128,128,128,0.8);
+  background-color: rgba(0,0,0,0.95);
   height: 100%;
   width: 100%;   
+}
+
+.span4 img {
+  margin-right: 10px;
+}
+.span4 .img-left {
+  float: left;
+}
+.span4 .img-right {
+  float: right;
+}
+
+#event-img{
+  padding:2%;
+}
+.event-content{
+  text-shadow: .5px .5px blue;
+}
+
+.events-class{
+  visibility: hidden;
+  position: absolute;
+  top:0;
+  left:0;
 }
 
 /* EVENTS INFO ENDS */
@@ -596,6 +630,5 @@ footer p
     margin-bottom: 20px;
   }
 }
-
 
 /* FOOTER ENDS */
