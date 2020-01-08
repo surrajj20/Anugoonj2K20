@@ -2,7 +2,7 @@
 
 function showTime() {
     var currDate = new Date();
-    var remDate = new Date(2020, 1, 6);
+    var remDate = new Date(2020, 1, 17);
 
     var currTime = currDate.getTime();
     var remTime = remDate.getTime();

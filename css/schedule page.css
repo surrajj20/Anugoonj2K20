@@ -352,6 +352,9 @@ body{
 .day-number{
     font-size: 40px;
 }
+.day-number:active{
+  outline: none;
+}
 .days-list-li{
     margin: 0px 20px 0px 20px;
     background: black;
