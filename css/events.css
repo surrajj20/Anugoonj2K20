@@ -505,3 +505,97 @@ a .row .events-card:hover{
 } 
 
 /* STOP SCROLL ENDS */
+
+
+/* FOOTER STARTS */
+
+/* FOOTER STARTS */
+footer
+{
+  margin-top:5%;
+  background-color: #252527;
+  color: #fff;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: roboto;
+}
+
+
+.footer-logo
+{
+  font-family: 'Ikaros-sans';
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+footer ul
+{
+  list-style-type: none;
+  margin-top:3px;
+  margin-bottom: 0;
+}
+footer li
+{
+  margin-bottom: 4px;
+}
+
+footer a
+{
+  color: white;
+}
+footer a:hover
+{
+  text-decoration: none;
+  color: white;
+  filter: brightness(.9);
+}
+
+footer li {
+  margin-bottom: 4px;
+}
+
+footer h4
+{
+  font-weight: normal;
+  font-size: 18px;
+  margin-top:5px;
+}
+
+footer p
+{
+  font-size:14px;
+  margin-bottom: 0;
+}
+
+.icon-tray img
+{
+  width: 30px;
+  margin: 0 10px;
+}
+
+@media(max-width:540px)
+{
+  footer
+  { flex-direction: column;
+    padding: 40px;
+  }
+
+  footer > div, ul
+  {
+    margin-top: 20px;
+  }
+  footer .icon-tray
+  {
+    text-align: center;
+    margin-top:40px
+  }
+  .footer-logo
+  {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* FOOTER ENDS */
