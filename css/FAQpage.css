@@ -354,6 +354,20 @@ nav::after
     transform: translateY(-20%);
 }
 
+.nav-overlay
+{
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-black);
+  transition: opacity .7s cubic-bezier(.535, .005, 0, 1) .2s
+}
+
+.nav-open .nav-overlay
+{
+  opacity: 0.7;
+}
+
 .nav-open .nav-links
 {
   opacity: 1;
