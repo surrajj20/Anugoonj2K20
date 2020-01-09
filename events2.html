@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/events2.css">
+</head>
+<body>
+    
+    <nav style="display: none;">
+        <div class="nav-overlay"></div>
+        <div class="nav-after-image"></div>
+        <div class="nav-inner-content">
+            <div class='cross' onclick="closeNav()">
+                <div class="cross-l1"></div>
+                <div class="cross-l2"></div>
+            </div>
+            <ul class='nav-links'>
+                <li id="nav-l1"><a href="index.html">Home</a></li>
+                <li id="nav-l2"><a href="events.html">Events</a></li>
+                <li id="nav-l3"><a href="schedule-page.html">Schedule</a></li>
+                <li id="nav-l4"><a href="sponsors-page.html">Sponsors</a></li>
+                <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
+                <li id="nav-l6"><a href="contactuspage.html" >Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id='hamburger' onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <main style="overflow-x: hidden;">
+        <section class="events">
+            <div class="heading dark">Event<span>s</span></div>
+            <div class="slider-nav event-nav">
+                <div class="active-slide-link">D<span style="font-size:25px; writing-mode: vertical-lr; line-height:0.5;transform: rotate(-180deg);">ance</span></div>
+                <div>M<span style="font-size:25px; display: block; text-align: center; margin-top:-20px">usic</span></div>
+                <div>W<div style="display: inline-flex;
+                    flex-direction: column;
+                    transform: translate(-6px,-24px);
+                    line-height: 1;"><span style="font-size:25px; transform:translateX(7px)">ork</span><span style="font-size:25px;">shop</span></div>
+                </div>
+                <div>L<span style="font-size:25px;">iterary</span></div>
+                <div>P<div style="display: inline-flex;
+                    
+                    transform: translate(-25px);
+                    line-height: 1;"><span style="font-size:25px; transform:translateX(-5px)">ro</span><span style="font-size:25px;transform-origin: top; writing-mode: vertical-lr; transform: rotate(-180DEG) translate(-4px,-22px);">Night</span></div>
+                </div>
+                <div>M<span style="font-size:25px;">isc.</span></div>
+            </div>
+
+            <div class="slider-slides">
+                <div class="slide-event">
+                    <div class="event-tile">
+                        <img src="images/Gallery/image3.JPG">
+                        <h4>Event Name</h4>
+                    </div>
+                    <div class="event-tile">
+                        <img src="images/Gallery/image5.JPG">
+                        <h4>Event Name</h4>
+                    </div>
+                    <div class="event-tile">
+                        <img src="images/Gallery/image6.JPG">
+                        <h4>Event Name</h4>
+                    </div>
+                    <div class="event-tile">
+                        <img src="images/Gallery/image2.JPG">
+                        <h4>Event Name</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER STARTS -->
+
+    <footer>
+        <div class="footer-logo">Anugoonj</div>
+
+        <ul class="mini-nav">
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='events.html'>Events</a></li>
+            <li><a href='#'>Schedule</a></li>   
+        </ul>
+
+        <div class="Address-block">
+            <h4>Address</h4>
+            <p>Guru Gobind Singh Indraprastha University<br>Sector 16c, Dwarka, New Delhi - 110078 </p>
+        </div>
+
+        <div class="icon-tray">
+            <a href="https://www.facebook.com/anugoonj2k1x/"target="_blank"><img src="images/icons/facebook.png"></a>
+            <a href="https://www.instagram.com/anugoonj_official/" target="_blank"><img src="images/icons/instagram.png"></a>
+            <a href="#" target="_blank"><img src="images/icons/twitter.png"></a>
+        </div>
+    </footer>
+    <script src='js/nav.js'></script>
+    <!-- FOOTER ENDS -->
+</body>
+</html>
