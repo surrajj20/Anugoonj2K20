@@ -1,2 +1,2 @@
 # Anugoonj2020
-https://surrajj20.github.io/Anugoon2K20/.
+https://surrajj20.github.io/Anugoonj2K20/.
