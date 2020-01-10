@@ -157,6 +157,44 @@ a{
 
 }
 
+.slide-event
+{
+    display: none;
+    animation: slide-in .3s ease-in-out;
+}
+
+@keyframes slide-in 
+{
+  from{ opacity: 0; transform : translateY(30px)}
+  to{opacity: 1; transform:translateY(0);}
+}
+
+.slide-event.active-slide
+{
+  
+    display: block;
+}
+
+
+@media (max-width:500px)
+{
+  .slider-nav > div 
+  {
+    margin:20px;
+  }
+
+  .slider-nav
+  {
+    flex-wrap: wrap ;
+    font-size:60px;
+    justify-content: space-evenly;
+  }
+  .event-tile
+  {
+    margin: 10px 0px;
+    width: 100%;
+  }
+}
 
 /*NAV BAR STARTS */
   .nav-inner-content ul{
@@ -168,7 +206,7 @@ a{
       position: fixed;
       width: 100%;
       height: 100vh;
-      z-index: 3;
+      z-index: 999;
       top:0;
   }
   .nav-after-image, nav::after
