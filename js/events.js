@@ -25,3 +25,44 @@ function eventslider()
 }
 
 eventslider();
+
+function eventDetails()
+{
+    let slides = document.querySelectorAll(".event");
+    let body = document.querySelector("body");
+    slides.forEach((tile)=>
+    {
+        tile.children[0].addEventListener('click',()=>
+        {
+            let tileImage = tile.children[1].children[0];
+
+                body.style = "overflow-y: hidden"
+                tileImage.style=`top:${tile.offsetTop - window.pageYOffset}px; left: ${tile.offsetLeft - window.pageXOffset}px; display:block; height: ${tile.offsetHeight}px; width : ${tile.offsetWidth}px;`;
+                tile.classList.toggle("active-tile");
+                 setTimeout(()=>
+                 {
+                    tileImage.style=`top:0px; left: 0px; display:block;`;
+                 },0);
+
+                tile.children[1].style=`top:${window.pageYOffset}px; left: ${window.pageXOffset}px; display:block;`;
+                
+            
+
+            
+
+            
+        });
+
+        if(tile.children[1].children[1])
+
+            
+            tile.children[1].children[1].addEventListener('click', ()=>
+            {   let tileImage = tile.children[1].children[0];
+                body.style="";
+                tileImage.style="";
+                tile.children[1].style="";
+                tile.classList.toggle("active-tile");
+            })
+    });
+}
+eventDetails();
