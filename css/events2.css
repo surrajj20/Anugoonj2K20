@@ -124,7 +124,7 @@ a{
   font-family: 'ikaros-sans';
   transform: translateY(200px);
   
-  animation: slide 20s forwards cubic-bezier(0, 1.01, 0, 0.94) ;
+  animation: slide 20s forwards infinite cubic-bezier(0.01, 0.54, 0.15, 0.54); ;
 
 }
 
@@ -350,6 +350,34 @@ a{
     margin: 10px 0px;
     width: 100%;
   }
+
+  .event-details img
+  {
+    width: 100vw;
+    height: 200px;
+  }
+
+  .event-details .text-container
+  {
+      left:0;
+      font-size: 16px;
+      top : 200px;
+      padding: 25px;
+      height : calc(100vh - 200px - 50px);
+  }
+  .event-details .event-cross
+  {
+    right: -14px;
+    top:0;
+  }
+
+  .event-details .text-container h1
+  {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+
 }
 
 /*NAV BAR STARTS */
