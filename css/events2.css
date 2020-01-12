@@ -109,6 +109,11 @@ a{
     cursor: pointer;
 }
 
+.slider-nav div span
+{
+  font-size: 25px;
+}
+
 .slide-bg-name
 {
   position: absolute;
@@ -339,6 +344,10 @@ a{
     margin:20px;
   }
 
+  .slider-nav div span
+  {
+    font-size:20px;
+  }
   .slider-nav
   {
     flex-wrap: wrap ;
