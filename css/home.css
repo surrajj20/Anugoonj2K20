@@ -540,7 +540,13 @@ body{
   max-width: 100%;
 }
 .colorChange{
-  color: rgba(223, 217, 221, 0.7);;
+  color: rgba(223, 217, 221, 0.7);
+}
+.colorChange a{
+  color: rgba(223, 217, 221, 0.7);
+}
+.colorChange a:hover{
+  color:#c9108c
 }
 
 /* .instagramLogo{
@@ -910,6 +916,12 @@ nav::after
 .nav-links  li:hover
 {
   color:var(--pink-color);
+}
+.nav-links .active{
+  color:black !important;
+}
+.nav-links .active:hover{
+  color:#c9108c !important
 }
 @media (max-width:700px)
 {

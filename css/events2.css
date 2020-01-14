@@ -584,6 +584,12 @@ a{
   {
     color:var(--pink-color);
   }
+  .nav-links .active{
+    color:black !important;
+  }
+  .nav-links .active:hover{
+    color:#c9108c !important
+  }
   @media (max-width:700px)
   {
     .nav-after-image, nav::after
@@ -703,6 +709,9 @@ footer
   font-family: 'Ikaros-sans';
   font-size: 34px;
   text-transform: uppercase;
+}
+.footer-logo a:hover{
+  color:#c9108c
 }
 
 footer ul
