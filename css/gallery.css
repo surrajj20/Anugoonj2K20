@@ -9,7 +9,7 @@
   
   #gallery {
     display: grid;
-    height: calc(100vh - 10px);
+    /* height: calc(100vh - 10px); */
     grid-template: repeat(6, 1fr)/repeat(6, 1fr);
     grid-gap: 0.5em;
   }

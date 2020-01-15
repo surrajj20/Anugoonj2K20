@@ -518,20 +518,97 @@ body{
   box-shadow:1px 1px 2px black, 0 0 55px blue, 0 0 5px darkblue
 }
 
-/*TEASER CSS ENDS*/
+
 
 .teaser-sec
 {
   
   text-align: center;
-  padding: 50px 0;
+  position: relative;
 }
 
 .teaser-sec video
 {
-  width: 90%;
-  box-shadow: #373737 -5px -5px 62px 0px;
+  width: 100%;
 }
+
+.teaser-sec .overlay
+{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  /* background-color: #000000d9; */
+  transition: background-color .3s ease-out;
+}
+.teaser-sec .overlay-content
+{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  
+}
+
+.teaser-sec .overlay h1{
+  font-family: "Ikaros-sans";
+  font-size: 100px;
+  color :white;
+  opacity: 1;
+  transition: transform .3s ease-out,
+              opacity .2s ease-in;
+}
+.teaser-sec .overlay p
+{
+  opacity: 1;
+  margin-top:-30px;
+  transition: transform .3s ease-out .1s,
+              opacity .2s ease-out .1s;
+}
+
+.teaser-sec .overlay h1 span{
+  color: var(--pink-color);
+}
+
+.teaser-sec .overlay.clicked .overlay-content h1
+{
+  transform : translate(-100vw);
+  opacity: 0;
+  transition: transform .4s ease-in .1s,
+              opacity .2s ease-in .1s;
+}
+
+.teaser-sec .overlay.clicked .overlay-content p
+{
+  transform : translate(-100vw);
+  opacity: 0;
+  transition: transform .4s ease-in,
+              opacity .2s ease-in;
+}
+
+.teaser-sec .overlay.clicked
+{
+  background-color: #00000000;
+}
+
+@media(max-width:500px)
+{
+  .teaser-sec .overlay h1
+  {
+    font-size: 30px;
+  }
+  
+  .teaser-sec .overlay p
+  {
+    font-size: 10px;
+    margin-top: -20px;;
+  }
+}
+
+/*TEASER CSS ENDS*/
 
 /* FOOTER STARTS */
 #footer{
