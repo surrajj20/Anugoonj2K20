@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/team.css" rel="stylesheet" type="text/css">
 
+    <!-- CSS FOR GALLERY -->
+    <link href="css/gallery.css" rel="stylesheet" type="text/css">
+
     <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -46,12 +49,12 @@
                     <div class="cross-l2"></div>
                 </div>
                 <ul class='nav-links'>
-                    <li id="nav-l1"><a href="#">Home</a></li>
+                    <li id="nav-l1" class="active">Home</li>
                     <li id="nav-l2"><a href="events2.html">Events</a></li>
                     <li id="nav-l3"><a href="schedule page.html">Schedule</a></li>
                     <li id="nav-l4"><a href="sponsors-page.html">Sponsors</a></li>
                     <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
-                    <li id="nav-l6"><a href="contactuspage.html" >Contact Us</a></li>
+                    <li id="nav-l6"><a href="contactuspage.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -65,7 +68,7 @@
             <div class="overlay"></div>
 
 
-            <div class="hero-content">
+            <div class="hero-content" name="hero-section">
                 <div class="left">
 
                     <svg class="pulse" id="logo" xmlns="http://www.w3.org/2000/svg" width="312.645" fill="none"
@@ -103,7 +106,12 @@
                 <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-left:7%">
                     <h1 class="project-heading mt-2 mb-2" style="color:#fff; font-family:'Ikaros-sans'">ABOUT <span
                             style="color:var(--pink-color)">US</span></h1>
-                    <pr style="font-family: 'nexa'; line-height:35px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pr>
+                    <pr style="font-family: 'nexa'; line-height:35px;">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</pr>
                     <br>
                 </div>
                 <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center colorlib-counters"
@@ -187,7 +195,8 @@
 
             <div class="row ">
                 <div class="col" id="buttonGoToEvents">
-                  <a href="events.html" > <button type="button" class="btn btn-danger btn-lg goToEvents" id="redButton">Go to events</button></a>
+                    <a href="events.html"> <button type="button" class="btn btn-danger btn-lg goToEvents"
+                            id="redButton">Go to events</button></a>
                 </div>
             </div>
         </div>
@@ -202,7 +211,7 @@
 
         <!-- GALLERY STARTS-->
 
-        <section>
+        <!-- <section>
             <a name="Gallery">
                 <h1 class="text-center pt-5 mb-5" style="color:#c9108c">GALLERY</h1>
                 <div class="container">
@@ -243,20 +252,135 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <div class="row">
-                                    <img src="images/Gallery/image9.jpg" class="fit-image">
+                                    <img src="images/Gallery/image4.jpg" class="fit-image">
                                 </div>
                                 <div class="row">
-                                    <img src="images/Gallery/image10.jpg" class="fit-image">
+                                    <img src="images/Gallery/image5.jpg" class="fit-image">
                                 </div>
                                 <div class="row">
-                                    <img src="images/Gallery/image11.jpg" class="fit-image">
+                                    <img src="images/Gallery/image3.jpg" class="fit-image">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
+        </section> -->
+
+        <section class="mb-5">
+            <h1 class="text-center pt-5 mb-5" style="color:#c9108c">GALLERY</h1>
+            <div id="gallery" class="container">
+                <div><img src="images/Gallery/image.jpg" /><a href="#lightbox-1"></a></div>
+                <div><img src="images/Gallery/image1.JPG" /><a href="#lightbox-2"></a></div>
+                <div><img src="images/Gallery/image2.jpg" /><a href="#lightbox-3"></a></div>
+                <div><img src="images/Gallery/image3.jpg" /><a href="#lightbox-4"></a></div>
+                <div><img src="images/Gallery/image4.jpg" /><a href="#lightbox-5"></a></div>
+                <div><img src="images/Gallery/image5.jpg" /><a href="#lightbox-6"></a></div>
+                <div><img src="images/Gallery/image6.jpg" /><a href="#lightbox-7"></a></div>
+                <div><img src="images/Gallery/image7.jpg" /><a href="#lightbox-8"></a></div>
+                <div><img src="images/Gallery/image8.jpg" /><a href="#lightbox-9"></a></div>
+                <div><img src="images/Gallery/image.jpg" /><a href="#lightbox-10"></a></div>
+                <div><img src="images/Gallery/image1.JPG" /><a href="#lightbox-11"></a></div>
+                <div><img src="images/Gallery/image2.jpg" /><a href="#lightbox-12"></a></div>
+                <div><img src="images/Gallery/image3.jpg" /><a href="#lightbox-13"></a></div>
+                <div><img src="images/Gallery/image4.jpg" /><a href="#lightbox-14"></a></div>
+                <div><img src="images/Gallery/image5.jpg" /><a href="#lightbox-15"></a></div>
+                <div><img src="images/Gallery/image6.jpg" /><a href="#lightbox-16"></a></div>
+                <div><img src="images/Gallery/image7.jpg" /><a href="#lightbox-17"></a></div>
+                <div><img src="images/Gallery/image8.jpg" /><a href="#lightbox-18"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-1">
+                <div class="content"><img src="images/Gallery/image.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-2">
+                <div class="content"><img src="images/Gallery/image1.JPG" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-3">
+                <div class="content"><img src="images/Gallery/image2.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-4">
+                <div class="content"><img src="images/Gallery/image3.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-5">
+                <div class="content"><img src="images/Gallery/image4.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-6">
+                <div class="content"><img src="images/Gallery/image5.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-7">
+                <div class="content"><img src="images/Gallery/image6.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-8">
+                <div class="content"><img src="images/Gallery/image7.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-9">
+                <div class="content"><img src="images/Gallery/image8.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-10">
+                <div class="content"><img src="images/Gallery/image.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-11">
+                <div class="content"><img src="images/Gallery/image1.JPG" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-12">
+                <div class="content"><img src="images/Gallery/image2.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-13">
+                <div class="content"><img src="images/Gallery/image3.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-14">
+                <div class="content"><img src="images/Gallery/image4.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-15">
+                <div class="content"><img src="images/Gallery/image5.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-16">
+                <div class="content"><img src="images/Gallery/image6.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-17">
+                <div class="content"><img src="images/Gallery/image7.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-18">
+                <div class="content"><img src="images/Gallery/image8.jpg" />
+                    <a class="close" href="#gallery"></a>
+                </div>
+            </div>
         </section>
+
 
         <!--GALLERY ENDS-->
 
@@ -367,14 +491,14 @@
                 <div class="row">
                     <div class="col-3" id="pehlaPart">
 
-                        <h2 class="colorChange">ANUGOONJ</h2>
+                        <h2 class="colorChange"><a href="index.html">ANUGOONJ</a></h2>
                     </div>
 
                     <div class=" col-3">
 
                         <ul id="list">
-                            <li><a class="removedecor" href="#">Home</a></li>
-                            <li><a class="removedecor" href="events.html">Events</a></li>
+                            <li><a class="removedecor" href="index.html">Home</a></li>
+                            <li><a class="removedecor" href="events2.html">Events</a></li>
                             <li><a class="removedecor" href="schedule page.html">Schedule</a></li>
 
                         </ul>
@@ -413,7 +537,7 @@
                                         <a class="nav-link" href="#" target="_blank">
                                             <!-- <span class="fa fa-linkedin linkedinLogo" aria-hidden="true"></span> -->
                                             <img class="linkedinLogo"
-                                                src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png">
+                                                src="https://img.icons8.com/color/48/000000/youtube-play.png">
 
                                         </a>
                                     </li>
@@ -459,7 +583,7 @@
                     </div>
         </section>
         <!-- FOOTER ENDS -->
-        
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -470,7 +594,7 @@
         <!-- Counters -->
         <script src="js/jquery.countTo.js"></script>
 
-        
+
         <!-- MAIN JS -->
         <script src="js/main.js"></script>
         <script type="text/javascript" src="js/app.js"></script>

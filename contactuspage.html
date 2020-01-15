@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Anugoonj'20 ContactUs</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/contactuspage.css" />
-        <link rel="stylesheet" href="css/FAQpage.css" />
-        <meta name="viewport"CONTENT="width=device-width,initial-scale=1.0">
-    </head>
-    <body>
-        <!--NAV BAR STARTED-->
-        <nav style="display: none;">
-            <div class="nav-overlay"></div>
-            <div class="nav-after-image"></div>
-            <div class="nav-inner-content">
-                <div class='cross' onclick="closeNav()">
-                    <div class="cross-l1"></div>
-                    <div class="cross-l2"></div>
-                </div>
-                <ul class='nav-links'>
-                    <li id="nav-l1"><a href="index.html">Home</a></li>
-                    <li id="nav-l2"><a href="events2.html">Events</a></li>
-                    <li id="nav-l3"><a href="schedule page.html">Schedule</a></li>
-                    <li id="nav-l4"><a href="sponsors-page.html">Sponsors</a></li>
-                    <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
-                    <li id="nav-l6"><a href="#" >Contact Us</a></li>
-                </ul>
+
+<head>
+    <title>Anugoonj'20 ContactUs</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contactuspage.css" />
+    <link rel="stylesheet" href="css/FAQpage.css" />
+    <meta name="viewport" CONTENT="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <!--NAV BAR STARTED-->
+    <nav style="display: none;">
+        <div class="nav-overlay"></div>
+        <div class="nav-after-image"></div>
+        <div class="nav-inner-content">
+            <div class='cross' onclick="closeNav()">
+                <div class="cross-l1"></div>
+                <div class="cross-l2"></div>
             </div>
-        </nav>
-    
-        <div id='hamburger' onclick="openNav()">
-            <div></div>
-            <div></div>
-            <div></div>
+            <ul class='nav-links'>
+                <li id="nav-l1"><a href="index.html">Home</a></li>
+                <li id="nav-l2"><a href="events2.html">Events</a></li>
+                <li id="nav-l3"><a href="schedule page.html">Schedule</a></li>
+                <li id="nav-l4"><a href="sponsors-page.html">Sponsors</a></li>
+                <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
+                <li id="nav-l6" class="active">Contact Us</li>
+            </ul>
         </div>
-        <!--NAVEABR END-->
+    </nav>
 
-        <!--MAIN CONTENT STARTED-->
+    <div id='hamburger' onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!--NAVEABR END-->
 
-        <!--ORGINIZING TEAM SECTION STARTED--> 
-        <h1 class="event-word container mt-5">Contact<span style="color:#c9108c">&nbspUs</span></h1>
+    <!--MAIN CONTENT STARTED-->
+
+    <!--ORGINIZING TEAM SECTION STARTED-->
+    <h1 class="event-word container mt-5">Contact<span style="color:#c9108c">&nbspUs</span></h1>
 
     <section>
-        <h1 class="heading container mt-5 text-center" style="color:#fff"><span style="color:#c9108c">O</span>rganizing Committee</h1>
-        <div class="row mt-5 text-center justify-content-center" style="width:100%" >
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  >
-                <div class="row">
-                    <div class="card bg-dark text-white">
-                        <img src="images/contact us/Sanket.jpeg" class="card-img">
-                        <div class="card-img-overlay text-center">
-                            <h2 class="card-title design take">Harry Potter</h2>
-                            <p class="card-text design">Team leader</p>
-                            <p class="card-text design">9845678231</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" >
-                <div class="row">
-                    <div class="card bg-dark text-white">
-                        <img src="images/contact us/Sanket.jpeg" class="card-img">
-                        <div class="card-img-overlay text-center">
-                            <h2 class="card-title design take">Sansa Stark</h2>
-                            <p class="card-text design">Team Co-leader</p>
-                            <p class="card-text design">9845678231</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  >
+        <h1 class="heading container mt-5 text-center" style="color:#fff"><span style="color:#c9108c">O</span>rganizing
+            Committee</h1>
+        <div class="row mt-5 text-center justify-content-center" style="width:100%">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/contact us/Sanket.jpeg" class="card-img">
@@ -95,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  >
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/contact us/Sanket.jpeg" class="card-img">
@@ -107,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" >
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/contact us/Sanket.jpeg" class="card-img">
@@ -119,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  >
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/contact us/Sanket.jpeg" class="card-img">
@@ -131,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" >
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
                 <div class="row">
                     <div class="card bg-dark text-white">
                         <img src="images/contact us/Sanket.jpeg" class="card-img">
@@ -143,7 +129,31 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/contact us/Sanket.jpeg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title design take">Harry Potter</h2>
+                            <p class="card-text design">Team leader</p>
+                            <p class="card-text design">9845678231</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/contact us/Sanket.jpeg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title design take">Sansa Stark</h2>
+                            <p class="card-text design">Team Co-leader</p>
+                            <p class="card-text design">9845678231</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!--ORIGINIZING TEAM SECTION END-->
@@ -151,82 +161,82 @@
     <!--LEADS TEAM SECTION START-->
     <section>
         <h1 class="heading container mt-5 text-center" style="color:#fff"><span style="color:#c9108c">L</span>eads</h1>
-            <div class="row mt-5 text-center justify-content-center" style="width:100%" >
-                <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card"  >
-                    <div class="row">
-                        <div class="card bg-dark text-white">
-                            <img src="images/contact us/img.jpg" class="card-img">
-                            <div class="card-img-overlay text-center">
-                                <h2 class="card-title design take">Harry Potter</h2>
-                                <p class="card-text design">Team leader</p>
-                                <p class="card-text design">9845678231</p>
-                            </div>
+        <div class="row mt-5 text-center justify-content-center" style="width:100%">
+            <div class="mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/contact us/img.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title design take">Harry Potter</h2>
+                            <p class="card-text design">Team leader</p>
+                            <p class="card-text design">9845678231</p>
                         </div>
                     </div>
                 </div>
-                <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" >
-                    <div class="row">
-                        <div class="card bg-dark text-white">
-                            <img src="images/contact us/img.jpg" class="card-img">
-                            <div class="card-img-overlay text-center">
-                                <h2 class="card-title design take">Sansa Stark</h2>
-                                <p class="card-text design">Team Co-leader</p>
-                                <p class="card-text design">9845678231</p>
-                            </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/contact us/img.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title design take">Sansa Stark</h2>
+                            <p class="card-text design">Team Co-leader</p>
+                            <p class="card-text design">9845678231</p>
                         </div>
                     </div>
                 </div>
-                <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" >
-                    <div class="row">
-                        <div class="card bg-dark text-white">
-                            <img src="images/contact us/img.jpg" class="card-img">
-                            <div class="card-img-overlay text-center">
-                                <h2 class="card-title design take">Sansa Stark</h2>
-                                <p class="card-text design">Team Co-leader</p>
-                                <p class="card-text design">9845678231</p>
-                            </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/contact us/img.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title design take">Sansa Stark</h2>
+                            <p class="card-text design">Team Co-leader</p>
+                            <p class="card-text design">9845678231</p>
                         </div>
                     </div>
                 </div>
-                <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" >
-                    <div class="row">
-                        <div class="card bg-dark text-white">
-                            <img src="images/contact us/img.jpg" class="card-img">
-                            <div class="card-img-overlay text-center">
-                                <h2 class="card-title design take">Sansa Stark</h2>
-                                <p class="card-text design">Team Co-leader</p>
-                                <p class="card-text design">9845678231</p>
-                            </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/contact us/img.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title design take">Sansa Stark</h2>
+                            <p class="card-text design">Team Co-leader</p>
+                            <p class="card-text design">9845678231</p>
                         </div>
                     </div>
                 </div>
-                <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card" >
-                    <div class="row">
-                        <div class="card bg-dark text-white">
-                            <img src="images/contact us/img.jpg" class="card-img">
-                            <div class="card-img-overlay text-center">
-                                <h2 class="card-title design take">Sansa Stark</h2>
-                                <p class="card-text design">Team Co-leader</p>
-                                <p class="card-text design">9845678231</p>
-                            </div>
+            </div>
+            <div class="ml-2 mr-5 col-lg-3 col-md-3 col-sm-3 col-xs-3 events-card">
+                <div class="row">
+                    <div class="card bg-dark text-white">
+                        <img src="images/contact us/img.jpg" class="card-img">
+                        <div class="card-img-overlay text-center">
+                            <h2 class="card-title design take">Sansa Stark</h2>
+                            <p class="card-text design">Team Co-leader</p>
+                            <p class="card-text design">9845678231</p>
                         </div>
                     </div>
                 </div>
-             </div>
-       </section>
-       <!--LEAD TEAM SECTION END-->
+            </div>
+        </div>
+    </section>
+    <!--LEAD TEAM SECTION END-->
 
 
-        <!--MAIN CONTENT END-->
+    <!--MAIN CONTENT END-->
 
-         <!-- FOOTER STARTS -->
+    <!-- FOOTER STARTS -->
     <footer>
-        <div class="footer-logo">Anugoonj</div>
+        <div class="footer-logo"><a href="index.html">Anugoonj</a></div>
 
         <ul class="mini-nav">
             <li><a href='index.html'>Home</a></li>
-            <li><a href='events.html'>Events</a></li>
-            <li><a href='schedule page.html'>Schedule</a></li>   
+            <li><a href='events2.html'>Events</a></li>
+            <li><a href='schedule page.html'>Schedule</a></li>
         </ul>
 
         <div class="Address-block">
@@ -236,15 +246,16 @@
 
         <div class="icon-tray">
             <a href="https://www.facebook.com/anugoonj2k1x/" target="_blank"><img src="images/icons/facebook.png"></a>
-           <a href="https://www.instagram.com/anugoonj_official/" target="_blank" ><img src="images/icons/instagram.png"></a>
-           <a href="#" target="_blank"> <img src="images/icons/twitter.png"></a>
+            <a href="https://www.instagram.com/anugoonj_official/" target="_blank"><img
+                    src="images/icons/instagram.png"></Contact>
+                <a href="#" target="_blank"> <img src="images/icons/youtube.png"></a>
         </div>
 
     </footer>
-  <!-- FOOTER ENDS -->
+    <!-- FOOTER ENDS -->
 
     <script type="text/javascript" src="js/nav.js"></script>
-    </body>
+</body>
 
 
 </html>
