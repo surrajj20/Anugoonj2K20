@@ -578,6 +578,7 @@ a{
   }
   .nav-links li {
     cursor: pointer;
+    line-height: 1.5;
     transition: color .4s ease-in-out;
   }
   .nav-links  li:hover
@@ -719,6 +720,7 @@ footer ul
   list-style-type: none;
   margin-top:3px;
   margin-bottom: 0;
+  padding-left: 0;
 }
 footer li
 {
