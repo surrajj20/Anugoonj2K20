@@ -15,6 +15,7 @@
 
     <!-- CSS FOR GALLERY -->
     <link href="css/gallery.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
@@ -102,9 +103,13 @@
         <!-- ABOUT US-->
 
         <section>
-            <div class="row" style="color: white ; padding:4% 0%;font-size:1em;">
+            <div class="row" style="color: white ; padding:8% 0%;font-size:1em;">
                 <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-left:7%">
-                    <h1 class="project-heading mt-2 mb-2" style="color:#fff; font-family:'Ikaros-sans'">ABOUT <span
+                    <h1 class="project-heading mt-2 mb-2" style="color: #fff;
+                    font-family: 'Ikaros-sans';
+                    margin-top: -20px!important;
+                    margin-bottom: 30px!important;
+                    padding-bottom: 0;">ABOUT <span
                             style="color:var(--pink-color)">US</span></h1>
                     <pr style="font-family: 'nexa'; line-height:35px;">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -120,24 +125,24 @@
                         <div class="row">
                         </div>
                         <div class="row">
-                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box" style = "margin: 2em 0em;">
                                 <span class="colorlib-counter js-counter" data-from="0" data-to="250" data-speed="5000"
                                     data-refresh-interval="10"></span>
                                 <span class="colorlib-counter-label">FOOTFALL</span>
                             </div>
-                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="500" data-speed="5000"
-                                    data-refresh-interval="8"></span>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box" style = "margin: 2em 0em;">
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="500" data-speed="3000"
+                                    data-refresh-interval="10"></span>
                                 <span class="colorlib-counter-label">EVENTS</span>
                             </div>
-                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="4000" data-speed="5000"
-                                    data-refresh-interval="2"></span>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box" style = "margin: 2em 0em;">
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="4000" data-speed="1000"
+                                    data-refresh-interval="10"></span>
                                 <span class="colorlib-counter-label">PARTICIPANTS</span>
                             </div>
-                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box">
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box" style = "margin: 2em 0em;">
                                 <span class="colorlib-counter js-counter" data-from="0" data-to="7500" data-speed="5000"
-                                    data-refresh-interval="1"></span>
+                                    data-refresh-interval="10"></span>
                                 <span class="colorlib-counter-label">STUDNETS</span>
                             </div>
                         </div>
@@ -148,7 +153,7 @@
         <!--ABOUT US ENDS-->
 
 
-        <div class="container">
+        <!-- <div class="container">
 
             <div data-aos="fade-down" class="row headingRow">
                 <div class="col" id="headingText">
@@ -162,7 +167,7 @@
                         <div class="grid" id=>
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                    <!-- <div class="row"> -->
+                                    
                                     <div class="row" data-aos="flip-right">
                                         <img src="images/Gallery/image1.JPG" class="fit-image">
                                     </div>
@@ -197,7 +202,19 @@
                     <a href="events2.html"> <button type="button" class="btn btn-danger btn-lg goToEvents" id="redButton">Go to events</button></a>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <section class="events-sec">
+            <div class="sec-info">
+                <!-- <div class="container"> -->
+                <h1>EVENT<span>S</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <a href="events2.html"><button class="primary-btn">View more</button></a>
+                <!-- </div> -->
+                
+            </div>
+            <img src="images/Gallery/image2.jpg">
+        </section>
         <!-- EVENTS INTRO ENDS -->
 
         <!-- GALLERY STARTS-->
@@ -376,7 +393,7 @@
 
         <!--TEASER STARTS-->
         <section class="teaser-sec">
-            <video controls>
+            <video>
                 <source src="images/ANUGOONJ'2018 AFTERMOVIE -- IP UNIVERSITY.mp4" type="video/mp4">
             </video>
             <div class="controls"></div>
