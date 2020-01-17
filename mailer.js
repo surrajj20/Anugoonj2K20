@@ -10,6 +10,7 @@ const app = express()
 app.use(express.json()) //these two lines are needed when you are making post requests.As you've seen postman, post request can be made in 2 ways/formats/whatever, json and urlencoded
 app.use(express.urlencoded({extended:true})) 
 
+var port = process.env.PORT || 8080
 app.set('view engine', 'hbs')
 app.use(express.static(__dirname + '/views'))
 var query1;
@@ -38,8 +39,8 @@ try{app.post('/',(req, res) => {
 catch{(err) => console.error(err)}
 
 
-app.listen('5533', () => {
-  console.log('server started on http://localhost:5533')
+app.listen(port, () => {
+  console.log('server started on http://localhost:' + port)
 })
 // const msg = {
 //   to: 'sanket.eeiit@gmail.com',
