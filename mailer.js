@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/views'))
 var query1;
 var email1;
 app.get('/',(req, res) => {
-  res.render('index.hbs')
+  res.send('index.html')
 } )
 try{app.post('/',(req, res) => {
   query1 = req.body.query1,
