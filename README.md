@@ -1,2 +1,3 @@
 # Anugoonj2020
-https://surrajj20.github.io/Anugoonj2K20/.
+# Heroku App Link
+https://anugoonj2k20.herokuapp.com/
