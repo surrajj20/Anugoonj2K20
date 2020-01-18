@@ -35,7 +35,7 @@
 
 
 /*NAV BAR STARTS */
-.nav-inner-content ul{
+/* .nav-inner-content ul{
   list-style-type: none;
 }
 
@@ -332,7 +332,7 @@ nav::after
   {
     transform : scale(0.7) translateY(-20%);
   }
-}
+} */
 /* NAVE BAR END */
 
 /* MAIN CONTENT */

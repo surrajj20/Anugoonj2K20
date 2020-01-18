@@ -690,7 +690,7 @@ body{
 
 /*TEASER CSS ENDS*/
 
-/* FOOTER STARTS */
+/* FOOTER STARTS
 #footer{
   background: #08080a;
   color: white;
@@ -713,9 +713,9 @@ body{
   /* padding-right: 80px;
   margin-left: 40px; 
 } */
-
+/*  
 #footer-list{
-  /* text-decoration: none; */
+  
   list-style: none;
 }
 
@@ -742,7 +742,7 @@ a:hover{
   }
 
   .facebookLogo{
-    /* height: 20px; */
+    
     margin-left: 0px ;
     position: relative;
 
@@ -750,7 +750,7 @@ a:hover{
   .instagramLogo{
     position: relative;
     top: -10px;
-    /* left: -10px; */
+    
   }
   .linkedinLogo{
     position: relative;
@@ -769,16 +769,12 @@ a:hover{
 @media(max-width:405px){
    h2{
       font-size: 23px;
-      /* font-weight: bold; */
+      
   }
 } 
-/*  */
+
 @media(max-width:650px){
-  /* .linkedinLogo{
-    position: relative;
-    /* top: 5px; */
-    /* right: 60px; */
-  /* } */ 
+
   .facebookLogo{
     position: relative;
     right:380px;
@@ -796,11 +792,7 @@ a:hover{
   }
 }
 @media(max-width:600px){
-  /* .linkedinLogo{
-    position: relative;
-    /* top: 5px; */
-    /* right: 60px; */
-  /* } */ 
+
   .facebookLogo{
     position: relative;
     right:380px;
@@ -818,11 +810,7 @@ a:hover{
   }
 }
   @media(max-width:500px){
-    /* .linkedinLogo{
-      position: relative;
-      /* top: 5px; */
-      /* right: 60px; */
-    /* } */ 
+   
     .facebookLogo{
       position: relative;
       right:330px;
@@ -876,10 +864,10 @@ a:hover{
     right:320px;
     top: 120px;
   }
-}
+} */
 /*TEASER CSS ENDS*/
 
-/*NAV BAR STARTS */
+/* NAV BAR STARTS
 .nav-inner-content ul{
   list-style-type: none;
 }
@@ -1177,7 +1165,7 @@ nav::after
   {
     transform : scale(0.7) translateY(-20%);
   }
-}
+} */
 
 
 .submit:hover{
