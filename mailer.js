@@ -36,7 +36,7 @@ try{app.post('/',(req, res) => {
 }
 
 )}
-catch{(err) => console.error(err)}
+catch(err) {console.error(err)};
 
 
 app.listen(port, () => {
