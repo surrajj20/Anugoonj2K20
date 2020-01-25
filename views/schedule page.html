@@ -67,7 +67,29 @@
   </ul>
   
   <div class="timing-container">
-    <ul class="timing-list ">
+    <ul class="timing-list timing-list-7 active">
+      <li class="timing-li"><span>10:00 AM</span></li>
+      <li class="timing-li"><span>11:00 AM</span></li>
+      <li class="timing-li"><span>12:00 PM</span></li>
+      <li class="timing-li"><span>1:00 PM</span></li>
+      <li class="timing-li"><span>2:00 PM</span></li>
+      <li class="timing-li"><span>3:00 PM</span></li>
+      <li class="timing-li"><span>4:00 PM</span></li>
+      <li class="timing-li"><span>5:00 PM</span></li>
+      <li class="timing-li"><span>6:00 PM</span></li>
+    </ul>
+    <ul class="timing-list timing-list-8">
+      <li class="timing-li"><span>10:00 AM</span></li>
+      <li class="timing-li"><span>11:00 AM</span></li>
+      <li class="timing-li"><span>12:00 PM</span></li>
+      <li class="timing-li"><span>1:00 PM</span></li>
+      <li class="timing-li"><span>2:00 PM</span></li>
+      <li class="timing-li"><span>3:00 PM</span></li>
+      <li class="timing-li"><span>4:00 PM</span></li>
+      <li class="timing-li"><span>5:00 PM</span></li>
+      <li class="timing-li"><span>6:00 PM</span></li>
+    </ul>
+    <ul class="timing-list timing-list-9">
       <li class="timing-li"><span>10:00 AM</span></li>
       <li class="timing-li"><span>11:00 AM</span></li>
       <li class="timing-li"><span>12:00 PM</span></li>
@@ -480,32 +502,51 @@
     //      $(".7th-schedule").fadeIn('fast');
     //    })
     //  })
+    let defaultx ={};
+    let table = document.querySelectorAll(".schedule-table");
+    let schedule = document.querySelectorAll(".container-schedule")
+    let timeline = document.querySelectorAll(".timing-list")
+    defaultx[0] =   table[0].getBoundingClientRect().x
+
+    for( let i=0; i<3; i++)
+    {
+      schedule[i].addEventListener("scroll", ()=>{
+        timeline[i].style="transform:translate(" +(table[i].getBoundingClientRect().x - defaultx[i] +30) + "px)";
+      })
+    }
+    
     $(".7th").click(() => {
       $(".day-button").removeClass("active")
+      $(".timing-list").removeClass("active")
+      $(".timing-list-7").addClass("active")
       $(".7th").addClass("active")
       $(".container-schedule").hide()
       $(".7th-schedule").show()
+      
+      defaultx[0] =   table[0].getBoundingClientRect().x
     })
     $(".8th").click(() => {
       $(".day-button").removeClass("active")
+      $(".timing-list").removeClass("active")
+      $(".timing-list-8").addClass("active")
       $(".8th").addClass("active")
       $(".container-schedule").hide()
       $(".8th-schedule").show()
+      defaultx[1] =   table[1].getBoundingClientRect().x
     })
     $(".9th").click(() => {
       $(".day-button").removeClass("active")
+      $(".timing-list").removeClass("active")
+      $(".timing-list-9").addClass("active")
       $(".9th").addClass("active")
       $(".container-schedule").hide()
       $(".9th-schedule").show()
+      defaultx[2] =   table[2].getBoundingClientRect().x
     })
 
-    let table = document.querySelector(".schedule-table");
-    let schedule = document.querySelector(".container-schedule")
-    let timeline = document.querySelector(".timing-list")
-    let defaultx = table.getBoundingClientRect().x
-    schedule.addEventListener("scroll", ()=>{
-      timeline.style="transform:translate(" +(table.getBoundingClientRect().x -defaultx) + "px)";
-    })
+    
+    
+    
 
   </script>
   <script type="text/javascript" src="js/nav.js"></script>

@@ -162,13 +162,17 @@ body{
 
 .timing-list{
   list-style: none;
-
+  display: none;
   padding-left: 300px;
   background: rgb(255, 0, 170) ;
-  display: grid;
+  
   grid-template-rows: 1fr;
   grid-template-columns: repeat(10,240px);
   margin-bottom: 0;
+}
+.timing-list.active 
+{
+  display: grid;
 }
 .timing-li{
   background: rgb(255, 0, 170);
@@ -386,6 +390,73 @@ tr{
     background:black;
   }
   
-  
-  
-  
+@media(max-width: 800px)
+{
+  ul
+  {
+    margin-top: 0!important;
+  }
+  .day-button
+  {
+    padding:0 10px;
+
+  }
+  .day-number{
+    font-size: 60px;
+  }
+  .day-button .subscript
+  {
+    font-size: 20px;
+  }
+  .day-button .month
+  {
+    right: -6px;
+    font-size: 13px;
+  }
+  .venue-header li
+  {
+    writing-mode: vertical-lr;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .venue-header
+  {
+    width: unset;
+    margin-top: -10px!important;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    box-shadow: #000000 2px 1px 8px 0px;
+  }
+  .timing-container
+  {
+    margin-bottom: 0px;
+  }
+  .timing-container::after{
+    box-shadow: #ff00aa -10px -2px 20px 20px;
+    width:0px;
+  }
+  .container-schedule
+  {
+    padding-top: 10px;
+    width: 100vw;
+  }
+  .tile{
+    width:140px;
+  }
+  .timing-list
+  {
+    padding-left: 60px;
+    font-size: 15px;
+    grid-template-columns: repeat(10,180px);
+  }
+  .time-grid > div
+  {
+    width: 180px;
+  }
+  .time-grid
+  {
+    left:49px;
+  }
+
+}
