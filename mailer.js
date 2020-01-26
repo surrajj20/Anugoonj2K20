@@ -23,7 +23,6 @@ try{app.post('/',(req, res) => {
   email1 = req.body.email1
 
   const msg = {
-   to: 'sanket.eeiit@gmail.com',
    to: 'anugoonjipu2020@gmail.com',
    from: `${email1}`,
    subject: 'query',
