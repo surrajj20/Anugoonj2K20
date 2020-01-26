@@ -24,9 +24,9 @@
 
 </head>
 
-<body style="background-color: white;">
+<body onload="preloader()" style="background-color: white;">
 
-    <nav style="display: none;">
+    <nav class="pre-preloader preloader">
         <div class="nav-overlay"></div>
         <div class="nav-after-image"></div>
         <div class="nav-inner-content">
@@ -42,6 +42,9 @@
                 <li id="nav-l5" class="active"><a href="#" onclick="closeNav()">FAQs</a></li>
                 <li id="nav-l6"><a href="contactuspage.html">Contact Us</a></li>
             </ul>
+        </div>
+        <div class="preloader-content">
+            <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
         </div>
     </nav>
     <div id='hamburger' onclick="openNav()">

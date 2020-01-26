@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/layout.css"/>
 </head>
 
-<body>
+<body onload="preloader()">
 
-    <nav style="display: none;">
+    <nav class="pre-preloader preloader">
         <div class="nav-overlay"></div>
         <div class="nav-after-image"></div>
         <div class="nav-inner-content">
@@ -29,6 +29,9 @@
                 <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
                 <li id="nav-l6"><a href="contactuspage.html">Contact Us</a></li>
             </ul>
+        </div>
+        <div class="preloader-content">
+            <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
         </div>
     </nav>
 

@@ -21,9 +21,9 @@
     <meta name="viewport" CONTENT="width=device-width,initial-scale=1.0">
 </head>
 
-<body>
+<body onload="preloader()">
     <!--NAV BAR STARTED-->
-    <nav style="display: none;">
+    <nav class="pre-preloader preloader">
         <div class="nav-overlay"></div>
         <div class="nav-after-image"></div>
         <div class="nav-inner-content">
@@ -39,6 +39,9 @@
                 <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
                 <li id="nav-l6" class="active">Contact Us</li>
             </ul>
+        </div>
+        <div class="preloader-content">
+            <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
         </div>
     </nav>
 

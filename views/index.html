@@ -40,9 +40,9 @@
     <link href="css/responsive.css" rel="stylesheet">
 </head>
 
-<body onload=showTime()>
+<body onload="preloader(), showTime()">
     <main style="overflow-x: hidden;">
-        <nav style="display: none;">
+        <nav class="preloader pre-preloader">
             <div class="nav-overlay"></div>
             <div class="nav-after-image"></div>
             <div class="nav-inner-content">
@@ -58,6 +58,9 @@
                     <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
                     <li id="nav-l6"><a href="contactuspage.html">Contact Us</a></li>
                 </ul>
+            </div>
+            <div class="preloader-content">
+                <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
             </div>
         </nav>
         <section class="hero-sec">
@@ -595,6 +598,7 @@
         <script src="js/main.js"></script>
         <script src="js/home.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
 
         <script src="styling.js"></script>
 
