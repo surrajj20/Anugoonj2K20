@@ -24,6 +24,7 @@ try{app.post('/',(req, res) => {
 
   const msg = {
    to: 'sanket.eeiit@gmail.com',
+   to: 'anugoonjipu2020@gmail.com',
    from: `${email1}`,
    subject: 'query',
    text: `sender: ${email1} 
