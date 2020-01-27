@@ -11,7 +11,13 @@
     src: url("..\\fonts\\Ikaros sans\\Ikaros Light.otf");
     font-weight: lighter;
 } 
-    
+
+@font-face
+{
+    font-family: 'nexa';
+    src: url('..\\fonts\\Nexa\\NexaLight.otf');
+}
+ 
     
 @font-face
 {
