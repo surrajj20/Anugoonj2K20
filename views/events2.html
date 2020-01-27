@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/layout.css"/>
 </head>
 
-<body>
+<body onload="preloader()">
 
-    <nav style="display: none;">
+    <nav class="pre-preloader preloader">
         <div class="nav-overlay"></div>
         <div class="nav-after-image"></div>
         <div class="nav-inner-content">
@@ -29,6 +29,9 @@
                 <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
                 <li id="nav-l6"><a href="contactuspage.html">Contact Us</a></li>
             </ul>
+        </div>
+        <div class="preloader-content">
+            <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
         </div>
     </nav>
 
@@ -448,40 +451,6 @@
 
                         </div>
                     </div>
-
-
-                    <div class="event">
-                        <div class="event-tile">
-                            <img src="images/Gallery/image6.jpg">
-                            <h4>Event Name</h4>
-                        </div>
-                        <div class="event-details">
-                            <img src="images/Gallery/image6.jpg">
-                            <div class='cross event-cross'>
-                                <div class="cross-l1"></div>
-                                <div class="cross-l2"></div>
-                            </div>
-                            <div class="text-container">
-                                <h1>Event Name</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <h3>Rules</h3>
-                                <ol>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magn.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                </ol>
-
-                                <div class="date-time-footer"><span>Date : 10 Feb 2020</span> <span>Time : 4:00 PM to
-                                        6:00 PM</span></div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
                 </div>
 
 
@@ -669,68 +638,7 @@
                                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                                 </ol>
 
-                                <div class="date-time-footer"><span>Date : For Prelims, Contact Zonal Office</span> <span>Time : For Prelims, Contact Zonal Office</span></div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="event">
-                        <div class="event-tile">
-                            <img src="images/Gallery/image5.jpg">
-                            <h4>Event Name</h4>
-                        </div>
-                        <div class="event-details">
-                            <img src="images/Gallery/image5.jpg">
-                            <div class='cross event-cross'>
-                                <div class="cross-l1"></div>
-                                <div class="cross-l2"></div>
-                            </div>
-                            <div class="text-container">
-                                <h1>Event Name</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <h3>Rules</h3>
-                                <ol>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magn.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                </ol>
-
-                                <div class="date-time-footer"><span>Date : 10 Feb 2020</span> <span>Time : 4:00 PM to
-                                        6:00 PM</span></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="event">
-                        <div class="event-tile">
-                            <img src="images/Gallery/image6.jpg">
-                            <h4>Event Name</h4>
-                        </div>
-                        <div class="event-details">
-                            <img src="images/Gallery/image6.jpg">
-                            <div class='cross event-cross'>
-                                <div class="cross-l1"></div>
-                                <div class="cross-l2"></div>
-                            </div>
-                            <div class="text-container">
-                                <h1>Event Name</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <h3>Rules</h3>
-                                <ol>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magn.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                </ol>
-
-                                <div class="date-time-footer"><span>Date : 10 Feb 2020</span> <span>Time : 4:00 PM to
-                                        6:00 PM</span></div>
+                                <div class="date-time-footer"><span>Date : </span> <span>Time :</span></div>
                             </div>
 
                         </div>
@@ -964,10 +872,11 @@
         </div>
 
         <div class="icon-tray">
+            <h4 style="color:white">Follow Us :</h4>
             <a href="https://www.facebook.com/anugoonj2k1x/" target="_blank"><img src="images/icons/facebook.png"></a>
             <a href="https://www.instagram.com/anugoonj_official/" target="_blank"><img
                     src="images/icons/instagram.png"></a>
-            <a href="#" target="_blank"><img src="images/icons/youtube.png"></a>
+            <a href="https://www.youtube.com/channel/UCKxCKdQ_mjzeCnFDFw8jKkg" target="_blank"><img src="images/icons/youtube.png"></a>
         </div>
     </footer>
     <script defer src='js/nav.js'></script>

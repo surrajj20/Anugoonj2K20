@@ -17,3 +17,12 @@ function openNav()
     nav.classList.add('nav-open');
     },100);
 }
+
+function preloader()
+{
+    document.querySelector(".preloader").classList.remove("preloader");
+    setTimeout(()=>{
+        document.querySelector('nav').style="display:none;";
+        document.querySelector(".pre-preloader").classList.remove("pre-preloader");
+    },900);
+}

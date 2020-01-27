@@ -40,9 +40,9 @@
     <link href="css/responsive.css" rel="stylesheet">
 </head>
 
-<body onload=showTime()>
+<body onload="preloader(), showTime()">
     <main style="overflow-x: hidden;">
-        <nav style="display: none;">
+        <nav class="preloader pre-preloader">
             <div class="nav-overlay"></div>
             <div class="nav-after-image"></div>
             <div class="nav-inner-content">
@@ -58,6 +58,9 @@
                     <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
                     <li id="nav-l6"><a href="contactuspage.html">Contact Us</a></li>
                 </ul>
+            </div>
+            <div class="preloader-content">
+                <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
             </div>
         </nav>
         <section class="hero-sec">
@@ -136,14 +139,11 @@
                         <div class="row">
                             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
                                 style="margin: 2em 0em;">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="60000" data-speed="700"
-                                    data-refresh-interval="10"></span>
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="60000" data-speed="700" data-refresh-interval="10"></span>
                                 <span class="colorlib-counter-label">FOOTFALL</span>
                             </div>
-                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
-                                style="margin: 2em 0em;">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="40" data-speed="700"
-                                    data-refresh-interval="10"></span>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box" style="margin: 2em 0em;">
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="40" data-speed="700" data-refresh-interval="10"></span>
                                 <span class="colorlib-counter-label">EVENTS</span>
                             </div>
                             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
@@ -406,9 +406,9 @@
         <!--GALLERY ENDS-->
 
         <!--TEASER STARTS-->
-        <section class="teaser-sec">
+        <section class="teaser-sec pt-5">
             <video>
-                <source src="images/anugoonjtrailer.mp4" type="video/mp4">
+                <source src="images/Anugoonj 2020 Trailer.mp4" type="video/mp4">
             </video>
             <div class="controls"></div>
             <div class="overlay" onclick="playTeaser()">
@@ -565,16 +565,17 @@
             </ul>
 
             <div class="Address-block">
-                <h4>Address</h4>
+                <h4 style="color:white">Address :</h4>
                 <p>Guru Gobind Singh Indraprastha University<br>Sector 16c, Dwarka, New Delhi - 110078 </p>
             </div>
 
             <div class="icon-tray">
+                <h4 style="color:white">Follow Us :</h4>
                 <a href="https://www.facebook.com/anugoonj2k1x/" target="_blank"><img
                         src="images/icons/facebook.png"></a>
                 <a href="https://www.instagram.com/anugoonj_official/" target="_blank"><img
                         src="images/icons/instagram.png"></a>
-                <a href="#" target="_blank"><img src="images/icons/youtube.png"></a>
+                <a href="https://www.youtube.com/channel/UCKxCKdQ_mjzeCnFDFw8jKkg" target="_blank"><img src="images/icons/youtube.png"></a>
             </div>
 
         </footer>
@@ -595,6 +596,7 @@
         <script src="js/main.js"></script>
         <script src="js/home.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
 
         <script src="styling.js"></script>
 
