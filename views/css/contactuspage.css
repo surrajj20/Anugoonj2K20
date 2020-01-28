@@ -19,6 +19,9 @@
     font-weight: normal;
     src: local('Typold Book'), url('..\\fonts\\Typold\\The Northern Block Ltd - Typold Book.woff') format('woff');
 }
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
     
    
 /* Colors */
@@ -136,3 +139,184 @@ body{
         margin: 0px 25px;
     }
   }
+
+
+  /* CSS FOR THE CONTENT STARTS */
+
+  figure.snip0044 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 16px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left
+  }
+  figure.snip0044 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  figure.snip0044 img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    opacity: 1.0;
+    left: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  figure.snip0044 h4 {
+    position: absolute;
+    color: #ffffff;
+    bottom: 20px;
+    text-transform: uppercase;
+    padding: 6px;
+    margin: 0;
+    left: 40px;
+    opacity: 0;
+    -webkit-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+  }
+  figure.snip0044 h6 {
+    position: absolute;
+    color: #ffffff;
+    bottom: 0;
+    text-transform: uppercase;
+    padding: 6px;
+    margin: 0;
+    left: 40px;
+    opacity: 0;
+    -webkit-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+  }
+  figure.snip0044 .icons {
+    bottom: 35px;
+    width: 35px;
+    position: absolute;
+    text-align: center;
+  }
+  figure.snip0044 .icons i {
+    display: inline-block;
+    font-size: 22px;
+    color: #ffffff;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate(-35px, 35px);
+    transform: translate(-35px, 35px);
+  }
+  figure.snip0044 .corner {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+  figure.snip0044 .icons i,
+  figure.snip0044 .corner {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background: #262626;
+  }
+  figure.snip0044 a {
+    opacity: 0.8;
+  }
+  figure.snip0044 a:hover {
+    opacity: 1;
+  }
+  figure.snip0044 a:hover i {
+    width: 40px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  figure.snip0044.blue {
+    background: #091b27;
+  }
+  figure.snip0044.blue .icons i,
+  figure.snip0044.blue .corner {
+    background: #2980b9;
+  }
+  figure.snip0044.red {
+    background: #2e0e0a;
+  }
+  figure.snip0044.red .icons i,
+  figure.snip0044.red .corner {
+    background: #c0392b;
+  }
+  figure.snip0044.yellow {
+    background: #4d2909;
+  }
+  figure.snip0044.yellow .icons i,
+  figure.snip0044.yellow .corner {
+    background: #e67e22;
+  }
+  figure.snip0044.green {
+    background: #061c10;
+  }
+  figure.snip0044.green .icons i,
+  figure.snip0044.green .corner {
+    background: #27ae60;
+  }
+  figure.snip0044:hover img,
+  figure.snip0044.hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  figure.snip0044:hover h4,
+  figure.snip0044.hover h4 {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 1;
+  }
+  figure.snip0044:hover h6,
+  figure.snip0044.hover h6 {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 1;
+  }
+  figure.snip0044:hover .icons,
+  figure.snip0044.hover .icons {
+    opacity: 1;
+  }
+  figure.snip0044:hover .icons i,
+  figure.snip0044.hover .icons i {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  figure.snip0044:hover a:first-child i,
+  figure.snip0044.hover a:first-child i {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  figure.snip0044:hover a:nth-child(2) i,
+  figure.snip0044.hover a:nth-child(2) i {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  figure.snip0044:hover a:nth-child(3) i,
+  figure.snip0044.hover a:nth-child(3) i {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+  /* CSS FOR THE CONTENT ENDS */
