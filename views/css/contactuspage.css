@@ -142,12 +142,12 @@ body{
 
 
   /* CSS FOR THE CONTENT STARTS */
-  
+
   figure.snip0044 {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 16px;
     min-width: 220px;
     max-width: 310px;
     max-height: 220px;
@@ -156,6 +156,7 @@ body{
     text-align: left;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    float:left
   }
   figure.snip0044 * {
     -webkit-box-sizing: border-box;
@@ -174,7 +175,21 @@ body{
     -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;
   }
-  figure.snip0044 h3 {
+  figure.snip0044 h4 {
+    position: absolute;
+    color: #ffffff;
+    bottom: 20px;
+    text-transform: uppercase;
+    padding: 6px;
+    margin: 0;
+    left: 40px;
+    opacity: 0;
+    -webkit-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+  }
+  figure.snip0044 h6 {
     position: absolute;
     color: #ffffff;
     bottom: 0;
@@ -262,16 +277,16 @@ body{
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
-  figure.snip0044:hover h3,
-  figure.snip0044.hover h3 {
+  figure.snip0044:hover h4,
+  figure.snip0044.hover h4 {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
     opacity: 1;
   }
-  figure.snip0044:hover h4,
-  figure.snip0044.hover h4 {
+  figure.snip0044:hover h6,
+  figure.snip0044.hover h6 {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     -webkit-transition-delay: 0.2s;
