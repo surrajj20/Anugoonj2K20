@@ -51,7 +51,7 @@
 
 body{
   overflow-x: hidden;
-   background-color: #08080a; 
+   background-color: #111; 
 }
 
 .hero-sec
@@ -493,84 +493,61 @@ body{
    }
 }
 
-.events-sec
+.event-container
 {
-  height: 600px;
-  background-color: white;
-  color: #777;
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
-  width: 100%;
-  position: relative;
-}
-
-.events-sec *
-{
-  padding: 0;
-  margin: 0;
-}
-
-.events-sec .sec-info 
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 150px;
-  padding-right: 7%;
   
-}
-.events-sec h1{
-  font-family: "ikaros-sans";
-  font-size: 40px;
-  margin-bottom: 10px;
-  margin-top: -58px;
+  margin: 200px 6vw ;
+  margin-top:100px;
+  display: flex;
+  flex-direction: row;
 }
 
-.events-sec h1 span
+.image-container
 {
-  color : var(--pink-color);
-}
-.events-sec p
-{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: nexa;
-  line-height: 1.8;
-  font-size: 18px;
+  width: 50%;
 }
 
-.primary-btn
+.image-container img{
+  box-shadow: #00000040 0px 0px 11px 10px;
+}
+
+.event-text
 {
-  color:white;
-  background-color: #ef299e;
+  color: white;
+  padding-left: 30px;
+  width: 50%;
+}
+
+.event-text button
+{
+  padding: 5px 30px;
+  background-color: #d81597;
   border: none;
-  padding: 10px 30px;
-  font-size : 15px;
- 
+  font-family: nexa;
+  padding-top: 8px;
+  font-weight: bold;
+  color: white;
+  font-size : 14px;
 }
 
-.events-sec .primary-btn
+.event-text button:hover
 {
-  width: 136px;
-  margin-bottom: -44px;
-  transition: box-shadow .2s ease-in-out;
+  box-shadow: #ffffff54 -3px 5px 12px -5px;
 }
 
-.events-sec .primary-btn:hover
+.event-text h2
 {
-  box-shadow: #0000004b 2px 2px 7px;
+  color: white;
+  font-size: 40px;
+  font-family: 'ikaros-sans';
 }
 
-
-
-.events-sec img
+.event-text p
 {
-  object-fit: cover;
-  width: 49vw;
+  font-size:16px;
+  font-family: nexa;
+  line-height: 30px;
 }
-
 
 
 /* OUR EVENTS ends */

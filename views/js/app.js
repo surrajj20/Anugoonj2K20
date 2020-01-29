@@ -37,23 +37,70 @@ function showTime() {
 
 
 /* GALLERY STARTS */
+let translateVal =0;
+let layers = document.querySelectorAll(".layer");
+function right()
+{
+    for(let i=0; i < layers[0].childElementCount; i++)
+    {
+        layers[0].children[i].classList.add("animate")
+    }
+    for(let i=0; i < layers[1].childElementCount; i++)
+    {
+        layers[1].children[i].classList.add("animate")
+    }
+    document.querySelector(".gallery-heading").classList.add("animate");
+    
+    
+    translateVal +=200;
+    layers[0].style="transform: translateX( -" +translateVal+"vw);";
+    layers[1].style="transform: translateX( -" +translateVal+"vw);";
 
-// let row1 = document.getElementsByClassName('row-1')[0]
-// let row2 = document.getElementsByClassName('row-2')[0]
-// let body= document.querySelector("body")
+    window.setTimeout(()=> {
+        for(let i=0; i < layers[0].childElementCount; i++)
+        {
+            layers[0].children[i].classList.remove("animate")
+        }
 
-// let gallery = document.getElementsByClassName("gallery")[0]
-// row1.style= 'transform:translateX(calc(100vw - '+row1.offsetWidth+'px))'
+        for(let i=0; i < layers[1].childElementCount; i++)
+        {
+            layers[1].children[i].classList.remove("animate")
+        }
+        document.querySelector(".gallery-heading").classList.remove("animate");
+    }, 1600)
+}
 
-// const initReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
-// let currReading;
-// let i =0;
-// window.addEventListener("scroll",(e)=>
-// {
-//      currReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
-//      row1.style = "transform: translateX(calc(100vw - " + (row1.offsetWidth- initReading + currReading) +"px))";
-//      row2.style = "transform: translateX("+(- initReading + currReading)+"px)";
-// });
+function left()
+{
+
+    for(let i=0; i < layers[0].childElementCount; i++)
+    {
+        layers[0].children[i].classList.add("animate")
+    }
+    for(let i=0; i < layers[1].childElementCount; i++)
+    {
+        layers[1].children[i].classList.add("animate")
+    }
+    document.querySelector(".gallery-heading").classList.add("animate");
+
+    translateVal -=200;
+    layers[0].style="transform: translateX( -" +translateVal+"vw);"
+    layers[1].style="transform: translateX( -" +translateVal+"vw);"
+
+    window.setTimeout(()=> {
+        for(let i=0; i < layers[0].childElementCount; i++)
+        {
+            layers[0].children[i].classList.remove("animate")
+        }
+
+        for(let i=0; i < layers[1].childElementCount; i++)
+        {
+            layers[1].children[i].classList.remove("animate")
+        }
+        document.querySelector(".gallery-heading").classList.remove("animate");
+
+    }, 1600)
+}
 
 
 /* GALLERY END*/
