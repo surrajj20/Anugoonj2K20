@@ -38,9 +38,12 @@ function showTime() {
 
 /* GALLERY STARTS */
 let translateVal =0;
-let layers = document.querySelectorAll(".layer");
+let layers = document.querySelectorAll(".layer .active-layer");
+
+
 function right()
 {
+    layers = document.querySelectorAll(".layer.active-layer");
     for(let i=0; i < layers[0].childElementCount; i++)
     {
         layers[0].children[i].classList.add("animate")
@@ -51,10 +54,11 @@ function right()
     }
     document.querySelector(".gallery-heading").classList.add("animate");
     
-    
-    translateVal +=200;
-    layers[0].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
-    layers[1].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
+    if(translateVal < 2)
+        translateVal++;
+        
+    layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[1].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
 
     window.setTimeout(()=> {
         for(let i=0; i < layers[0].childElementCount; i++)
@@ -72,6 +76,8 @@ function right()
 
 function left()
 {
+    
+    layers = document.querySelectorAll(".layer.active-layer");
 
     for(let i=0; i < layers[0].childElementCount; i++)
     {
@@ -83,9 +89,10 @@ function left()
     }
     document.querySelector(".gallery-heading").classList.add("animate");
 
-    translateVal -=200;
-    layers[0].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
-    layers[1].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
+    if(translateVal > 0)
+        translateVal--;
+    layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[1].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
 
     window.setTimeout(()=> {
         for(let i=0; i < layers[0].childElementCount; i++)
@@ -103,5 +110,46 @@ function left()
 }
 
 
+let desktopLayers = document.querySelectorAll(".desktop-layer");
+let mobileLayers = document.querySelectorAll(".mobile-layer")
+window.addEventListener("resize",()=>
+{
+    if(window.innerWidth > 600)
+    {
+        desktopLayers[0].classList.add("active-layer")
+        desktopLayers[1].classList.add("active-layer")
+        mobileLayers[0].classList.remove("active-layer")
+        mobileLayers[1].classList.remove("active-layer")
+    }
+
+    else
+    {
+        desktopLayers[0].classList.remove("active-layer")
+        desktopLayers[1].classList.remove("active-layer")
+        mobileLayers[0].classList.add("active-layer")
+        mobileLayers[1].classList.add("active-layer")
+    }
+});
+
+checkGallery();
+
+function checkGallery()
+{
+    if(window.innerWidth > 600)
+    {
+        desktopLayers[0].classList.add("active-layer")
+        desktopLayers[1].classList.add("active-layer")
+        mobileLayers[0].classList.remove("active-layer")
+        mobileLayers[1].classList.remove("active-layer")
+    }
+
+    else
+    {
+        desktopLayers[0].classList.remove("active-layer")
+        desktopLayers[1].classList.remove("active-layer")
+        mobileLayers[0].classList.add("active-layer")
+        mobileLayers[1].classList.add("active-layer")
+    }
+}
 /* GALLERY END*/
 

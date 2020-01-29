@@ -44,9 +44,9 @@
 
 @keyframes scale
 {
-    0%{transform: scale(1) rotateZ(0deg); ; }
-    30%{transform: scale(.9) rotateY(10deg);; }
-    70%{transform: scale(1) rotateZ(0deg);;}
+    0%{transform: scale(1); }
+    30%{transform: scale(.9); }
+    70%{transform: scale(1) ;}
 }
 
 .gallery-container
@@ -77,6 +77,12 @@
     /* transition: transform 1.6s cubic-bezier(0.54, 0.44, 0, 0.99); */
     transition: transform 1.6s cubic-bezier(0.24, 0.89, 0, 0.97);
     perspective: 1000px;
+    display: none;
+}
+
+.active-layer
+{
+    display: block;
 }
 
 .below-layer
@@ -97,4 +103,20 @@
     background-color: #2f2f2f;
     box-shadow: #00000040 0px 0px 11px 10px;
     
+}
+
+@media(max-width:600px)
+{
+    .gallery
+    {
+        height: 850px;
+        margin-top: 0;
+        background-color: #222;
+    }
+
+    .gallery-heading
+    {
+        font-size:80px;
+        right: 10px;
+    }
 }

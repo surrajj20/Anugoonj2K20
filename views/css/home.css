@@ -329,7 +329,76 @@ body{
     margin-left:7%; 
 } 
 
-/* ABOUT ANUGOONJ */
+/* ABOUT US */
+
+
+
+.about-us-flex
+{
+  color: white ; 
+  padding:8% 6vw;
+  display: flex;
+  padding-right: 0;
+}
+
+.about-us-text
+{
+  width: 50%;
+}
+
+.about-us-text h1
+{
+  color: #fff;
+  font-family: 'Ikaros-sans';
+  margin-bottom: 30px!important;
+  padding-bottom: 0;
+}
+
+.about-us-text p
+{
+  font-family: 'nexa';
+  font-size: 16px;
+  line-height:30px;
+  padding-right:3vw;
+}
+
+@media(max-width:600px)
+{
+  .about-us-flex
+  {
+    flex-direction: column;
+    padding-right:6vw; 
+    margin: 100px 0;
+  }
+  .about-us-text
+  {
+    width:unset;
+  }
+  .about-us-text p
+  {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  #colorlib-counter
+  {
+    padding: 0!important;
+  }
+ .colorlib-narrow-content .row >div
+  {
+    width:50% !important;
+  }
+  .colorlib-counters .colorlib-counter
+  {
+    font-size: 32px!important;
+    margin-bottom: .1em!important;
+  }
+  .colorlib-counters .colorlib-counter-label
+  {
+    font-size: 12px!important;
+  }
+}
+
 .images img{
     height: auto;
     width: 50%;
@@ -495,7 +564,6 @@ body{
 
 .event-container
 {
-  
   margin: 200px 6vw ;
   margin-top:100px;
   display: flex;
@@ -520,7 +588,7 @@ body{
 
 .event-text
 {
-  color: white;
+  color: #dedede;
   padding-left: 30px;
   width: 50%;
   display: flex;
@@ -536,7 +604,7 @@ body{
   font-family: nexa;
   padding-top: 8px;
   font-weight: bold;
-  color: white;
+  color: #dedede;
   font-size : 14px;
   flex-grow: 0;
   width: 140px;
@@ -577,6 +645,7 @@ body{
   .event-container
   {
     flex-direction: column;
+    margin-bottom: 100px;
   }
   .event-text .mobile-img
   {
@@ -607,8 +676,9 @@ body{
   }
   .event-text p 
   {
-    line-height: 25px;
-    font-size: 14px;
+    line-height: 26px;
+    font-size: 15px;
+    margin-top:10px;
   }
   .event-text button 
   {
