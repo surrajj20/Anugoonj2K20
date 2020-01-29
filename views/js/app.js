@@ -37,24 +37,119 @@ function showTime() {
 
 
 /* GALLERY STARTS */
-
-// let row1 = document.getElementsByClassName('row-1')[0]
-// let row2 = document.getElementsByClassName('row-2')[0]
-// let body= document.querySelector("body")
-
-// let gallery = document.getElementsByClassName("gallery")[0]
-// row1.style= 'transform:translateX(calc(100vw - '+row1.offsetWidth+'px))'
-
-// const initReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
-// let currReading;
-// let i =0;
-// window.addEventListener("scroll",(e)=>
-// {
-//      currReading = body.getBoundingClientRect().y - row1.getBoundingClientRect().y;
-//      row1.style = "transform: translateX(calc(100vw - " + (row1.offsetWidth- initReading + currReading) +"px))";
-//      row2.style = "transform: translateX("+(- initReading + currReading)+"px)";
-// });
+let translateVal =0;
+let layers = document.querySelectorAll(".layer .active-layer");
 
 
+function right()
+{
+    layers = document.querySelectorAll(".layer.active-layer");
+    for(let i=0; i < layers[0].childElementCount; i++)
+    {
+        layers[0].children[i].classList.add("animate")
+    }
+    for(let i=0; i < layers[1].childElementCount; i++)
+    {
+        layers[1].children[i].classList.add("animate")
+    }
+    document.querySelector(".gallery-heading").classList.add("animate");
+    
+    if(translateVal < 2)
+        translateVal++;
+        
+    layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[1].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+
+    window.setTimeout(()=> {
+        for(let i=0; i < layers[0].childElementCount; i++)
+        {
+            layers[0].children[i].classList.remove("animate")
+        }
+
+        for(let i=0; i < layers[1].childElementCount; i++)
+        {
+            layers[1].children[i].classList.remove("animate")
+        }
+        document.querySelector(".gallery-heading").classList.remove("animate");
+    }, 1600)
+}
+
+function left()
+{
+    
+    layers = document.querySelectorAll(".layer.active-layer");
+
+    for(let i=0; i < layers[0].childElementCount; i++)
+    {
+        layers[0].children[i].classList.add("animate")
+    }
+    for(let i=0; i < layers[1].childElementCount; i++)
+    {
+        layers[1].children[i].classList.add("animate")
+    }
+    document.querySelector(".gallery-heading").classList.add("animate");
+
+    if(translateVal > 0)
+        translateVal--;
+    layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[1].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+
+    window.setTimeout(()=> {
+        for(let i=0; i < layers[0].childElementCount; i++)
+        {
+            layers[0].children[i].classList.remove("animate")
+        }
+
+        for(let i=0; i < layers[1].childElementCount; i++)
+        {
+            layers[1].children[i].classList.remove("animate")
+        }
+        document.querySelector(".gallery-heading").classList.remove("animate");
+
+    }, 1600)
+}
+
+
+let desktopLayers = document.querySelectorAll(".desktop-layer");
+let mobileLayers = document.querySelectorAll(".mobile-layer")
+window.addEventListener("resize",()=>
+{
+    if(window.innerWidth > 600)
+    {
+        desktopLayers[0].classList.add("active-layer")
+        desktopLayers[1].classList.add("active-layer")
+        mobileLayers[0].classList.remove("active-layer")
+        mobileLayers[1].classList.remove("active-layer")
+    }
+
+    else
+    {
+        desktopLayers[0].classList.remove("active-layer")
+        desktopLayers[1].classList.remove("active-layer")
+        mobileLayers[0].classList.add("active-layer")
+        mobileLayers[1].classList.add("active-layer")
+    }
+});
+
+checkGallery();
+
+function checkGallery()
+{
+    if(window.innerWidth > 600)
+    {
+        desktopLayers[0].classList.add("active-layer")
+        desktopLayers[1].classList.add("active-layer")
+        mobileLayers[0].classList.remove("active-layer")
+        mobileLayers[1].classList.remove("active-layer")
+    }
+
+    else
+    {
+        desktopLayers[0].classList.remove("active-layer")
+        desktopLayers[1].classList.remove("active-layer")
+        mobileLayers[0].classList.add("active-layer")
+        mobileLayers[1].classList.add("active-layer")
+    }
+}
 /* GALLERY END*/
 
