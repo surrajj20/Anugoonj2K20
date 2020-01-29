@@ -338,6 +338,19 @@ body{
     top:-75%
 }
 
+#more{
+  display: none;
+}
+
+.row button{
+  background-color:#c9108c ;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+
 /* FootFall */
 
 #colorlib-counter {
