@@ -53,8 +53,8 @@ function right()
     
     
     translateVal +=200;
-    layers[0].style="transform: translateX( -" +translateVal+"vw);";
-    layers[1].style="transform: translateX( -" +translateVal+"vw);";
+    layers[0].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[1].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
 
     window.setTimeout(()=> {
         for(let i=0; i < layers[0].childElementCount; i++)
@@ -84,8 +84,8 @@ function left()
     document.querySelector(".gallery-heading").classList.add("animate");
 
     translateVal -=200;
-    layers[0].style="transform: translateX( -" +translateVal+"vw);"
-    layers[1].style="transform: translateX( -" +translateVal+"vw);"
+    layers[0].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[1].style="transform: translateX( -" +translateVal+"vw); transform-origin:" + translateVal+"px;";
 
     window.setTimeout(()=> {
         for(let i=0; i < layers[0].childElementCount; i++)

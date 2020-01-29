@@ -234,6 +234,11 @@
                 </div>
                 <div class="event-text">
                     <h2>Event<span style="color:var(--pink-color)">s</span></h2>
+                    <div class="mobile-img"> 
+                        <img src="images/Gallery/img27.png"> 
+                        <!-- <div>See all</div> -->
+                    </div>
+                    
                     <p>Anugoonj comprises of a plethora of events. Ranging from dancing and  literary, to dramatics for your emerging talents. From Mr. and Ms. Anugoonj to Talent show for specially-abled students; we got you covered you. With lots of prizes and gifts up for grabs, come and showcase your talents in these exciting and enthralling events.</p>
                     <button onclick="window.navigate(events2.html)">See all</button>
                 </div>
@@ -438,31 +443,21 @@
                             <li><a class="removedecor" href="#">Events</a></li> -->
 
         <!-- review section -->
-        <div class="container " style="padding-bottom: 80px; padding-top: 40px">
-            <div style="text-align: center;"><span style="color: white; font-size: 50px">Revie</span><span
-                    style="color: #c9108c; font-size: 50px">w</span></div>
+        <div class="review-container" >
+            <div class="review-text">
+                <h1>Something on your mind?</h1>
+                <h3>We'd love to hear from you!</h3>
+            </div>
             <form method="POST" action="/">
                 <div class="form-group">
-                    <label for="exampleInputEmail1" style="color: grey;">Email address</label>
-                    <input type="email" class="form-control " name="email1" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter your email" required>
-                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    <input type="email" class="form-field"  name="email1" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Email Address" required>
+                    
+                    
+                    <textarea name="query1"  class="form-field" id="exampleFormControlTextarea1" rows="1"
+                    placeholder="Message" style=" resize: none;" required></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1" style="color: grey;">Query</label>
-                    <textarea class="form-control" name="query1" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Type Your query here" class="query" required></textarea>
-                </div>
-                <!-- <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div> -->
-                <!-- <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div> -->
-                <button type="submit" class="btn btn-primary btn-lg" style="background-color: #c9108c;"
-                    class="submit">Submit</button>
+                <button type="submit" class="submit">Send</button>
             </form>
         </div>
 
