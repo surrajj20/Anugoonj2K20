@@ -45,6 +45,17 @@
 
 /* NAVIGATION STYLES */
 
+body::-webkit-scrollbar
+{
+  background-color: #080808;
+  display: block;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: #711b55f5;;
+}
+
 .nav-inner-content ul{
     list-style-type: none;
   }
