@@ -43,6 +43,7 @@ let layers = document.querySelectorAll(".layer .active-layer");
 
 function right()
 {
+    document.querySelector(".instructions").classList.add("remove");
     layers = document.querySelectorAll(".layer.active-layer");
     for(let i=0; i < layers[0].childElementCount; i++)
     {
@@ -54,7 +55,7 @@ function right()
     }
     document.querySelector(".gallery-heading").classList.add("animate");
     
-    if(translateVal < 2)
+    if(translateVal < 3)
         translateVal++;
         
     layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
@@ -91,6 +92,8 @@ function left()
 
     if(translateVal > 0)
         translateVal--;
+    if(translateVal==0)
+        document.querySelector(".instructions").classList.remove("remove");
     layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
     layers[1].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
 
@@ -110,46 +113,5 @@ function left()
 }
 
 
-let desktopLayers = document.querySelectorAll(".desktop-layer");
-let mobileLayers = document.querySelectorAll(".mobile-layer")
-window.addEventListener("resize",()=>
-{
-    if(window.innerWidth > 600)
-    {
-        desktopLayers[0].classList.add("active-layer")
-        desktopLayers[1].classList.add("active-layer")
-        mobileLayers[0].classList.remove("active-layer")
-        mobileLayers[1].classList.remove("active-layer")
-    }
-
-    else
-    {
-        desktopLayers[0].classList.remove("active-layer")
-        desktopLayers[1].classList.remove("active-layer")
-        mobileLayers[0].classList.add("active-layer")
-        mobileLayers[1].classList.add("active-layer")
-    }
-});
-
-checkGallery();
-
-function checkGallery()
-{
-    if(window.innerWidth > 600)
-    {
-        desktopLayers[0].classList.add("active-layer")
-        desktopLayers[1].classList.add("active-layer")
-        mobileLayers[0].classList.remove("active-layer")
-        mobileLayers[1].classList.remove("active-layer")
-    }
-
-    else
-    {
-        desktopLayers[0].classList.remove("active-layer")
-        desktopLayers[1].classList.remove("active-layer")
-        mobileLayers[0].classList.add("active-layer")
-        mobileLayers[1].classList.add("active-layer")
-    }
-}
 /* GALLERY END*/
 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link href="css/team.css" rel="stylesheet" type="text/css">
 
     <!-- CSS FOR GALLERY -->
@@ -18,22 +18,23 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
 
-    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script> -->
+
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Anugoonj'20</title>
     <!-- Flaticons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -70,7 +71,7 @@
                 <div></div>
                 <div></div>
             </div>
-
+            <img class="logo" src="images/ip logo/1200px-GGSIU_logo.png">
             <div class="overlay"></div>
 
 
@@ -110,7 +111,7 @@
 
         <!-- ABOUT US-->
 
-        <section>
+        <!-- <section> -->
             <!-- <div class="row" style="color: white ; padding:8% 0%;font-size:1em;">
                 <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-left:7%">
                     <h1 class="project-heading mt-2 mb-2" style="color: #fff;
@@ -191,7 +192,7 @@
             <section class="event-sec">
                 <div class="event-container">
                     <div class="image-container">
-                        <img src="images/Gallery/img27.png">
+                        <img  srcset="images/Gallery/img27.png 2048w, images/mobile-gallery/img27.jpg 500w," src="images/mobile-gallery/img27.png">
                     </div>
                     <div class="event-text">
                         <h2>Event<span style="color:var(--pink-color)">s</span></h2>
@@ -204,7 +205,7 @@
                             for your emerging talents. From Mr. and Ms. Anugoonj to Talent show for specially-abled
                             students; we got you covered you. With lots of prizes and gifts up for grabs, come and
                             showcase your talents in these exciting and enthralling events.</p>
-                        <button onclick="window.navigate(events2.html)">See all</button>
+                        <a class="event-button" href="events2.html">See all</a>
                     </div>
                 </div>
             </section>
@@ -214,36 +215,42 @@
 
             <section class="gallery">
                 <div class="left-btn" onclick="left()"></div>
+                <div class="instructions"><span> to navigate</span></div>
                 <div class="gallery-container">
+                    
                     <div class="layer below-layer desktop-layer">
-                        <img height="600px" src="images/Gallery/img30.JPG" style="left: 1000px; ">
-                        <img height="400px" width="500px" style="object-position: bottom; top:-100px; left: 3900px"
-                            src="images/Gallery/img18.JPG">
-                        <img height="200px" src="images/Gallery/img17.JPG" style="top:600px; left: 4300px">
-                        <img height="300px" src="images/Gallery/img26.png" style="left: 6400px; top:500px ">
-                        <img height="300px" src="images/Gallery/img28.JPG" style="left: 7250px; top:300px ">
+                        <img height="600px" data-src="images/Gallery/img30.JPG" style="left: 65vw;">
+                        <img height="400px" width="500px" style="object-position: bottom; top:-100px; left: 260vw;"
+                            data-src="images/Gallery/img18.JPG">
+                        <img height="200px" data-src="images/Gallery/img17.JPG" style="top:600px; left: 280vw">
+                        <img height="300px" data-src="images/Gallery/img26.png" style="left: 418vw; top:500px ">
+                        <img height="300px" data-src="images/Gallery/img28.JPG" style="left: 475vw; top:300px ">
+                        <img height="250px" data-src="images/Gallery/DSC_0453.JPG" style="left: 665vw;top: 450px;">
+                        <img height="300px" data-src="images/Gallery/DSC_5143.JPG" style="left: 625vw;top: 492px;">
+
                     </div>
                     <div class="layer below-layer mobile-layer active-layer">
-                        <img height="400px" src="images/Gallery/img30.JPG" style="left: 40vw; ">
-                        <img height="250px" style="object-position: bottom; left: 220vw;" src="images/Gallery/img18.JPG"
+                        <img height="400px" data-src="images/mobile-gallery/img30.JPG" style="left: 40vw; ">
+                        <img height="250px" style="object-position: bottom; left: 220vw;" data-src="images/mobile-gallery/img18.JPG"
                             width="400px">
-                        <img height="200px" src="images/Gallery/img17.JPG" style="top: 550px;left: 220vw;">
-                        <img height="300px" src="images/Gallery/img28.JPG" style="left: 422vw;top: 129px;">
+                        <img height="200px" data-src="images/mobile-gallery/img17.JPG" style="top: 550px;left: 220vw;">
+                        <img height="300px" data-src="images/mobile-gallery/img28.JPG" style="left: 422vw;top: 129px;">
 
                     </div>
 
                     <div class="gallery-heading">gallery</div>
 
                     <div class="layer above-layer desktop-layer">
-                        <img height="400px" src="images/Gallery/img32.JPG" style="top:350px">
-                        <img height="500px" src="images/Gallery/img19.JPG" style="left: 3200px; top:200px ">
-                        <img height="350px" width="600px" src="images/Gallery/img6.jpg" style="left: 6350px; top:50px ">
+                        <img height="400px" data-src="images/Gallery/img32.JPG" style="top:350px">
+                        <img height="500px" data-src="images/Gallery/img19.JPG" style="left: 206vw; top:200px ">
+                        <img height="350px" width="600px" data-src="images/Gallery/img6.jpg" style="left: 418vw;; top:50px ">
+                        <img height="350px" data-src="images/Gallery/img16.JPG" style="left: 605vw;top: 100px;">
+                        <img height="300px" data-src="images/Gallery/img15.JPEG" style="left: 668vw;top: 10px;">
                     </div>
                     <div class="layer above-layer mobile-layer active-layer">
-                        <img src="images/Gallery/img32.JPG" style="top: 550px;  width: 300px;">
-                        <img height="250px" src="images/Gallery/img19.JPG" style="left: 190vw; top: 300px;">
-                        <img height="250px" src="images/Gallery/img21.jpg" style="left: 390vw;top: 500px;">
-                        <img height="350px" width="600px" src="images/Gallery/img6.jpg" style="left: 6350px; top:50px ">
+                        <img data-src="images/mobile-gallery/img32.JPG" style="top: 550px;  width: 300px;">
+                        <img height="250px" data-src="images/mobile-gallery/img19.JPG" style="left: 190vw; top: 300px;">
+                        <img height="250px" data-src="images/mobile-gallery/img21.jpg" style="left: 390vw;top: 500px;">
                     </div>
                 </div>
                 <div class="right-btn" onclick="right()"></div>
@@ -424,8 +431,8 @@
             <!-- FOOTER ENDS -->
 
             <!-- jQuery -->
-            <script src="https://code.jquery.com/jquery-3.4.1.js"
-                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
 
 
             <!-- Waypoints -->
@@ -439,7 +446,37 @@
             <script src="js/home.js"></script>
             <script type="text/javascript" src="js/app.js"></script>
             <script type="text/javascript" src="js/nav.js"></script>
+            <script>
+            
+                let desktopLayers = document.querySelectorAll(".desktop-layer");
+                let mobileLayers = document.querySelectorAll(".mobile-layer")
+                checkGallery();
 
+                function checkGallery()
+                {
+                    if(window.innerWidth > 600)
+                    {
+                        desktopLayers[0].classList.add("active-layer")
+                        desktopLayers[1].classList.add("active-layer")
+                        mobileLayers[0].remove()
+                        mobileLayers[1].remove()
+                    }
+
+                    else
+                    {
+                        desktopLayers[0].remove()
+                        desktopLayers[1].remove()
+                        mobileLayers[0].classList.add("active-layer")
+                        mobileLayers[1].classList.add("active-layer")
+                    }
+                }
+
+                let images = document.querySelectorAll("img[data-src]");
+                images.forEach((x)=>
+                {
+                    x.src= x.attributes.getNamedItem("data-src").value;
+                })
+            </script>
             <!-- <script src="styling.js"></script> -->
 
             <!-- ANIMATION -->

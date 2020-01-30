@@ -74,7 +74,13 @@ body{
   filter: brightness(17%); 
  } 
 
-
+ .hero-sec .logo
+ {
+  position: absolute;
+  width: 100px;
+  left: 4vw;
+  top: 4vw;
+ }
 
 .hero-content
 {
@@ -156,6 +162,11 @@ body{
 
 @media(max-width:600px)
 {
+  .hero-sec .logo
+  {
+    width:70px;
+  }
+
   .splitter-line{display: none;}
   
   .hero-content{
@@ -615,7 +626,8 @@ body{
   justify-content: center;
 }
 
-.event-text button
+
+.event-text .event-button
 {
   padding: 5px 30px;
   background-color: #d81597;
@@ -628,9 +640,11 @@ body{
   flex-grow: 0;
   width: 140px;
   margin-top: 12px;
+  display: flex;
+  justify-content: center;
 }
 
-.event-text button:hover
+.event-text .event-button:hover
 {
   box-shadow: #ffffff54 -3px 5px 12px -5px;
 }
@@ -664,7 +678,8 @@ body{
   .event-container
   {
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    position: relative;
   }
   .event-text .mobile-img
   {
@@ -699,11 +714,14 @@ body{
     font-size: 15px;
     margin-top:10px;
   }
-  .event-text button 
+  .event-text .event-button 
   {
-    padding: 8px 50px;
+    padding: 8px 40px;
     padding-top: 12px;
     width: 150px;
+    right: 0;
+    position: absolute;
+    bottom: -40px;
   }
 
 }

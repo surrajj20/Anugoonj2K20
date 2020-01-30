@@ -42,6 +42,31 @@
     animation: scale 1.6s ease-out;
 }
 
+.gallery .instructions
+{
+    position: absolute;
+    writing-mode: vertical-lr;
+    font-family: nexa;
+    font-size: 20px;
+    top:50vh;
+    right:20px;
+    transform: translateY(-60%);
+    opacity: 0.7;
+    
+    transition: opacity .4s ease-in-out;
+}
+
+.gallery .instructions::before
+    {
+        content: "Click";
+    }
+
+
+.gallery .instructions.remove
+{
+    opacity: 0;
+}
+
 @keyframes scale
 {
     0%{transform: scale(1); }
@@ -111,12 +136,30 @@
     {
         height: 850px;
         margin-top: 0;
-        background-color: #222;
+        background-color: #111;
     }
 
     .gallery-heading
     {
         font-size:80px;
         right: 10px;
+    }
+
+    .gallery .instructions
+    {
+        font-size: 18px;
+        top: 51.5%;
+        right: 62px;
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+    .gallery .instructions::before
+    {
+        content: "Tap";
+    }
+
+    .gallery .left-btn
+    {
+        width: 100px;
     }
 }
