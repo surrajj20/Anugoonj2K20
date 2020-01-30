@@ -162,7 +162,7 @@ body{
     font-size:10px;
     display: block;
     top:0;
-    height: 100%;
+    height: 90vh;
     transform: unset;;
   }
   #text
@@ -384,6 +384,12 @@ body{
   {
     padding: 0!important;
   }
+
+  .colorlib-narrow-content .row
+  {
+    margin-left: 10px!important;
+  }
+
  .colorlib-narrow-content .row >div
   {
     width:50% !important;
