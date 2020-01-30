@@ -21,7 +21,10 @@
     src: local('Typold Book'), url('..\\fonts\\Typold\\The Northern Block Ltd - Typold Book.woff') format('woff');
 }
     
-   
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
+
+
 /* Colors */
 
 :root
@@ -41,6 +44,17 @@
   } */
 
 /* NAVIGATION STYLES */
+
+body::-webkit-scrollbar
+{
+  background-color: #080808;
+  display: block;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: #711b55f5;;
+}
 
 .nav-inner-content ul{
     list-style-type: none;
@@ -431,12 +445,15 @@ footer
   line-height: 1.5;
 }
 
+footer p
+{
+  color: #cbcbcb;
+}
 
 .footer-logo
 {
   font-family: 'Ikaros-sans';
   font-size: 34px;
-  text-transform: uppercase;
 }
 .footer-logo a:hover{
   color:#c9108c
@@ -455,7 +472,7 @@ footer li
 
 footer a
 {
-  color: white;
+   color: #cbcbcb;
 }
 footer a:hover
 {
@@ -466,6 +483,7 @@ footer a:hover
 
 footer li {
   margin-bottom: 4px;
+  font-size: 15px;
 }
 
 footer h4
@@ -495,18 +513,35 @@ footer p
   { flex-direction: column;
     padding: 40px;
   }
+  .footer-logo
+  {
+    font-size:30px;
+  }
 
   footer > div, ul
   {
     margin-top: 20px;
+    font-weight: 300;
   }
+  
   footer .icon-tray
   {
     text-align: center;
-    margin-top:40px
+    margin-top:50px;
+    margin-bottom: 10px;
   }
+  footer .icon-tray img
+  {
+    width: 25px;
+  }
+
   .footer-logo
   {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+  }
+
+  footer .Address-block
+  {
+    margin-top: 25px;
   }
 }
