@@ -24,7 +24,7 @@ app.use(session({
 app.use(express.json()) //for post requests
 app.use(express.urlencoded({extended:true})) 
 
-var port = process.env.PORT || 8080
+var port = process.env.PORT || 3000
 app.set('view engine', 'hbs')
 app.use(express.static(__dirname + '/views'))
 var query1;
@@ -41,12 +41,12 @@ app.get('/',(req, res) => {
     // incrementing values
     getBlogArray()
     console.log(overallvisits);    
-    res.render('index1.hbs')
+    res.render('index.html')
 
   } 
   else
   {
-      res.render('index1.hbs')
+      res.render('index.html')
   }
   
 })
