@@ -2,6 +2,8 @@ const { MongoClient } = require('mongodb')
  
 // Connection URL
 const url = 'mongodb://localhost:27017';
+// const url = "mongodb+srv://unnat:8lRdHvx8O8cmdcKk@cluster0-svlpu.mongodb.net/";
+
   
 // Use connect method to connect to the server
 

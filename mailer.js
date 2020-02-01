@@ -49,7 +49,14 @@ app.get('/',(req, res) => {
       res.render('index1.hbs')
   }
   
-} )
+})
+
+app.get('/visits', (req, res)=>
+{
+  res.send( 'Overall Visit : ' + overallvisits)
+})
+
+
 try{app.post('/',(req, res) => {
   query1 = req.body.query1,
   email1 = req.body.email1
