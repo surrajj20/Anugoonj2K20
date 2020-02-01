@@ -38,7 +38,9 @@ const visit = {
     async function getBlogArray (){
        
      
-        var client = await MongoClient.connect(url) 
+        // var client = await MongoClient.connect(url)
+        var client = await MongoClient.connect(url, { useNewUrlParser: true }) 
+
         var visitsdb = client.db('visitsdb')
         var visitsCollection = visitsdb.collection('visitsCollection')
         
@@ -80,5 +82,5 @@ const visit = {
 
 module.exports = {
     getBlogArray
-    
+
 }

@@ -66,3 +66,15 @@ function eventDetails()
     });
 }
 eventDetails();
+
+function lazyload()
+{
+    if(window.innerWidth > 600) {
+        let imgs = document.querySelectorAll("img[data-srcset]");
+        imgs.forEach((img)=>
+        {
+            img.srcset= img.attributes.getNamedItem("data-srcset").value;
+        });
+    }
+   
+}

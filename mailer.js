@@ -41,12 +41,12 @@ app.get('/',(req, res) => {
     // incrementing values
     getBlogArray()
     console.log(overallvisits);    
-    res.render('index.html')
+    res.render('index.hbs')
 
   } 
   else
   {
-      res.render('index.html')
+      res.render('index.hbs')
   }
   
 })
