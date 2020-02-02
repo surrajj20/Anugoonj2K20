@@ -768,19 +768,25 @@ body{
   padding: 0vw 6vw;
 }
 
-.teaser-sec video
+.teaser-sec .video-container
 {
   width:100%;
   box-shadow: #00000070 7px 6px 20px 11px;
+}
+
+.vjs-afterglow-skin .vjs-big-play-button
+{
+  display: none!important;
 }
 
 .teaser-sec .overlay
 {
   position: absolute;
   top:0;
-  left:0;
-  height: 100%;
-  width: 100%;
+  right: 6vw;
+  left:6vw;
+  height: 90%;
+  
   cursor: pointer;
   /* background-color: #111; */
   transition: background-color .3s ease-out;
@@ -836,12 +842,22 @@ body{
   background-color: #00000000;
 }
 
+.teaser-sec .overlay.animated
+{
+  display: none;
+}
+
 @media(max-width:500px)
 {
   .teaser-sec .overlay h1
   {
     font-size: 30px;
   }
+
+  .teaser-sec .overlay.animated
+{
+  display: block;
+}
   
   .teaser-sec .overlay p
   {
@@ -951,6 +967,35 @@ body{
     box-shadow: 5px 10px 8px #888888;
 } */
 
+.review-container.submitted form 
+{
+   animation: fade-out 0.5s forwards ease-in-out;
+}
+
+@keyframes fade-out
+{
+  from{ opacity:1}
+  to {opacity: 0;}
+}
+
+@keyframes fade-out
+{
+  from{ opacity:0}
+  to {opacity: 1;}
+}
+
+.review-container.submitted .review-text h1, .review-container.submitted .review-text h3
+{
+  animation: fade-out 0.5s forwards ease-in-out;
+}
+
+.review-text .submitted-text
+{
+  animation: fade-in 0.5s forwards ease-in-out;
+}
+
+
+
 @media (max-width: 1400px)
 {
   .form-group
@@ -972,6 +1017,7 @@ body{
     padding-left: 20px;
   }
 }
+
 
 @media (max-width:600px)
 {

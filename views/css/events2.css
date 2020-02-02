@@ -149,6 +149,16 @@ a{
     
 }
 
+.slide-link 
+{
+  font-weight: bold;
+}
+
+.slide-link span
+{
+  font-weight: lighter;
+}
+
 .active-slide-link
 {
     color:#fff;
@@ -200,15 +210,20 @@ a{
 
 .event-tile h4
 {
-    position: absolute;
-    /* z-index: 3; */
-    color: #d1d1d1;
-    font-family: 'Ikaros-sans';
-    letter-spacing: 0.12em;
-    bottom: 0px;
-    left: 20px;
+  position: absolute;
 
+  background: #3a3a3ae0;
+  padding: 5px 15px;
+  color: #d6d6d6;
+  margin-bottom: 10px;
+  font-family: 'Ikaros-sans';
+  letter-spacing: 0.12em;
+  bottom: 0px;
+  left: 15px;
+  max-width: 300px;
 }
+
+
 
 .slide-event
 {
@@ -376,8 +391,13 @@ a{
   }
   .event-details .event-cross
   {
-    right: -14px;
+    right: -9px;
     top:0;
+    background: #ddd ;
+    width: 70px;
+    height: 70px;
+    background: #2727273b;
+
   }
 
   .event-details .text-container h1

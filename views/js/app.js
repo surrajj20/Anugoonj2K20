@@ -115,3 +115,17 @@ function left()
 
 /* GALLERY END*/
 
+
+function gotcha()
+{
+    document.querySelector(".review-container").classList.add("submitted");
+    window.setTimeout(()=>
+    {
+        document.querySelector('.review-container.submitted .review-text > h1').style="display:none";
+        document.querySelector('.review-container.submitted .review-text > h3').style="display:none";
+        document.querySelector('.review-container.submitted form').style="display:none";
+        document.querySelector('.review-container.submitted .review-text .submitted-text').style="display:none"
+    }, 500);
+
+}
+

@@ -1,8 +1,11 @@
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey("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");
+sgMail.setApiKey('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');
 
-
-const { updateVisitsDB, setupDB, getVisitsNo} = require('./database')
+if (process.env.isHeroku === undefined)
+{
+  const { updateVisitsDB, setupDB, getVisitsNo} = require('./database');
+}
+  
 const express = require('express')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
@@ -30,7 +33,6 @@ var query1;
 var email1;
 
 
-var overallvisits = 0;
 app.get('/',(req, res) => {
 
   res.render('index.hbs')
@@ -44,7 +46,9 @@ app.use(function (req,res, next)
   {
     hasVisited = 1;
     res.cookie('hasVisited', hasVisited, { maxAge: 30*24*3600, httpOnly: true });
-    updateVisitsDB();
+
+    if (process.env.isHeroku === undefined)
+      updateVisitsDB();
   }
   next();
 });
@@ -57,17 +61,18 @@ app.get('/visits', (req, res)=>
 
 
 try{app.post('/',(req, res) => {
-  query1 = req.body.query1,
-  email1 = req.body.email1
+  query1 = req.body.query1;
+  email1 = req.body.email1;
 
   const msg = {
    to: 'anugoonjipu2020@gmail.com',
-   from: `${email1}`,
-   subject: 'query',
-   text: `sender: ${email1} 
-          query: ${query1}`,
-   
+    // to: 'unnatmalkoti@gmail.com',
+   from: `Anugoonj@anugoonj-ipu.com`,
+   subject: 'Reply on Anugoonj website',
+   text: `Sender: ${email1}\nSaid: ${query1}`,  
  };
+
+ console.log(msg);
  sgMail.send(msg);
 
   res.redirect('/')

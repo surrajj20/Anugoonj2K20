@@ -37,14 +37,17 @@
         crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Anugoonj'20</title>
+    <title>Anugoonj 20</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <!-- Flaticons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/layout.css">
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
 
     <link href="css/responsive.css" rel="stylesheet">
+    <script src="js/afterglow.min.js"></script>
 </head>
 
 <body onload="preloader(), showTime()">
@@ -116,29 +119,6 @@
 
         <!-- ABOUT US-->
 
-        <!-- <section> -->
-            <!-- <div class="row" style="color: white ; padding:8% 0%;font-size:1em;">
-                <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-left:7%">
-                    <h1 class="project-heading mt-2 mb-2" style="color: #fff;
-                    font-family: 'Ikaros-sans';
-                    margin-top: -20px!important;
-                    margin-bottom: 30px!important;
-                    padding-bottom: 0;">ABOUT <span style="color:var(--pink-color)">US</span></h1>
-                    <pr style="font-family: 'nexa'; line-height:35px;"> Anugoonj which translates to “Echoing of small
-                        efforts” is the monumental annual cultural festival of GGSIPU which takes place in February. 
-                        Captivating all creative thoroughbreds from more than 100 affiliated colleges, the fest spans
-                        over three days. This extravaganza is escapism from the laborious college life. Anugoonj is the
-                        place to be whether, you want to flaunt your skills or stand with your mouth agape watching the
-                        talent or just an excuse to come and have tons of fun.<span id="dots">...</span><br>
-                        <span id="more">
-                            Anugoonj features events like dramatics, music, dance, quiz, debates, quiz, street play, and
-                            the
-                            most awaited event Mr and Ms Anugoonj among many others. If you have a talent, then we the
-                            platform to showcase it to a crowd of over 80000 viewers.<br>
-                            Anugoonj has previously hosted phenomenal artists like Pakshee Band,Kailash Kher, KK and
-                            many
-                            others. So get your groove on and be ready to be dazzled by the artists we bring this year!
-                    </pr> -->
             <section class="aboutus-sec">
                 <div class="about-us-flex">
                     <div class="about-us-text">
@@ -146,7 +126,7 @@
                         <p> Anugoonj, which translates to “Echoing of small efforts”, is the monumental annual cultural
                             festival of GGSIPU which takes place in February. Captivating all creative thoroughbreds
                             from more than 100 affiliated colleges, the fest spans three days. This extravaganza is
-                            escapism from the laborious college life. Anugoonj is the place to be, whether, you want to
+                            escapism from the laborious college life. Anugoonj is the place to be, whether you want to
                             flaunt your skills, stand with your mouth agape watching the talent, or just use it as an
                             excuse to come and have tons of fun.
                             <!-- <br><br>Anugoonj features events like dramatics, music, dance, quiz, debates, street play, and the much anticipated Mr and Ms Anugoonj event among many others. If you have a talent, then we are the platform to showcase it to a crowd of over 80000 viewers. -->
@@ -197,18 +177,18 @@
             <section class="event-sec">
                 <div class="event-container">
                     <div class="image-container">
-                        <img alt="Three students singing" srcset="images/Gallery/img27.png 2048w, images/mobile-gallery/img27.jpg 500w," src="images/mobile-gallery/img27.png">
+                        <img alt="Three students singing" srcset="images/Gallery/img27.png 2048w, images/mobile-gallery/img27.JPG 500w," src="images/mobile-gallery/img27.JPG">
                     </div>
                     <div class="event-text">
                         <h2>Event<span style="color:var(--pink-color)">s</span></h2>
                         <div class="mobile-img">
-                            <img alt="Three students singing" src="images/mobile-gallery/img27.png">
+                            <img alt="Three students singing" src="images/mobile-gallery/img27.JPG">
                             <!-- <div>See all</div> -->
                         </div>
 
                         <p>Anugoonj comprises of a plethora of events. Ranging from dancing and literary, to dramatics
                             for your emerging talents. From Mr. and Ms. Anugoonj to Talent show for specially-abled
-                            students; we got you covered you. With lots of prizes and gifts up for grabs, come and
+                            students; we got you covered. With lots of prizes and gifts up for grabs, come and
                             showcase your talents in these exciting and enthralling events.</p>
                         <a class="event-button" href="events2.html">See all</a>
                     </div>
@@ -265,9 +245,12 @@
 
             <!--TEASER STARTS-->
             <section class="teaser-sec">
-                <video>
-                    <source src="images/Anugoonj 2020 Trailer.mp4" type="video/mp4">
-                </video>
+                <div class="video-container">
+                    <video class="afterglow"  width="1980" height="1080">
+                        <source src="images/Anugoonj 2020 Trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
                 <div class="controls"></div>
                 <div class="overlay" onclick="playTeaser()">
                     <div class="overlay-content">
@@ -282,7 +265,10 @@
             <!--OUR TEAM STARTS-->
 
             <section>
-                <div id="team" class="section wb" style="background-color: #08080a;">
+                <div id="team" class="section wb" style="background-color: unset;
+                    padding-bottom: 100px;
+                    border-bottom: solid 2px #8080800f;
+                    padding-top: 100px;">
                     <div class="container-fluid">
                         <div class="section-title text-center">
                             <h3 style="color: #fff!important;
@@ -293,8 +279,9 @@
                         </div><!-- end title -->
 
                         <div class="row">
-                            <div class="col-md-2 col-sm-6">
+                            <div class="col-md-3 col-sm-6">
                                 <div class="box">
+                                    <div class="overlay"></div>
                                     <img alt="Image of Shlok" src="images/Our Team/shlok.jfif">
                                     <div class="box-content">
                                         <h3 class="title">SHLOK GARG</h3>
@@ -311,8 +298,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 col-sm-6">
+                            <div class="col-md-3 col-sm-6">
                                 <div class="box">
+                                    <div class="overlay"></div>
                                     <img alt="Image of Suraj" src="images/Our Team/suraj.jpg">
                                     <div class="box-content">
                                         <h3 class="title">SURAJ SAH</h3>
@@ -330,8 +318,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 col-sm-6">
+                            <div class="col-md-3 col-sm-6">
                                 <div class="box">
+                                    <div class="overlay"></div>
                                     <img alt="Image of Sanket" src="images/Our Team/sanket1.jpeg" alt="Coming Soon..">
                                     <div class="box-content">
                                         <h3 class="title">SANKET SHIVAM</h3>
@@ -348,12 +337,13 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 col-sm-6">
+                            <div class="col-md-3 col-sm-6">
                                 <div class="box">
+                                    <div class="overlay"></div>
                                     <img alt="Image of Unnat" src="images/Our Team/unnat.jpeg" alt="Coming Soon..">
                                     <div class="box-content">
                                         <h3 class="title">UNNAT MALKOTI</h3>
-                                        <span class="post">Web Developer</span>
+                                        <span class="post">UI Designer /<br>Web Developer</span>
                                         <ul class="icon">
                                             <li><a href="https://www.linkedin.com/in/unnat-malkoti-a93431164/"
                                                     target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
@@ -373,29 +363,17 @@
 
             <!--OUR TEAM ENDS-->
 
-            <!-- FOOTER STARTS -->
-            <!-- <section>
-            <div id="footer" class="container">
-                <div class="row">
-                    <div class="col-3" id="pehlaPart">
-
-                        <h2 class="colorChange">ANUGOONJ</h2>
-                    </div>
-
-                    <div class=" col-3">
-
-                        <ul id="list">
-                            <li><a class="removedecor" href="#">Home</a></li>
-                            <li><a class="removedecor" href="#">Schedule</a></li>
-                            <li><a class="removedecor" href="#">Events</a></li> -->
-
             <!-- review section -->
             <div class="review-container">
                 <div class="review-text">
                     <h1>Something on your mind?</h1>
                     <h3>We'd love to hear from you!</h3>
+                    <div class="submitted-text" style="display: none;">
+                        <h1>Gotcha!</h1>
+                        <h3>Heard you loud and clear!</h3>
+                    </div>
                 </div>
-                <form method="POST" action="/">
+                <form id="form1" method="POST" action="/" onsubmit="gotcha()">
                     <div class="form-group">
                         <input type="email" class="form-field" name="email1" id="exampleInputEmail1"
                             aria-describedby="emailHelp" placeholder="Email Address" required>
@@ -489,6 +467,7 @@
 
             <!-- ANIMATION -->
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            
             <script>
                 AOS.init({
                     duration: 1300

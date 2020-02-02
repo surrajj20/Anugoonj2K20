@@ -873,7 +873,7 @@ xclip
 @media only screen and (max-width:990px){
     .box{ margin-bottom: 30px; }
 }
-
+/* 
 #team .row 
 {
     justify-content: center;
@@ -883,3 +883,32 @@ xclip
 {
     margin:0 20px;
 }
+
+#team .box
+{
+    position: relative;
+}
+
+#team .box .overlay
+{
+    content: "";
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+#team .box:hover .overlay
+{
+    opacity:0.7;
+}
+
+#team .box .box-content
+{
+    transform:scale(0.8);
+    background: none;
+} */
