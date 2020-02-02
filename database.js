@@ -1,86 +1,63 @@
 const { MongoClient } = require('mongodb')
+var visitsNo =0;
  
 // Connection URL
 const url = 'mongodb://localhost:27017';
 // const url = "mongodb+srv://unnat:8lRdHvx8O8cmdcKk@cluster0-svlpu.mongodb.net/";
 
-  
-// Use connect method to connect to the server
 
-// const connectdb = (dbName) => {
-//   return MongoClient.connect(url)
-//   .then(client => client.db(dbName))
-// }
+function updateVisitsDB()
+{
+    MongoClient.connect(url, (err, db)=>{
+        if (err) throw err;
 
-const visit = {
-    indexing: 1,
-    count: 0
-} 
-
-//  const InsertVisit = () =>
-//     connectdb('visitsdb')
-//     .then(db => db.collection('visitsCollection'))
-//     .then(collection => collection.insertOne(visit))
-
-//  InsertVisit()   
-
-// increment
-//  const incrementVisits = () =>
-//     connectdb('visitsdb')
-//     .then(db => db.collection('visitsCollection'))
-//     .then(collection => collection.updateOne(
-//         {indexing: 1},
-//             {$inc: {count : 1}}
-//     ))
-//     incrementVisits()
+        var dbo = db.db("anugoonj");
+        dbo.collection("visits").updateOne({'id':1}, { $inc: {'visitsNo' : 1}})
+    });
+}
 
 
-    async function getBlogArray (){
-       
-     
-        // var client = await MongoClient.connect(url)
-        var client = await MongoClient.connect(url, { useNewUrlParser: true }) 
+function setupDB()
+{
+    MongoClient.connect(url, (err,db)=>
+    {
+        var dbo = db.db("anugoonj");
+        dbo.createCollection('visits', (err, res)=>
+        {
+            var myobj = {'visitsNo' : 1, 'id' : 1}
+            dbo.collection('visits').insertOne(myobj, (err, res)=>
+            {
+                if(err) throw err;
+                db.close();
+            })
+        })
+    })
+}
 
-        var visitsdb = client.db('visitsdb')
-        var visitsCollection = visitsdb.collection('visitsCollection')
-        
-        var visitsArray = await visitsCollection.find().toArray()
-        visitsArray.forEach(vis => console.log(vis))
- 
-        // increment
-        visitsCollection.update(
-            {indexing: 1},
-            {$inc: {count : 1}}
-        )
-        // deleting all entries
-        // visitsCollection.remove({})
-     }  
-     
-     getBlogArray()
+function ReadVisitDB()
+{
+    MongoClient.connect(url, (err, db)=>
+        {
+            var dbo = db.db('anugoonj');
+            dbo.collection('visits').findOne({'id' : 1}, (err, result)=>
+            {
+                visitsNo = result.visitsNo;
+                db.close();
+            })
+        });
+}
 
-// const getAllBlogs = connectdb('visitsdb')
-//                     .then(db => db.collection('visits').find())
-//                     .then(cursor => cursor.toArray())
+setInterval(() => {
+    ReadVisitDB();
+}, 5000);
 
- 
-
-//  getAllBlogs.forEach((visit) => console.log(JSON.stringify(visit)))                   
-    
-
-// function  incrementVisits() {
-//     connectdb('visitsdb')
-//     .then(db => db.collection('visits').update(
-//       { indexing: 1},
-//       {$inc: {'count': 1}}
-//     ).then(getAllBlogs()))
-// }
-// incrementVisits() 
-
-    
-
-    // console.log(visit)
+function getVisitsNo()
+{
+    return visitsNo;
+}
 
 module.exports = {
-    getBlogArray
-
+    updateVisitsDB,
+    setupDB,
+    getVisitsNo
 }

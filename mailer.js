@@ -2,8 +2,7 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey("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");
 
 
-
-const { getBlogArray } = require('./database')
+const { updateVisitsDB, setupDB, getVisitsNo} = require('./database')
 const express = require('express')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
@@ -33,27 +32,27 @@ var email1;
 
 var overallvisits = 0;
 app.get('/',(req, res) => {
-  
-  if (!req.session.visits) {
-    req.session.visits=1 //per user visits
-    overallvisits++;
-    
-    // incrementing values
-    getBlogArray()
-    console.log(overallvisits);    
-    res.render('index.hbs')
 
-  } 
-  else
-  {
-      res.render('index.hbs')
-  }
-  
+  res.render('index.hbs')
+
 })
+
+app.use(function (req,res, next)
+{
+  var hasVisited = req.cookies.hasVisited;
+  if (hasVisited === undefined)
+  {
+    hasVisited = 1;
+    res.cookie('hasVisited', hasVisited, { maxAge: 30*24*3600, httpOnly: true });
+    updateVisitsDB();
+  }
+  next();
+});
+
 
 app.get('/visits', (req, res)=>
 {
-  res.send( 'Overall Visit : ' + overallvisits)
+  res.send( 'Overall Visit :' + getVisitsNo())
 })
 
 
