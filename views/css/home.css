@@ -373,6 +373,15 @@ body{
   padding-right:3vw;
 }
 
+span.colorlib-counter.js-counter::after {
+  content: "+";
+}
+
+#counterk::after
+{
+  content: 'K+';
+}
+
 @media(max-width:600px)
 {
   .about-us-flex
