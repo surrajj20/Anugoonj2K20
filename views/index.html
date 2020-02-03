@@ -140,7 +140,7 @@
                         <div class="row">
                             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
                                 style="margin: 2em 0em;">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="60000" data-speed="700"
+                                <span id="counterk" class="colorlib-counter js-counter" data-from="0" data-to="60" data-speed="700"
                                     data-refresh-interval="10"></span>
                                 <span class="colorlib-counter-label">FOOTFALL</span>
                             </div>
@@ -260,13 +260,21 @@
 
         <!--GALLERY ENDS-->
 
-        <!--TEASER STARTS-->
-        <section class="teaser-sec">
-            <div class="video-container">
-                <video class="afterglow" width="1980" height="1080">
-                    <source src="images/Anugoonj 2020 Trailer.mp4" type="video/mp4">
-                </video>
-            </div>
+            <!--TEASER STARTS-->
+            <section class="teaser-sec">
+                <div class="video-container">
+                    <video class="afterglow"  width="1980" height="1080">
+                        <!-- <source src="images/Anugoonj 2020 Trailer.mp4" type="video/mp4" data-quality="hd"> -->
+                        <source src="images/Anugoonj 2020 Trailer 480p.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="controls"></div>
+                <div class="overlay" onclick="playTeaser()">
+                    <div class="overlay-content">
+                        <h1>Teas<span>er</span></h1>
+                        <p>Click to play</p>
+                    </div>
 
             <div class="controls"></div>
             <div class="overlay" onclick="playTeaser()">
