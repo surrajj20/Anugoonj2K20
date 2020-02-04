@@ -40,11 +40,13 @@
     <title>Anugoonj 20</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <!-- Flaticons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS Theme -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/layout.css">
-    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
+        integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+        crossorigin="anonymous"></script>
 
     <link href="css/responsive.css" rel="stylesheet">
     <script src="js/afterglow.min.js"></script>
@@ -119,135 +121,151 @@
 
         <!-- ABOUT US-->
 
-            <section class="aboutus-sec">
-                <div class="about-us-flex">
-                    <div class="about-us-text">
-                        <h1>About <span style="color:var(--pink-color)">us</span></h1>
-                        <p> Anugoonj, which translates to “Echoing of small efforts”, is the monumental annual cultural
-                            festival of GGSIPU which takes place in February. Captivating all creative thoroughbreds
-                            from more than 100 affiliated colleges, the fest spans three days. This extravaganza is
-                            escapism from the laborious college life. Anugoonj is the place to be, whether you want to
-                            flaunt your skills, stand with your mouth agape watching the talent, or just use it as an
-                            excuse to come and have tons of fun.
-                            <!-- <br><br>Anugoonj features events like dramatics, music, dance, quiz, debates, street play, and the much anticipated Mr and Ms Anugoonj event among many others. If you have a talent, then we are the platform to showcase it to a crowd of over 80000 viewers. -->
-                            <!--
-                        Anugoonj has previously hosted phenomenal artists like Pakshee Band,Kailash Kher, KK and many
-                        others. So get your groove on and be ready to be dazzled by the artists we bring this year! -->
-                        </p>
-                        <!-- <br>
-                    </span>
-                    <button type="button" id="read" onclick="read()">Read More</button> -->
-                    </div>
+        <section class="aboutus-sec">
+            <div class="about-us-flex">
+                <div class="about-us-text">
+                    <h1>About <span style="color:var(--pink-color)">us</span></h1>
+                    <p> Anugoonj, which translates to “Echoing of small efforts”, is the monumental annual cultural
+                        festival of GGSIPU which takes place in February. Captivating all creative thoroughbreds
+                        from more than 100 affiliated colleges, the fest spans three days. This extravaganza is
+                        escapism from the laborious college life. Anugoonj is the place to be, whether you want to
+                        flaunt your skills, stand with your mouth agape watching the talent, or just use it as an
+                        excuse to come and have tons of fun.
+                    </p>
+                </div>
 
-                    <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center colorlib-counters"
-                        id="colorlib-counter">
-                        <div class="colorlib-narrow-content">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
-                                    style="margin: 2em 0em;">
-                                    <span class="colorlib-counter js-counter" data-from="0" data-to="60000"
-                                        data-speed="700" data-refresh-interval="10"></span>
-                                    <span class="colorlib-counter-label">FOOTFALL</span>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
-                                    style="margin: 2em 0em;">
-                                    <span class="colorlib-counter js-counter" data-from="0" data-to="40"
-                                        data-speed="700" data-refresh-interval="10"></span>
-                                    <span class="colorlib-counter-label">EVENTS</span>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
-                                    style="margin: 2em 0em;">
-                                    <span class="colorlib-counter js-counter" data-from="0" data-to="500"
-                                        data-speed="700" data-refresh-interval="10"></span>
-                                    <span class="colorlib-counter-label">PARTICIPANTS</span>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
-                                    style="margin: 2em 0em;">
-                                    <span class="colorlib-counter js-counter" data-from="0" data-to="132"
-                                        data-speed="700" data-refresh-interval="10"></span>
-                                    <span class="colorlib-counter-label">Colleges</span>
-                                </div>
+                <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center colorlib-counters"
+                    id="colorlib-counter">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
+                                style="margin: 2em 0em;">
+                                <span id="counterk" class="colorlib-counter js-counter" data-from="0" data-to="60" data-speed="700"
+                                    data-refresh-interval="10"></span>
+                                <span class="colorlib-counter-label">FOOTFALL</span>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
+                                style="margin: 2em 0em;">
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="40" data-speed="700"
+                                    data-refresh-interval="10"></span>
+                                <span class="colorlib-counter-label">EVENTS</span>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
+                                style="margin: 2em 0em;">
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="500" data-speed="700"
+                                    data-refresh-interval="10"></span>
+                                <span class="colorlib-counter-label">PARTICIPANTS</span>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center animate-box"
+                                style="margin: 2em 0em;">
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="132" data-speed="700"
+                                    data-refresh-interval="10"></span>
+                                <span class="colorlib-counter-label">Colleges</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--ABOUT US ENDS-->
+            </div>
+        </section>
+        <!--ABOUT US ENDS-->
 
-            <section class="event-sec">
-                <div class="event-container">
-                    <div class="image-container">
-                        <img alt="Three students singing" srcset="images/Gallery/img27.png 2048w, images/mobile-gallery/img27.JPG 500w," src="images/mobile-gallery/img27.JPG">
-                    </div>
-                    <div class="event-text">
-                        <h2>Event<span style="color:var(--pink-color)">s</span></h2>
-                        <div class="mobile-img">
-                            <img alt="Three students singing" src="images/mobile-gallery/img27.JPG">
-                            <!-- <div>See all</div> -->
-                        </div>
-
-                        <p>Anugoonj comprises of a plethora of events. Ranging from dancing and literary, to dramatics
-                            for your emerging talents. From Mr. and Ms. Anugoonj to Talent show for specially-abled
-                            students; we got you covered. With lots of prizes and gifts up for grabs, come and
-                            showcase your talents in these exciting and enthralling events.</p>
-                        <a class="event-button" href="events2.html">See all</a>
-                    </div>
+        <section class="event-sec">
+            <div class="event-container">
+                <div class="image-container">
+                    <img alt="Three students singing"
+                        srcset="images/Gallery/img27.png 2048w, images/mobile-gallery/img27.JPG 500w,"
+                        src="images/mobile-gallery/img27.JPG">
                 </div>
-            </section>
-            <!-- EVENTS INTRO ENDS -->
-
-            <!-- GALLERY STARTS-->
-
-            <section class="gallery">
-                <div class="left-btn" onclick="left()"></div>
-                <div class="instructions"><span> to navigate</span></div>
-                <div class="gallery-container">
-                    
-                    <div class="layer below-layer desktop-layer">
-                        <img alt="Galley Image" height="600px" data-src="images/Gallery/img30.JPG" style="left: 65vw;">
-                        <img alt="Galley Image" height="400px" width="500px" style="object-position: bottom; top:-100px; left: 260vw;"
-                            data-src="images/Gallery/img18.JPG">
-                        <img alt="Galley Image" height="200px" data-src="images/Gallery/img17.JPG" style="top:600px; left: 280vw">
-                        <img alt="Galley Image" height="300px" data-src="images/Gallery/img26.png" style="left: 418vw; top:500px ">
-                        <img alt="Galley Image" height="300px" data-src="images/Gallery/img28.JPG" style="left: 475vw; top:300px ">
-                        <img alt="Galley Image" height="250px" data-src="images/Gallery/DSC_0453.JPG" style="left: 665vw;top: 450px;">
-                        <img alt="Galley Image" height="300px" data-src="images/Gallery/DSC_5143.JPG" style="left: 625vw;top: 492px;">
-
-                    </div>
-                    <div class="layer below-layer mobile-layer active-layer">
-                        <img alt="Galley Image" height="400px" data-src="images/mobile-gallery/img30.JPG" style="left: 40vw; ">
-                        <img alt="Galley Image" height="250px" style="object-position: bottom; left: 220vw;" data-src="images/mobile-gallery/img18.JPG"
-                            width="400px">
-                        <img alt="Galley Image" height="200px" data-src="images/mobile-gallery/img17.JPG" style="top: 550px;left: 220vw;">
-                        <img alt="Galley Image" height="300px" data-src="images/mobile-gallery/img28.JPG" style="left: 422vw;top: 129px;">
-
+                <div class="event-text">
+                    <h2>Event<span style="color:var(--pink-color)">s</span></h2>
+                    <div class="mobile-img">
+                        <img alt="Three students singing" src="images/mobile-gallery/img27.JPG">
+                        <!-- <div>See all</div> -->
                     </div>
 
-                    <div class="gallery-heading">gallery</div>
-
-                    <div class="layer above-layer desktop-layer">
-                        <img alt="Galley Image" height="400px" data-src="images/Gallery/img32.JPG" style="top:350px">
-                        <img alt="Galley Image" height="500px" data-src="images/Gallery/img19.JPG" style="left: 206vw; top:200px ">
-                        <img alt="Galley Image" height="350px" width="600px" data-src="images/Gallery/img6.jpg" style="left: 418vw;; top:50px ">
-                        <img alt="Galley Image" height="350px" data-src="images/Gallery/img16.JPG" style="left: 605vw;top: 100px;">
-                        <img alt="Galley Image" height="300px" data-src="images/Gallery/img15.JPEG" style="left: 668vw;top: 10px;">
-                    </div>
-                    <div class="layer above-layer mobile-layer active-layer">
-                        <img alt="Galley Image" data-src="images/mobile-gallery/img32.JPG" style="top: 550px;  width: 300px;">
-                        <img alt="Galley Image" height="250px" data-src="images/mobile-gallery/img19.JPG" style="left: 190vw; top: 300px;">
-                        <img alt="Galley Image" height="250px" data-src="images/mobile-gallery/img21.jpg" style="left: 390vw;top: 500px;">
-                    </div>
+                    <p>Anugoonj comprises of a plethora of events. Ranging from dancing and literary, to dramatics
+                        for your emerging talents. From Mr. and Ms. Anugoonj to Talent show for specially-abled
+                        students; we got you covered. With lots of prizes and gifts up for grabs, come and
+                        showcase your talents in these exciting and enthralling events.</p>
+                    <a class="event-button" href="events2.html">See all</a>
                 </div>
-                <div class="right-btn" onclick="right()"></div>
-            </section>
+            </div>
+        </section>
+        <!-- EVENTS INTRO ENDS -->
 
-            <!--GALLERY ENDS-->
+        <!-- GALLERY STARTS-->
+
+        <section class="gallery">
+            <div class="left-btn" onclick="left()"></div>
+            <div class="instructions"><span> to navigate</span></div>
+            <div class="gallery-container">
+
+                <div class="layer below-layer desktop-layer">
+                    <img alt="Galley Image" height="600px" data-src="images/Gallery/img30.JPG" style="left: 65vw;">
+                    <img alt="Galley Image" height="400px" width="500px"
+                        style="object-position: bottom; top:-100px; left: 260vw;" data-src="images/Gallery/img18.JPG">
+                    <img alt="Galley Image" height="200px" data-src="images/Gallery/img17.JPG"
+                        style="top:600px; left: 280vw">
+                    <img alt="Galley Image" height="300px" data-src="images/Gallery/img26.png"
+                        style="left: 418vw; top:500px ">
+                    <img alt="Galley Image" height="300px" data-src="images/Gallery/img28.JPG"
+                        style="left: 475vw; top:300px ">
+                    <img alt="Galley Image" height="250px" data-src="images/Gallery/DSC_0453.JPG"
+                        style="left: 665vw;top: 450px;">
+                    <img alt="Galley Image" height="300px" data-src="images/Gallery/DSC_5143.JPG"
+                        style="left: 625vw;top: 492px;">
+
+                </div>
+                <div class="layer below-layer mobile-layer active-layer">
+                    <img alt="Galley Image" height="400px" data-src="images/mobile-gallery/img30.JPG"
+                        style="left: 40vw; ">
+                    <img alt="Galley Image" height="250px" style="object-position: bottom; left: 220vw;"
+                        data-src="images/mobile-gallery/img18.JPG" width="400px">
+                    <img alt="Galley Image" height="200px" data-src="images/mobile-gallery/img17.JPG"
+                        style="top: 550px;left: 220vw;">
+                    <img alt="Galley Image" height="300px" data-src="images/mobile-gallery/img28.JPG"
+                        style="left: 422vw;top: 129px;">
+
+                    <!-- <img alt="Galley Image" height="200px" data-src="images/mobile-gallery/DSC_0453"
+                        style="top: 550px;left: 220vw;">
+                    <img alt="Galley Image" height="300px" data-src="images/mobile-gallery/DSC_5143"
+                        style="left: 422vw;top: 129px;"> -->
+
+                </div>
+
+                <div class="gallery-heading">gallery</div>
+
+                <div class="layer above-layer desktop-layer">
+                    <img alt="Galley Image" height="400px" data-src="images/Gallery/img32.JPG" style="top:350px">
+                    <img alt="Galley Image" height="500px" data-src="images/Gallery/img19.JPG"
+                        style="left: 206vw; top:200px ">
+                    <img alt="Galley Image" height="350px" width="600px" data-src="images/Gallery/img6.jpg"
+                        style="left: 418vw;; top:50px ">
+                    <img alt="Galley Image" height="350px" data-src="images/Gallery/img16.JPG"
+                        style="left: 605vw;top: 100px;">
+                    <img alt="Galley Image" height="300px" data-src="images/Gallery/img15.JPEG"
+                        style="left: 668vw;top: 10px;">
+                </div>
+                <div class="layer above-layer mobile-layer active-layer">
+                    <img alt="Galley Image" data-src="images/mobile-gallery/img32.JPG"
+                        style="top: 550px;  width: 300px;">
+                    <img alt="Galley Image" height="250px" data-src="images/mobile-gallery/img19.JPG"
+                        style="left: 190vw; top: 300px;">
+                    <img alt="Galley Image" height="250px" data-src="images/mobile-gallery/img21.jpg"
+                        style="left: 390vw;top: 500px;">
+                </div>
+            </div>
+            <div class="right-btn" onclick="right()"></div>
+        </section>
+
+        <!--GALLERY ENDS-->
 
             <!--TEASER STARTS-->
             <section class="teaser-sec">
                 <div class="video-container">
                     <video class="afterglow"  width="1980" height="1080">
-                        <source src="images/Anugoonj 2020 Trailer.mp4" type="video/mp4">
+                        <!-- <source src="images/Anugoonj 2020 Trailer.mp4" type="video/mp4" data-quality="hd"> -->
+                        <source src="images/Anugoonj 2020 Trailer 480p.mp4" type="video/mp4">
                     </video>
                 </div>
                 
@@ -257,222 +275,216 @@
                         <h1>Teas<span>er</span></h1>
                         <p>Click to play</p>
                     </div>
-
                 </div>
-            </section>
-            <!--TEASER ENDS-->
+        </section>
+        <!--TEASER ENDS-->
 
-            <!--OUR TEAM STARTS-->
+        <!--OUR TEAM STARTS-->
 
-            <section>
-                <div id="team" class="section wb" style="background-color: unset;
+        <section>
+            <div id="team" class="section wb" style="background-color: unset;
                     padding-bottom: 100px;
                     border-bottom: solid 2px #8080800f;
                     padding-top: 100px;">
-                    <div class="container-fluid">
-                        <div class="section-title text-center">
-                            <h3 style="color: #fff!important;
+                <div class="container-fluid">
+                    <div class="section-title text-center">
+                        <h3 style="color: #fff!important;
                             font-family: ikaros-sans;
                             font-size: 40px;
                             letter-spacing: 0.05em;">Developer<span style="color:var(--pink-color)">s</span></h3>
-                            <!-- <p></p>-->
-                        </div><!-- end title -->
+                        <!-- <p></p>-->
+                    </div><!-- end title -->
 
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="box">
-                                    <div class="overlay"></div>
-                                    <img alt="Image of Shlok" src="images/Our Team/shlok.jfif">
-                                    <div class="box-content">
-                                        <h3 class="title">SHLOK GARG</h3>
-                                        <span class="post">Web Developer</span>
-                                        <ul class="icon">
-                                            <li><a href="https://www.linkedin.com/in/shlok-garg-0b216b191/"
-                                                    target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
-                                            <li><a href="https://www.facebook.com/profile.php?id=100004778597873&ref=bookmarks"
-                                                    target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
-                                            <li><a href="https://www.instagram.com/sg_3105/" target="_blank"><span><i
-                                                            class="fa fa-instagram"></i></span></a></li>
-                                        </ul>
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="overlay"></div>
+                                <img alt="Image of Shlok" src="images/Our Team/shlok.jfif">
+                                <div class="box-content">
+                                    <h3 class="title">SHLOK GARG</h3>
+                                    <span class="post">Web Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="https://www.linkedin.com/in/shlok-garg-0b216b191/"
+                                                target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
+                                        <li><a href="https://www.facebook.com/profile.php?id=100004778597873&ref=bookmarks"
+                                                target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
+                                        <li><a href="https://www.instagram.com/sg_3105/" target="_blank"><span><i
+                                                        class="fa fa-instagram"></i></span></a></li>
+                                    </ul>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-md-3 col-sm-6">
-                                <div class="box">
-                                    <div class="overlay"></div>
-                                    <img alt="Image of Suraj" src="images/Our Team/suraj.jpg">
-                                    <div class="box-content">
-                                        <h3 class="title">SURAJ SAH</h3>
-                                        <span class="post">Web Developer</span>
-                                        <ul class="icon">
-                                            <li><a href="https://www.linkedin.com/in/shahsuraj1200/"
-                                                    target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
-                                            <li><a href="https://www.facebook.com/suraj.shah1200"
-                                                    target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
-                                            <li><a href="https://www.instagram.com/suraj.shah1200/"
-                                                    target="_blank"><span><i class="fa fa-instagram"></i></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="overlay"></div>
+                                <img alt="Image of Suraj" src="images/Our Team/suraj.jpg">
+                                <div class="box-content">
+                                    <h3 class="title">SURAJ SAH</h3>
+                                    <span class="post">Web Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="https://www.linkedin.com/in/shahsuraj1200/"
+                                                target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
+                                        <li><a href="https://www.facebook.com/suraj.shah1200" target="_blank"><span><i
+                                                        class="fa fa-facebook"></i></span></a></li>
+                                        <li><a href="https://www.instagram.com/suraj.shah1200/" target="_blank"><span><i
+                                                        class="fa fa-instagram"></i></span></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-md-3 col-sm-6">
-                                <div class="box">
-                                    <div class="overlay"></div>
-                                    <img alt="Image of Sanket" src="images/Our Team/sanket1.jpeg" alt="Coming Soon..">
-                                    <div class="box-content">
-                                        <h3 class="title">SANKET SHIVAM</h3>
-                                        <span class="post">Web Developer</span>
-                                        <ul class="icon">
-                                            <li><a href="https://www.linkedin.com/in/sanket-shivam-8517771a0/"
-                                                    target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
-                                            <li><a><span><i class="fa fa-facebook"></i></span></a></li>
-                                            <li><a href="https://www.instagram.com/shivam.sanket/"
-                                                    target="_blank"><span><i class="fa fa-instagram"></i></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="overlay"></div>
+                                <img alt="Image of Sanket" src="images/Our Team/sanket1.jpeg" alt="Coming Soon..">
+                                <div class="box-content">
+                                    <h3 class="title">SANKET SHIVAM</h3>
+                                    <span class="post">Web Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="https://www.linkedin.com/in/sanket-shivam-8517771a0/"
+                                                target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
+                                        <li><a><span><i class="fa fa-facebook"></i></span></a></li>
+                                        <li><a href="https://www.instagram.com/shivam.sanket/" target="_blank"><span><i
+                                                        class="fa fa-instagram"></i></span></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-md-3 col-sm-6">
-                                <div class="box">
-                                    <div class="overlay"></div>
-                                    <img alt="Image of Unnat" src="images/Our Team/unnat.jpeg" alt="Coming Soon..">
-                                    <div class="box-content">
-                                        <h3 class="title">UNNAT MALKOTI</h3>
-                                        <span class="post">UI Designer /<br>Web Developer</span>
-                                        <ul class="icon">
-                                            <li><a href="https://www.linkedin.com/in/unnat-malkoti-a93431164/"
-                                                    target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
-                                            <li><a href="https://www.facebook.com/unnatmalkoti" target="_blank"><span><i
-                                                            class="fa fa-facebook"></i></span></a></li>
-                                            <li><a href="https://www.instagram.com/unnatmalkoti/"
-                                                    target="_blank"><span><i class="fa fa-instagram"></i></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="overlay"></div>
+                                <img alt="Image of Unnat" src="images/Our Team/unnat.jpeg" alt="Coming Soon..">
+                                <div class="box-content">
+                                    <h3 class="title">UNNAT MALKOTI</h3>
+                                    <span class="post">UI Designer /<br>Web Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="https://www.linkedin.com/in/unnat-malkoti-a93431164/"
+                                                target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
+                                        <li><a href="https://www.facebook.com/unnatmalkoti" target="_blank"><span><i
+                                                        class="fa fa-facebook"></i></span></a></li>
+                                        <li><a href="https://www.instagram.com/unnatmalkoti/" target="_blank"><span><i
+                                                        class="fa fa-instagram"></i></span></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--OUR TEAM ENDS-->
+        <!--OUR TEAM ENDS-->
 
-            <!-- review section -->
-            <div class="review-container">
-                <div class="review-text">
-                    <h1>Something on your mind?</h1>
-                    <h3>We'd love to hear from you!</h3>
-                    <div class="submitted-text" style="display: none;">
-                        <h1>Gotcha!</h1>
-                        <h3>Heard you loud and clear!</h3>
-                    </div>
+        <!-- review section -->
+        <div class="review-container">
+            <div class="review-text">
+                <h1>Something on your mind?</h1>
+                <h3>We'd love to hear from you!</h3>
+                <div class="submitted-text" style="display: none;">
+                    <h1>Gotcha!</h1>
+                    <h3>Heard you loud and clear!</h3>
                 </div>
-                <form id="form1" method="POST" action="/" onsubmit="gotcha()">
-                    <div class="form-group">
-                        <input type="email" class="form-field" name="email1" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Email Address" required>
+            </div>
+            <form id="form1" method="POST" action="/" onsubmit="gotcha()">
+                <div class="form-group">
+                    <input type="email" class="form-field" name="email1" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Email Address" required>
 
 
-                        <textarea name="query1" class="form-field" id="exampleFormControlTextarea1" rows="1"
-                            placeholder="Message" style=" resize: none;" required></textarea>
-                    </div>
-                    <button type="submit" class="submit">Send</button>
-                </form>
+                    <textarea name="query1" class="form-field" id="exampleFormControlTextarea1" rows="1"
+                        placeholder="Message" style=" resize: none;" required></textarea>
+                </div>
+                <button type="submit" class="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- FOOTER STARTS -->
+        <footer>
+            <div class="footer-logo"><a href="/">Anugoonj</a></div>
+
+            <ul class="mini-nav">
+                <li><a href='/'>Home</a></li>
+                <li><a href='events2.html'>Events</a></li>
+                <li><a href='schedule page.html'>Schedule</a></li>
+            </ul>
+
+            <div class="Address-block">
+                <h4 style="color:white; font-size:15px">Address</h4>
+                <p>Guru Gobind Singh Indraprastha University<br>Sector 16c, Dwarka, New Delhi - 110078 </p>
             </div>
 
-            <!-- FOOTER STARTS -->
-            <footer>
-                <div class="footer-logo"><a href="/">Anugoonj</a></div>
+            <div class="icon-tray">
+                <h4 style="color:white; font-weight: 300; font-size: 15px; margin-bottom: 20px; text-align: center;">
+                    Follow Us</h4>
+                <a href="https://www.facebook.com/anugoonj2k1x/" target="_blank"><img src="images/icons/facebook.png"
+                        alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/anugoonj_official/" target="_blank"><img
+                        src="images/icons/instagram.png" alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/channel/UCKxCKdQ_mjzeCnFDFw8jKkg" target="_blank"><img
+                        src="images/icons/youtube.png" alt="Youtube logo"></a>
+            </div>
 
-                <ul class="mini-nav">
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='events2.html'>Events</a></li>
-                    <li><a href='schedule page.html'>Schedule</a></li>
-                </ul>
+        </footer>
+        <!-- FOOTER ENDS -->
 
-                <div class="Address-block">
-                    <h4 style="color:white; font-size:15px">Address</h4>
-                    <p>Guru Gobind Singh Indraprastha University<br>Sector 16c, Dwarka, New Delhi - 110078 </p>
-                </div>
-
-                <div class="icon-tray">
-                    <h4
-                        style="color:white; font-weight: 300; font-size: 15px; margin-bottom: 20px; text-align: center;">
-                        Follow Us</h4>
-                    <a href="https://www.facebook.com/anugoonj2k1x/" target="_blank"><img
-                            src="images/icons/facebook.png" alt="Facebook logo"></a>
-                    <a href="https://www.instagram.com/anugoonj_official/" target="_blank"><img
-                            src="images/icons/instagram.png" alt="Instagram logo"></a>
-                    <a href="https://www.youtube.com/channel/UCKxCKdQ_mjzeCnFDFw8jKkg" target="_blank"><img
-                            src="images/icons/youtube.png" alt="Youtube logo"></a>
-                </div>
-
-            </footer>
-            <!-- FOOTER ENDS -->
-
-            <!-- jQuery -->
-            <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+        <!-- jQuery -->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
                 integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
 
 
-            <!-- Waypoints -->
-            <script src="js/jquery.waypoints.min.js"></script>
-            <!-- Counters -->
-            <script src="js/jquery.countTo.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Counters -->
+        <script src="js/jquery.countTo.js"></script>
 
 
-            <!-- MAIN JS -->
-            <script src="js/main.js"></script>
-            <script src="js/home.js"></script>
-            <script type="text/javascript" src="js/app.js"></script>
-            <script type="text/javascript" src="js/nav.js"></script>
-            <script>
-            
-                let desktopLayers = document.querySelectorAll(".desktop-layer");
-                let mobileLayers = document.querySelectorAll(".mobile-layer")
-                checkGallery();
+        <!-- MAIN JS -->
+        <script src="js/main.js"></script>
+        <script src="js/home.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+        <script>
 
-                function checkGallery()
-                {
-                    if(window.innerWidth > 600)
-                    {
-                        desktopLayers[0].classList.add("active-layer")
-                        desktopLayers[1].classList.add("active-layer")
-                        mobileLayers[0].remove()
-                        mobileLayers[1].remove()
-                    }
+            let desktopLayers = document.querySelectorAll(".desktop-layer");
+            let mobileLayers = document.querySelectorAll(".mobile-layer")
+            checkGallery();
 
-                    else
-                    {
-                        desktopLayers[0].remove()
-                        desktopLayers[1].remove()
-                        mobileLayers[0].classList.add("active-layer")
-                        mobileLayers[1].classList.add("active-layer")
-                    }
+            function checkGallery() {
+                if (window.innerWidth > 600) {
+                    desktopLayers[0].classList.add("active-layer")
+                    desktopLayers[1].classList.add("active-layer")
+                    mobileLayers[0].remove()
+                    mobileLayers[1].remove()
                 }
 
-                let images = document.querySelectorAll("img[data-src]");
-                images.forEach((x)=>
-                {
-                    x.src= x.attributes.getNamedItem("data-src").value;
-                })
-            </script>
-            <!-- <script src="styling.js"></script> -->
+                else {
+                    desktopLayers[0].remove()
+                    desktopLayers[1].remove()
+                    mobileLayers[0].classList.add("active-layer")
+                    mobileLayers[1].classList.add("active-layer")
+                }
+            }
 
-            <!-- ANIMATION -->
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            
-            <script>
-                AOS.init({
-                    duration: 1300
-                });
-            </script>
+            let images = document.querySelectorAll("img[data-src]");
+            images.forEach((x) => {
+                x.src = x.attributes.getNamedItem("data-src").value;
+            })
+        </script>
+        <!-- <script src="styling.js"></script> -->
+
+        <!-- ANIMATION -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 1300
+            });
+        </script>
 
     </main>
 

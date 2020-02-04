@@ -1,11 +1,10 @@
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey('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');
 
-if (process.env.isHeroku === undefined)
-{
-  const { updateVisitsDB, setupDB, getVisitsNo} = require('./database');
+if (process.env.isHeroku === undefined) {
+  const { updateVisitsDB, setupDB, getVisitsNo } = require('./database');
 }
-  
+
 const express = require('express')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
@@ -24,7 +23,7 @@ app.use(session({
 )
 
 app.use(express.json()) //for post requests
-app.use(express.urlencoded({extended:true})) 
+app.use(express.urlencoded({ extended: true }))
 
 var port = process.env.PORT || 3000
 app.set('view engine', 'hbs')
@@ -33,19 +32,17 @@ var query1;
 var email1;
 
 
-app.get('/',(req, res) => {
+app.get('/', (req, res) => {
 
   res.render('index.hbs')
 
 })
 
-app.use(function (req,res, next)
-{
+app.use(function (req, res, next) {
   var hasVisited = req.cookies.hasVisited;
-  if (hasVisited === undefined)
-  {
+  if (hasVisited === undefined) {
     hasVisited = 1;
-    res.cookie('hasVisited', hasVisited, { maxAge: 30*24*3600, httpOnly: true });
+    res.cookie('hasVisited', hasVisited, { maxAge: 30 * 24 * 3600, httpOnly: true });
 
     if (process.env.isHeroku === undefined)
       updateVisitsDB();
@@ -54,32 +51,33 @@ app.use(function (req,res, next)
 });
 
 
-app.get('/visits', (req, res)=>
-{
-  res.send( 'Overall Visit :' + getVisitsNo())
+app.get('/visits', (req, res) => {
+  res.send('Overall Visit :' + getVisitsNo())
 })
 
 
-try{app.post('/',(req, res) => {
-  query1 = req.body.query1;
-  email1 = req.body.email1;
+try {
+  app.post('/', (req, res) => {
+    query1 = req.body.query1;
+    email1 = req.body.email1;
 
-  const msg = {
-   to: 'anugoonjipu2020@gmail.com',
-    // to: 'unnatmalkoti@gmail.com',
-   from: `Anugoonj@anugoonj-ipu.com`,
-   subject: 'Reply on Anugoonj website',
-   text: `Sender: ${email1}\nSaid: ${query1}`,  
- };
+    const msg = {
+      to: 'anugoonjipu2020@gmail.com',
+      // to: 'unnatmalkoti@gmail.com',
+      from: `Anugoonj@anugoonj-ipu.com`,
+      subject: 'Reply on Anugoonj website',
+      text: `Sender: ${email1}\nSaid: ${query1}`,
+    };
 
- console.log(msg);
- sgMail.send(msg);
+    console.log(msg);
+    sgMail.send(msg);
 
-  res.redirect('/')
+    res.redirect('/')
+  }
+
+  )
 }
-
-)}
-catch(err) {console.error(err)};
+catch (err) { console.error(err) };
 
 
 app.listen(port, () => {
