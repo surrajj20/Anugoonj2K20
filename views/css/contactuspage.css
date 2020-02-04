@@ -142,7 +142,10 @@ body{
 
 
   /* CSS FOR THE CONTENT STARTS */
-
+.main{
+  max-height:328px !important;
+  width:20px
+}
   figure.snip0044 {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
@@ -156,7 +159,7 @@ body{
     text-align: left;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    float:left
+    float:left;
   }
   figure.snip0044 * {
     -webkit-box-sizing: border-box;
