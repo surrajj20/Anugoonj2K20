@@ -1,9 +1,8 @@
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey('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');
 
-if (process.env.isHeroku === undefined) {
   const { updateVisitsDB, setupDB, getVisitsNo } = require('./database');
-}
+
 
 const express = require('express')
 const session = require('express-session')
