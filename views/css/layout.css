@@ -375,8 +375,16 @@ body::-webkit-scrollbar-thumb
   font-size: 50px;
   font-family: nexa;
   opacity: 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 
   transition: opacity .2s ease-in;
+}
+
+.pre-preloader img
+{
+  width:400px;
 }
 
 .preloader .preloader-content
@@ -403,19 +411,25 @@ body::-webkit-scrollbar-thumb
 .preloader-content div :nth-child(3)
 {
   display: inline-block;
-  animation: move-up-down .6s linear alternate infinite 0.4s;
+  animation: move-up-down .6s linear alternate infinite 0.3s;
 }
 
 .preloader-content div :nth-child(4)
 {
   display: inline-block;
-  animation: move-up-down .6s linear alternate infinite 0.8s;
+  animation: move-up-down .6s linear alternate infinite 0.6s;
+}
+
+.preloader-content div :nth-child(5)
+{
+  display: inline-block;
+  animation: move-up-down .6s linear alternate infinite 0.9s;
 }
 
 @keyframes move-up-down
 {
-  from{transform : translateY(0px);color: var(--dark-grey)}
-  to {transform : translateY(-5px);color: var(--pink-color)
+  from{transform : translateY(0px);color: var(--pink-color)}
+  to {transform : translateY(-10px);color: var(--pink-color)
   }
 }
 
@@ -424,6 +438,11 @@ body::-webkit-scrollbar-thumb
   .pre-preloader .preloader-content
   {
     font-size: 32px;
+  }
+
+  .pre-preloader img
+  {
+    width: 300px;
   }
 }
 
