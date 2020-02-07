@@ -43,7 +43,6 @@ app.use(function (req, res, next) {
     hasVisited = 1;
     res.cookie('hasVisited', hasVisited, { maxAge: 30 * 24 * 3600, httpOnly: true });
 
-    if (process.env.isHeroku === undefined)
       updateVisitsDB();
   }
   next();
