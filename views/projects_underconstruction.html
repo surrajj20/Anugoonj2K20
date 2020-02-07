@@ -2,33 +2,44 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Anugoonj'20</title>
   <link rel="stylesheet" type="text/css" href="css/project_underconstruction.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-  <nav style="display: none;">
-    <div class="nav-overlay">
-    </div>
-    <div class="nav-after-image">
-    </div>
+<body onload="preloader()" style="background-color: white;">
+
+  <nav class="pre-preloader preloader">
+    <div class="nav-overlay"></div>
+    <div class="nav-after-image"></div>
     <div class="nav-inner-content">
       <div class='cross' onclick="closeNav()">
         <div class="cross-l1"></div>
         <div class="cross-l2"></div>
       </div>
-      <ul class='nav-links'>
-        <li><a href="index1.html">HOME</a></li>
-        <li><a href="projects_underconstruction.html">EVENTS</a></li>
-        <li><a href="projects_underconstruction.html">SCHEDULE</a></li>
-        <li><a href="projects_underconstruction.html">SPONSORS</a></li>
-        <li><a href="projects_underconstruction.html">FAQ</a></li>
-        <li><a href="projects_underconstruction.html">CONTACT US</a></li>
+      <ul class='nav-links' style="list-style-type: none !important;">
+        <li id="nav-l1"><a href="index.html">Home</a></li>
+        <li id="nav-l2"><a href="events2.html">Events</a></li>
+        <li id="nav-l3"><a href="projects_underconstruction.html">Schedule</a></li>
+        <li id="nav-l4"><a href="projects_underconstruction.html">Sponsors</a></li>
+        <li id="nav-l5"><a href="FAQpage.html">FAQs</a></li>
+        <li id="nav-l6"><a href="contactuspage.html">Contact Us</a></li>
       </ul>
     </div>
-    <!-- ::after -->
+    <div class="preloader-content">
+      <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
+    </div>
   </nav>
+  <div id='hamburger' onclick="openNav()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 
   <div class="container">
     <div class="wrapper">
@@ -41,6 +52,8 @@
       </div>
     </div>
   </div>
+  <script src="node_modules/swup/dist/swup.min.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 
 </html>
