@@ -51,7 +51,7 @@ app.use(function (req, res, next) {
 
 
 app.get('/visits', (req, res) => {
-  res.send('Overall Visit :' + getVisitsNo())
+  res.send('Overall Visit :' + (getVisitsNo() - 900))
 })
 
 
