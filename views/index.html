@@ -52,9 +52,9 @@
 
 
 
-    <link href="../video-audio-slider/video-audio-slider.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../video-audio-slider/video-audio-slider.css" rel="stylesheet" type="text/css" />
     <script src="../video-audio-slider/VideoPlugin.js"></script>
-    <script src="../video-audio-slider/video-audio-slider.js" type="text/javascript"></script>
+    <script src="../video-audio-slider/video-audio-slider.js" type="text/javascript"></script> -->
 
 
 
@@ -63,7 +63,7 @@
     <script src="js/afterglow.min.js"></script>
 </head>
 
-<body onload="preloader(),showTime()">
+<body onload="preloader(),showTime(), videoSec()">
     <main style="overflow-x: hidden;">
         <nav class="preloader pre-preloader">
             <div class="nav-overlay"></div>
@@ -274,24 +274,74 @@
         <!--GALLERY ENDS-->
 
         <!--TEASER STARTS-->
-        <!-- <section class="teaser-sec">
+        <section class="teaser-sec">
             <div class="video-container">
                 <video class="afterglow" width="720" height="480">
                     <source src="images/Anugoonj 2020 Trailer 480p.mp4" type="video/mp4">
                 </video>
-            </div>
-
-            <div class="controls"></div>
-            <div class="overlay" onclick="playTeaser()">
-                <div class="overlay-content">
-                    <h1>Teas<span>er</span></h1>
-                    <p>Click to play</p>
+                <div class="overlay" onclick="playTeaser()">
+                    <div class="overlay-content">
+                        <h1>Teas<span>er</span></h1>
+                        <p>Click to play</p>
+                    </div>
                 </div>
             </div>
-        </section> -->
+            <div class="video-list ">
+                <div class="left-arrow">
+                    <svg width="61" height="129" viewBox="0 0 61 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33483e-06 105.062L38.0712 64.5L5.85841e-06 23.9381L7.19323e-06 0L60.5395 64.5L0 129L1.33483e-06 105.062Z" />
+                        </svg>
+                </div>
+                <div class="video-list-container">
+                    <div class="video-thumb active-video" video-src="images/Anugoonj 2020 Trailer 480p.mp4">
+                        <svg width="126" height="144" viewBox="0 0 126 144" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M123 66.8038C127 69.1132 127 74.8868 123 77.1962L8.99999 143.014C4.99999 145.323 -6.92549e-06 142.437 -6.7236e-06 137.818L-9.69609e-07 6.18206C-7.67715e-07 1.56326 5 -1.32349 9 0.985911L123 66.8038Z"/>
+                        </svg>
+                        <img src="images/Gallery/image2.jpg">
+                        <div class="overlay"></div>
+                        <h5>Teaser #1</h5>
+                        
+                    </div>
+                    <div class="video-thumb" video-src="images/trailer2.mp4">
+                        <svg width="126" height="144" viewBox="0 0 126 144" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M123 66.8038C127 69.1132 127 74.8868 123 77.1962L8.99999 143.014C4.99999 145.323 -6.92549e-06 142.437 -6.7236e-06 137.818L-9.69609e-07 6.18206C-7.67715e-07 1.56326 5 -1.32349 9 0.985911L123 66.8038Z"/>
+                        </svg>
+                        <img src="images/Gallery/image2.jpg">
+                        <div class="overlay"></div>
+                        <h5>Teaser #2</h5>
+                    </div>
+    
+                    <div class="video-thumb" video-src="images/trailer2.mp4">
+                        <svg width="126" height="144" viewBox="0 0 126 144" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M123 66.8038C127 69.1132 127 74.8868 123 77.1962L8.99999 143.014C4.99999 145.323 -6.92549e-06 142.437 -6.7236e-06 137.818L-9.69609e-07 6.18206C-7.67715e-07 1.56326 5 -1.32349 9 0.985911L123 66.8038Z"/>
+                        </svg>
+                        <img src="images/Gallery/image2.jpg">
+                        <div class="overlay"></div>
+                        <h5>Teaser #2</h5>
+                    </div>
+    
+                    <div class="video-thumb" video-src="images/trailer2.mp4">
+                        <svg width="126" height="144" viewBox="0 0 126 144" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M123 66.8038C127 69.1132 127 74.8868 123 77.1962L8.99999 143.014C4.99999 145.323 -6.92549e-06 142.437 -6.7236e-06 137.818L-9.69609e-07 6.18206C-7.67715e-07 1.56326 5 -1.32349 9 0.985911L123 66.8038Z"/>
+                        </svg>
+                        <img src="images/Gallery/image2.jpg">
+                        <div class="overlay"></div>
+                        <h5>Teaser #2</h5>
+                    </div>
+                </div>
+                
+                <div class="right-arrow">
+                    <svg width="61" height="129" viewBox="0 0 61 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33483e-06 105.062L38.0712 64.5L5.85841e-06 23.9381L7.19323e-06 0L60.5395 64.5L0 129L1.33483e-06 105.062Z" />
+                        </svg>
+                </div>
+            </div>
+
+            
+        </section> 
 
 
-        <section class="teaser-sec">
+        <!-- <section class="teaser-sec">
             <div id='video-slider' style="background-color: #111111;">
                 <div class="slider-inner">
                     <ul>
@@ -336,10 +386,10 @@
                             </div>
                         </li>
                     </ul>
-                    <!-- <div class="fs-icon"></div> -->
+                     <div class="fs-icon"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--TEASER ENDS-->
 
@@ -539,6 +589,63 @@
             images.forEach((x) => {
                 x.src = x.attributes.getNamedItem("data-src").value;
             })
+
+            let videoObject;
+            function videoSec()
+            {
+                videoObject = document.querySelector('video');
+                let videoLinks = document.querySelectorAll('div[video-src]');
+                
+                videoLinks.forEach(videoLink =>
+                {
+                    videoLink.addEventListener('click', ()=>
+                    {
+                        videoObject.src = videoLink.attributes.getNamedItem("video-src").value;
+                        videoObject.play();
+                        videoLinks.forEach(x=> x.classList.remove('active-video'));
+                        videoLink.classList.add('active-video');
+                        let overlay = document.querySelector(".teaser-sec .overlay");
+                        overlay.classList.add("clicked");
+                    });
+                });
+            }
+
+            let translateCount = 1; 
+            let totalThumb = document.querySelector('.video-list-container').childElementCount;
+            
+            
+            document.querySelector('.right-arrow').addEventListener('click', ()=>
+            {
+                let thumbInView = Math.floor(document.querySelector('.video-list').offsetWidth / 320);
+                if(thumbInView*translateCount < totalThumb)
+                    document.querySelector('.video-list-container').style= `transform:translate(${320*thumbInView*(-(++translateCount-1))}px)`;
+                checkArrowState()
+            });
+
+            document.querySelector('.left-arrow').addEventListener('click', ()=>
+            {
+                let thumbInView = Math.floor(document.querySelector('.video-list').offsetWidth / 320);
+                if(translateCount > 1)
+                    document.querySelector('.video-list-container').style= `transform:translate(${320*thumbInView*(-(--translateCount-1))}px)`;
+                checkArrowState();
+            });
+            checkArrowState();
+            function checkArrowState()
+            {
+                if(translateCount > 1)
+                    document.querySelector('.left-arrow').classList.remove('deactive-btn');
+                else
+                    document.querySelector('.left-arrow').classList.add('deactive-btn');
+
+                let thumbInView = Math.floor(document.querySelector('.video-list').offsetWidth / 320);
+
+                if(thumbInView*translateCount < totalThumb)
+                    document.querySelector('.right-arrow').classList.remove('deactive-btn');
+                else
+                    document.querySelector('.right-arrow').classList.add('deactive-btn');
+            }
+
+
         </script>
         <!-- <script src="styling.js"></script> -->
 
