@@ -183,7 +183,7 @@
     margin:0;
     margin-top:-65px;/*pager's height should also be counted*/
     background-color:none;
-    background-color:#ccc\9;/*IE8 hack*/
+    background-color:#111111;/*IE8 hack*/
     backface-visibility:hidden;
     color:white;
     overflow:hidden;
