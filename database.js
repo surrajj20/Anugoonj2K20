@@ -8,12 +8,17 @@ const url = 'mongodb://localhost:27017';
 
 function updateVisitsDB()
 {
-    MongoClient.connect(url, (err, db)=>{
-        if (err) throw err;
-
-        var dbo = db.db("anugoonj");
-        dbo.collection("visits").updateOne({'id':1}, { $inc: {'visitsNo' : 1}})
-    });
+    try{
+        MongoClient.connect(url, (err, db)=>{
+            // if (err) throw err;
+    
+            var dbo = db.db("anugoonj");
+            dbo.collection("visits").updateOne({'id':1}, { $inc: {'visitsNo' : 1}})
+        });
+    }
+    catch(e)
+    {}
+    
 }
 
 
