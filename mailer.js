@@ -1,7 +1,7 @@
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey('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');
 
-  const { updateVisitsDB, setupDB, getVisitsNo } = require('./database');
+const { updateVisitsDB, setupDB, getVisitsNo } = require('./database');
 
 
 const express = require('express')
@@ -43,15 +43,14 @@ app.use(function (req, res, next) {
     hasVisited = 1;
     res.cookie('hasVisited', hasVisited, { maxAge: 30 * 24 * 3600, httpOnly: true });
 
-    if (process.env.isHeroku === undefined)
-      updateVisitsDB();
+    updateVisitsDB();
   }
   next();
 });
 
 
 app.get('/visits', (req, res) => {
-  res.send('Overall Visit :' + getVisitsNo())
+  res.send('Overall Visit :' + (getVisitsNo() - 900))
 })
 
 

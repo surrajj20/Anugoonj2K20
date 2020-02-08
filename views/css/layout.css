@@ -56,6 +56,10 @@ body::-webkit-scrollbar-thumb
   background-color: #711b55f5;;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-inner-content ul{
     list-style-type: none;
   }
