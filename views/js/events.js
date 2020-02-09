@@ -34,6 +34,7 @@ function eventDetails()
     {
         tile.children[0].addEventListener('click',()=>
         {
+            window.location.hash = '#event-details'
             let tileImage = tile.children[1].children[0];
 
                 body.style = "overflow-y: hidden"
@@ -45,27 +46,45 @@ function eventDetails()
                  },0);
 
                 tile.children[1].style=`top:${window.pageYOffset}px; left: ${window.pageXOffset}px; display:block;`;
-                
-            
-
-            
-
-            
+     
         });
 
-        if(tile.children[1].children[1])
-
-            
             tile.children[1].children[1].addEventListener('click', ()=>
-            {   let tileImage = tile.children[1].children[0];
+            {
+                window.history.back();
+            })
+
+        // if(tile.children[1].children[1])
+        //     tile.children[1].children[1].addEventListener('click', ()=>
+        //     {   let tileImage = tile.children[1].children[0];
+        //         body.style="";
+        //         tileImage.style="";
+        //         tile.children[1].style="";
+        //         tile.classList.toggle("active-tile");
+        //     })
+    });
+
+    window.addEventListener('hashchange',(e)=>
+    {
+        if(window.location.hash != '#event-details' && e.oldURL.split('#')[1] === 'event-details')
+        
+        {
+            slides.forEach((tile)=>
+            {
+                let tileImage = tile.children[1].children[0];
                 body.style="";
                 tileImage.style="";
                 tile.children[1].style="";
-                tile.classList.toggle("active-tile");
-            })
+                tile.classList.remove("active-tile");
+            });
+        }
     });
+
 }
 eventDetails();
+
+
+
 
 function lazyload()
 {

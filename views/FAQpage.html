@@ -31,7 +31,7 @@
         <div class="nav-overlay"></div>
         <div class="nav-after-image"></div>
         <div class="nav-inner-content">
-            <div class='cross' onclick="closeNav()">
+            <div class='cross' onclick="window.history.back()">
                 <div class="cross-l1"></div>
                 <div class="cross-l2"></div>
             </div>
@@ -45,14 +45,16 @@
             </ul>
         </div>
         <div class="preloader-content">
-            <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
+            <div><span>Loading</span><span>.</span><span>.</span><span>.</span><span>.</span></div>
         </div>
     </nav>
-    <div id='hamburger' onclick="openNav()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <a href="#nav">
+        <div id='hamburger'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </a>
 
     <div class="heading">FAQ<span>s</span></div>
     <div class=container>
