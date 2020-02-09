@@ -2,7 +2,6 @@ const nav = document.querySelector('nav');
 const main = document.querySelector('body');
 function closeNav()
 {
-    main.style = "overflow-x: hidden";
     nav.classList.remove('nav-open');
     setTimeout(()=>{
         document.querySelector('nav').style="display:none;"
@@ -11,12 +10,20 @@ function closeNav()
 
 function openNav()
 {
-    main.style = "overflow: hidden";
     nav.style="";
     setTimeout(()=>{
     nav.classList.add('nav-open');
     },100);
 }
+
+window.addEventListener('hashchange', (e)=>
+{
+
+    if(window.location.hash === '#nav')
+        openNav();
+    else if(e.oldURL.split('#')[1] ==='nav')
+        closeNav();
+});
 
 function preloader()
 {

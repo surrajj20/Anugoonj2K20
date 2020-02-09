@@ -69,7 +69,7 @@
             <div class="nav-overlay"></div>
             <div class="nav-after-image"></div>
             <div class="nav-inner-content">
-                <div class='cross' onclick="closeNav()">
+                <div class='cross' onclick="window.history.back()">
                     <div class="cross-l1"></div>
                     <div class="cross-l2"></div>
                 </div>
@@ -87,11 +87,13 @@
             </div>
         </nav>
         <section class="hero-sec">
-            <div id='hamburger' onclick="openNav()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <a href="#nav">
+                <div id='hamburger'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </a>
             <img class="logo" src="images/ip logo/1200px-GGSIU_logo.png" alt="IPU Logo">
             <div class="overlay"></div>
 

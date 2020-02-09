@@ -29,7 +29,7 @@
         <div class="nav-overlay"></div>
         <div class="nav-after-image"></div>
         <div class="nav-inner-content">
-            <div class='cross' onclick="closeNav()">
+            <div class='cross' onclick="window.history.back()">
                 <div class="cross-l1"></div>
                 <div class="cross-l2"></div>
             </div>
@@ -47,11 +47,13 @@
         </div>
     </nav>
 
-    <div id='hamburger' onclick="openNav()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <a href="#nav">
+        <div id='hamburger'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </a>
     <!--NAVEABR END-->
 
     <!--MAIN CONTENT STARTED-->

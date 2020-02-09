@@ -5,20 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Anugoonj'20</title>
+  <title>Under Construction</title>
   <link rel="stylesheet" type="text/css" href="css/project_underconstruction.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
-<body onload="preloader()" style="background-color: white;">
+<body onload="preloader()">
 
   <nav class="pre-preloader preloader">
     <div class="nav-overlay"></div>
     <div class="nav-after-image"></div>
     <div class="nav-inner-content">
-      <div class='cross' onclick="closeNav()">
+      <div class='cross' onclick="window.history.back()">
         <div class="cross-l1"></div>
         <div class="cross-l2"></div>
       </div>
@@ -32,27 +31,28 @@
       </ul>
     </div>
     <div class="preloader-content">
-      <div><span>Loading</span><span>.</span><span>.</span><span>.</span></div>
+      <div><span>Loading</span><span>.</span><span>.</span><span>.</span><span>.</span></div>
     </div>
   </nav>
-  <div id='hamburger' onclick="openNav()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <div class="container">
-    <div class="wrapper">
-      <div class="content">
-        <div class="item">
-          <!-- Place your content here to have it be centered vertically and horizontally  -->
-          <h1>COMING SOON</h1>
-          <p>This page is under construction.</p>
-        </div>
-      </div>
+  <a href="#nav">
+    <div id='hamburger'>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-  </div>
-  <script src="node_modules/swup/dist/swup.min.js"></script>
+  </a>
+  <main>
+    <div class="center-content">
+      <h1>Under Construc<span>tion</span></h1>
+      <p>More info will be availabe soon.<br>Stay tuned!</p>
+    </div>
+    <div class="footer">
+      <a href='/'>Home</a>
+      <a href='/events2.html'>Events</a>
+      <a href='/FAQpage.html'>FAQs</a>
+      <a href='/contactuspage.html'>Contact us</a>
+    </div>
+  </main>
   <script src="js/nav.js"></script>
 </body>
 
