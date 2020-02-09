@@ -216,6 +216,8 @@ body{
     transform: translate(-10px, 0);
     -webkit-transition-delay: 0;
     transition-delay: 0;
+    font-size: 12px;
+    font-family: nexa;
   }
   figure.snip0044 .icons {
     bottom: 35px;
