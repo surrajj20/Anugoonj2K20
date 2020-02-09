@@ -307,9 +307,13 @@ a{
 {
   display: flex;
   justify-content: space-between;
-  
   margin-top:100px;
- 
+}
+
+.event-details .text-container .location-footer{
+  display:flex;
+  justify-content: space-between;
+  margin-top:22px;
 }
 
 .event-details .text-container h3
