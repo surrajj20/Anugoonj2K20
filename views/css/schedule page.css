@@ -199,7 +199,8 @@ table{
   color: white !important;
 }
 tr{
-  height: 100px;
+  height: 120.8px;
+  border-bottom: 1px solid #ffffff08;
   /* margin-bottom: 15px; */
 }
 /* to make only columns-lines appear */
@@ -246,7 +247,7 @@ tr{
     padding-right:  20px;
     justify-content: center;
     list-style: none;
-    height: 114px;
+    height: 120.8px;
     font-size: 18px;
     color: #e3e3e3;
     font-family: "typold book";
@@ -312,6 +313,25 @@ tr{
     margin-top:7px;
     margin-bottom: 7px;
   }
+  .blank-tile
+  {
+    opacity: 0;
+  }
+
+  .half-left-tile
+  {
+    position: relative;
+    left: -52%;
+  }
+
+  
+
+  .half-right-tile
+  {
+    position: relative;
+    left: 50%;
+  }
+
   .tile::before
   {
     content: url('..\\images\\Subtraction 1.svg');
@@ -377,19 +397,41 @@ tr{
     padding-top: 18px;
     padding-bottom: 2px;
   }
-  .event2-2{
-    width: 100%;
-  }
-  .event2-3{
-    background:black;
-  }
-  .event2-1{
-    background:black;
-  }
-  .event1-2{
-    background:black;
-  }
   
+ .tile-content span.higlight {
+    position: static;
+    color: #ff97dd;
+}
+
+  .half-tile {
+    height: 50px;
+  }
+  .half-tile::before
+  {
+    content: url('../images/Subtract-half.svg');
+  }
+
+  .half-tile::after
+  {
+    left: -28px;
+    top: -3px;
+  }
+
+  .half-tile .tile-content
+  {
+    margin-left: 5px;
+  }
+  .half-tile h4
+  {
+    top: 5px;
+    font-size : 16px;
+  }
+  .half-tile span
+  {
+    bottom: 6px;
+  }
+
+
 @media(max-width: 800px)
 {
   ul
@@ -457,6 +499,23 @@ tr{
   .time-grid
   {
     left:49px;
+  }
+
+  .half-tile span
+  {
+    white-space: nowrap;
+    font-size: 11px;
+  }
+  .tile.lil-exp 
+  {
+    width: 150px;
+    margin-right: -10px;
+  }
+
+  .tile.exp
+  {
+    width: 210px;
+    margin-right: -70px;
   }
 
 }
