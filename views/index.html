@@ -408,16 +408,14 @@
         <!--OUR TEAM STARTS-->
 
         <section>
-            <div id="team" class="section wb" style="background-color: unset;
-                    padding-bottom: 100px;
-                    border-bottom: solid 2px #8080800f;
-                    padding-top: 100px;">
+            <div id="team" class="section wb">
                 <div class="container-fluid">
                     <div class="section-title text-center">
-                        <h3 style="color: #fff!important;
+                        <h3 id="dev-btn" onclick="isDevCollapsed = !isDevCollapsed; Developer()" style="color: #fff!important;
                             font-family: ikaros-sans;
                             font-size: 40px;
-                            letter-spacing: 0.05em;">Developer<span style="color:var(--pink-color)">s</span></h3>
+                            letter-spacing: 0.05em;
+                            cursor: pointer;">Developer<span style="color:var(--pink-color)">s</span></h3>
                         <!-- <p></p>-->
                     </div><!-- end title -->
 
@@ -649,6 +647,19 @@
                 else
                     document.querySelector('.right-arrow').classList.add('deactive-btn');
             }
+
+            let isDevCollapsed = true;
+            function Developer()
+            {
+                let devRow = document.querySelector('#team .row');
+                let devSection = document.querySelector("#team");
+                if(isDevCollapsed != true)
+                    devSection.style = `height: ${200 +60+ devRow.offsetHeight }px`;
+                else
+                    devSection.style = 'height:200px';
+            }
+            window.addEventListener('resize', Developer);
+            Developer()
 
 
         </script>
