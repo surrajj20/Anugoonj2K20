@@ -1177,7 +1177,7 @@ span.colorlib-counter.js-counter::after {
   padding-bottom: 100px;
   border-bottom: solid 2px #8080800f;
   padding-top: 100px;
-  transition:  height 1s ease-in-out;
+  transition:  height .5s ease-in-out;
 }
 
 #dev-btn::after

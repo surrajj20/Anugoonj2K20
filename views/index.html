@@ -656,7 +656,8 @@
                 if(isDevCollapsed != true)
                     devSection.style = `height: ${200 +60+ devRow.offsetHeight }px`;
                 else
-                    devSection.style = 'height:200px';
+                    
+                    devSection.style =  window.innerWidth > 500?'height:200px' : 'height : 140px';
             }
             window.addEventListener('resize', Developer);
             Developer()
