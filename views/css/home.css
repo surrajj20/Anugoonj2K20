@@ -1171,6 +1171,39 @@ span.colorlib-counter.js-counter::after {
    animation: fade-out 0.5s forwards ease-in-out;
 }
 
+.wb
+{
+  background-color: unset!important;
+  padding-bottom: 100px;
+  border-bottom: solid 2px #8080800f;
+  padding-top: 100px;
+  transition:  height .5s ease-in-out;
+}
+
+#dev-btn::after
+{
+  content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    display: inline-block;
+    border-top: 7px solid white;
+    margin-bottom: 6px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.section-title #dev-btn:hover::after
+{
+  transform: translateY(-10px) scale(1.2);
+}
+
+.section-title #dev-btn:active::after
+{
+  transform: translateY(0px) scale(1.2);
+}
+
+
 @keyframes fade-out
 {
   from{ opacity:1}
