@@ -20,7 +20,12 @@
     font-weight: normal;
     src: local('Typold Book'), url('..\\fonts\\Typold\\The Northern Block Ltd - Typold Book.woff') format('woff');
 }
-    
+
+@font-face
+{
+    font-family: 'nexa';
+    src: url('..\\fonts\\Nexa\\NexaLight.otf');
+}
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap');
 
