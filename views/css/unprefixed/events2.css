@@ -94,17 +94,10 @@ a{
 .slider-nav
 {
     color: #545454;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-family: 'Roboto';
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 1050px;
     font-size: 80px;
     margin: 60px auto;
@@ -126,9 +119,7 @@ a{
   position: absolute;
   /* opacity: 0; */
   z-index: 0;
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
+  writing-mode: tb-rl;
   font-size: 150px;
   text-transform: uppercase;
   font-weight: bold;
@@ -136,27 +127,17 @@ a{
   bottom: -150px; */
   color: hsl(180, 2%, 10%);
   font-family: 'ikaros-sans';
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
+  transform: translateY(200px);
   
-  -webkit-animation: slide 20s forwards infinite cubic-bezier(0.01, 0.54, 0.15, 0.54);
-  
-          animation: slide 20s forwards infinite cubic-bezier(0.01, 0.54, 0.15, 0.54); ;
+  animation: slide 20s forwards infinite cubic-bezier(0.01, 0.54, 0.15, 0.54); ;
 
-}
-
-@-webkit-keyframes slide
-{
-
-  from { -webkit-transform: translateY(200px); transform: translateY(200px);}
-  to { -webkit-transform: translateY(-100px); transform: translateY(-100px);}
 }
 
 @keyframes slide
 {
 
-  from { -webkit-transform: translateY(200px); transform: translateY(200px);}
-  to { -webkit-transform: translateY(-100px); transform: translateY(-100px);}
+  from { transform: translateY(200px);}
+  to { transform: translateY(-100px);}
 }
 
 .slider-slides
@@ -193,10 +174,7 @@ a{
   cursor: pointer;
     height: 230px;
     position: relative;
-    -webkit-transition: box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-    transition: box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
     box-shadow:  #00000059 3px 3px 20px 0px;
 }
 
@@ -211,19 +189,14 @@ a{
 .event-tile:hover
 {
   box-shadow: #00000022 20px 20px 20px 10px;
-  -webkit-transform:scale(1.07);
-          transform:scale(1.07);
+  transform:scale(1.07);
 }
 
 .event-tile:active
 {
   box-shadow:none;
-  -webkit-transform:scale(1);
-          transform:scale(1);
-  -webkit-transition: box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  transform:scale(1);
   transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
 
 .event-tile img
@@ -231,8 +204,7 @@ a{
     width: 100%;
     height: 400px;
     position: relative;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     
 }
 
@@ -255,20 +227,13 @@ a{
 .slide-event
 {
     display: none;
-    -webkit-animation: slide-in .3s ease-out;
-            animation: slide-in .3s ease-out;
-}
-
-@-webkit-keyframes slide-in 
-{
-  from{ opacity: 0; -webkit-transform : translateY(30px); transform : translateY(30px)}
-  to{opacity: 1; -webkit-transform:translateY(0); transform:translateY(0);}
+    animation: slide-in .3s ease-out;
 }
 
 @keyframes slide-in 
 {
-  from{ opacity: 0; -webkit-transform : translateY(30px); transform : translateY(30px)}
-  to{opacity: 1; -webkit-transform:translateY(0); transform:translateY(0);}
+  from{ opacity: 0; transform : translateY(30px)}
+  to{opacity: 1; transform:translateY(0);}
 }
 
 .slide-event.active-slide
@@ -290,14 +255,7 @@ a{
   height: 100vh;
   background-color: #8880;
   z-index: 3;
-  -webkit-animation: fade-in-bg 0.4s forwards 0.2s;
-          animation: fade-in-bg 0.4s forwards 0.2s;
-}
-
-@-webkit-keyframes fade-in-bg
-{
-  from{ background-color: #19191a00;}
-  to { background-color:  #19191aff;}
+  animation: fade-in-bg 0.4s forwards 0.2s;
 }
 
 @keyframes fade-in-bg
@@ -309,12 +267,9 @@ a{
 {
   width: 50vw;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: none;
   position: absolute;
-  -webkit-transition: width .3s  .1s , height .3s  .2s,
-              left .4s , top .7s ;
   transition: width .3s  .1s , height .3s  .2s,
               left .4s , top .7s ;
 }
@@ -329,8 +284,7 @@ a{
   font-family: "Roboto";
   font-size : 18px;
   font-weight: lighter;
-  -webkit-animation: slide-in .2s forwards ease-out .3s;
-          animation: slide-in .2s forwards ease-out .3s;
+  animation: slide-in .2s forwards ease-out .3s;
   opacity: 0;
   line-height: 1.5;
   height: calc(100vh - 160px);
@@ -350,22 +304,14 @@ a{
 
 .event-details  .text-container .date-time-footer
 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top:100px;
 }
 
 .event-details .text-container .location-footer{
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top:22px;
 }
 
@@ -388,14 +334,7 @@ a{
   position: absolute;
   z-index: 1;
  
-  -webkit-animation: fade-in .3s forwards.5s;
- 
-          animation: fade-in .3s forwards.5s;
-}
-@-webkit-keyframes fade-in 
-{
-  form{opacity: 0;}
-  to{opacity: 1;}
+  animation: fade-in .3s forwards.5s;
 }
 @keyframes fade-in 
 {
@@ -429,12 +368,9 @@ a{
   }
   .slider-nav
   {
-    -ms-flex-wrap: wrap ;
-        flex-wrap: wrap ;
+    flex-wrap: wrap ;
     font-size:60px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .event
   {

@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @font-face
 {
     font-family: ikaros-sans;
@@ -72,11 +74,15 @@
 
 .sponsors-grid
 {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 80vw;
   min-height: calc(95vh - 82.4px - 187px);
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin:auto;
   margin-bottom: 40px;
   grid-row-gap: 10px;
@@ -88,6 +94,7 @@
 {
   .sponsors-grid
   {
+    -ms-grid-columns:  1fr 1fr;
     grid-template-columns:  1fr 1fr;
   }
     
@@ -98,6 +105,7 @@
 {
   .sponsors-grid
   {
+    -ms-grid-columns:  1fr;
     grid-template-columns:  1fr;
   }
     

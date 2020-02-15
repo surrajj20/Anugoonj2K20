@@ -714,7 +714,8 @@
 
     for (let i = 0; i < 3; i++) {
       schedule[i].addEventListener("scroll", () => {
-        timeline[i].style = "transform:translate(" + (table[i].getBoundingClientRect().x - defaultx[i] + 30) + "px)";
+        timeline[i].style = "transform:translate(" + (table[i].getBoundingClientRect().x - defaultx[i] + 30) + "px);"
+        + "-ms-transform:translate(" + (table[i].getBoundingClientRect().x - defaultx[i] + 30) + "px);" + "-webkit-transform:translate(" + (table[i].getBoundingClientRect().x - defaultx[i] + 30) + "px);";
       })
     }
 
