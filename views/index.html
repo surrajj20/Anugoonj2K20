@@ -623,14 +623,17 @@
             document.querySelector('.right-arrow').addEventListener('click', () => {
                 let thumbInView = Math.floor(document.querySelector('.video-list').offsetWidth / 320);
                 if (thumbInView * translateCount < totalThumb)
-                    document.querySelector('.video-list-container').style = `transform:translate(${320 * thumbInView * (-(++translateCount - 1))}px)`;
+                    document.querySelector('.video-list-container').style = `transform:translate(${320 * thumbInView * (-(++translateCount - 1))}px);` +
+                    `-ms-transform:translate(${320 * thumbInView * (-(++translateCount - 1))}px);` +`-webkit-transform:translate(${320 * thumbInView * (-(++translateCount - 1))}px);`;
                 checkArrowState()
             });
 
             document.querySelector('.left-arrow').addEventListener('click', () => {
                 let thumbInView = Math.floor(document.querySelector('.video-list').offsetWidth / 320);
                 if (translateCount > 1)
-                    document.querySelector('.video-list-container').style = `transform:translate(${320 * thumbInView * (-(--translateCount - 1))}px)`;
+                    document.querySelector('.video-list-container').style = `transform:translate(${320 * thumbInView * (-(--translateCount - 1))}px);` +
+                    `-webkit-transform:translate(${320 * thumbInView * (-(--translateCount - 1))}px);` +`-ms-transform:translate(${320 * thumbInView * (-(--translateCount - 1))}px);`;
+                    
                 checkArrowState();
             });
             checkArrowState();
