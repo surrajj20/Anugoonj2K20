@@ -27,6 +27,7 @@ window.addEventListener('hashchange', (e)=>
 
 function preloader()
 {
+    window.location.hash ="";
     document.querySelector(".preloader").classList.remove("preloader");
     setTimeout(()=>{
         document.querySelector('nav').style="display:none;";
