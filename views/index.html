@@ -553,6 +553,7 @@
                         src="images/icons/youtube.png" alt="Youtube logo"></a>
             </div>
 
+
         </footer>
         <!-- FOOTER ENDS -->
 
@@ -649,15 +650,14 @@
             }
 
             let isDevCollapsed = true;
-            function Developer()
-            {
+            function Developer() {
                 let devRow = document.querySelector('#team .row');
                 let devSection = document.querySelector("#team");
-                if(isDevCollapsed != true)
-                    devSection.style = `height: ${200 +60+ devRow.offsetHeight }px`;
+                if (isDevCollapsed != true)
+                    devSection.style = `height: ${200 + 60 + devRow.offsetHeight}px`;
                 else
-                    
-                    devSection.style =  window.innerWidth > 500?'height:200px' : 'height : 140px';
+
+                    devSection.style = window.innerWidth > 500 ? 'height:200px' : 'height : 140px';
             }
             window.addEventListener('resize', Developer);
             Developer()
