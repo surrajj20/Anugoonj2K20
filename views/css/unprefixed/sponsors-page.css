@@ -1,0 +1,110 @@
+@font-face
+{
+    font-family: ikaros-sans;
+    src: url("..\\fonts\\Ikaros sans\\Ikaros Regular.otf");
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: ikaros-sans-light;
+    src: url("..\\fonts\\Ikaros sans\\Ikaros Light.otf");
+    font-weight: lighter;
+} 
+    
+
+@font-face
+{
+    font-family: 'Typold Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Typold Book'), url('..\\fonts\\Typold\\The Northern Block Ltd - Typold Book.woff') format('woff');
+}
+    
+   
+/* Colors */
+
+:root
+{
+    --pink-color : #c9108c;
+    --blue-color : #3636b3;
+    --background-black : #08080a;
+    --dark-grey :  #393939;
+    --light-grey : #cfcfcf;
+
+}
+
+/* MAIN STYLES */
+
+/* Main Styles */
+
+
+.heading{
+  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size :40px;
+  color: #08080a;
+  margin-left: 25px;
+  font-family: 'Ikaros-sans';
+  letter-spacing: 2px;
+}
+
+.heading span{
+  color: #c9108c;
+}
+
+
+@media(min-width:900px){
+  .heading
+  {
+    margin-left:5%;
+    font-size: 55px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.sponsors-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80vw;
+  min-height: calc(95vh - 82.4px - 187px);
+  align-items: center;
+  margin:auto;
+  margin-bottom: 40px;
+  grid-row-gap: 10px;
+  grid-column-gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media(max-width:500px)
+{
+  .sponsors-grid
+  {
+    grid-template-columns:  1fr 1fr;
+  }
+    
+
+}
+
+@media(max-width:300px)
+{
+  .sponsors-grid
+  {
+    grid-template-columns:  1fr;
+  }
+    
+
+}
+
+.sponsors-grid img
+{
+  width : 100%;
+}

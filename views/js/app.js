@@ -58,8 +58,11 @@ function right()
     if(translateVal < 3)
         translateVal++;
         
-    layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
-    layers[1].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[0].style="-webkit-transform: translateX( -" + 200*translateVal+"vw); -ms-transform: translateX( -" + 200*translateVal+"vw);  transform: translateX( -" + 200*translateVal+"vw);"+
+    "transform-origin:" + translateVal+"px; -webkit-transform-origin:" + translateVal+"px; -ms-transform-origin:" + translateVal+"px;";
+
+    layers[1].style="transform: translateX( -" + 200*translateVal+"vw);  -webkit-transform: translateX( -" + 200*translateVal+"vw); -ms-transform: translateX( -" + 200*translateVal+"vw);"+ 
+    "transform-origin:" + translateVal+"px; -ms-transform-origin:" + translateVal+"px; -webkit-transform-origin:" + translateVal+"px;";
 
     window.setTimeout(()=> {
         for(let i=0; i < layers[0].childElementCount; i++)
@@ -94,8 +97,12 @@ function left()
         translateVal--;
     if(translateVal==0)
         document.querySelector(".instructions").classList.remove("remove");
-    layers[0].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
-    layers[1].style="transform: translateX( -" + 200*translateVal+"vw); transform-origin:" + translateVal+"px;";
+    layers[0].style="-webkit-transform: translateX( -" + 200*translateVal+"vw); -ms-transform: translateX( -" + 200*translateVal+"vw);  transform: translateX( -" + 200*translateVal+"vw);"+
+    "transform-origin:" + translateVal+"px; -webkit-transform-origin:" + translateVal+"px; -ms-transform-origin:" + translateVal+"px;";
+
+    layers[1].style="transform: translateX( -" + 200*translateVal+"vw);  -webkit-transform: translateX( -" + 200*translateVal+"vw); -ms-transform: translateX( -" + 200*translateVal+"vw);"+ 
+    "transform-origin:" + translateVal+"px; -ms-transform-origin:" + translateVal+"px; -webkit-transform-origin:" + translateVal+"px;";
+    
 
     window.setTimeout(()=> {
         for(let i=0; i < layers[0].childElementCount; i++)

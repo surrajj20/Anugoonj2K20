@@ -46,6 +46,7 @@ body{
 .design{
     color: white;
     opacity:0;
+    -webkit-transition: opacity .15s ease-out ;
     transition: opacity .15s ease-out ;
 }
 
@@ -63,6 +64,7 @@ body{
 .card-img-overlay
 {
     background-color: #c9108c00;
+    -webkit-transition: background-color .15s ease-out ;
     transition: background-color .15s ease-out ;
 }
 .card-img-overlay:hover
@@ -111,8 +113,11 @@ body{
 
   .active-slide
   {
+    display:-webkit-box!important;
+    display:-ms-flexbox!important;
     display:flex!important;
-    flex-wrap: wrap!important;
+    -ms-flex-wrap: wrap!important;
+        flex-wrap: wrap!important;
   }
 
   #media-slide.active-slide
@@ -122,9 +127,14 @@ body{
 
   .contact-us-container
   {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
   }
   
   
@@ -169,11 +179,9 @@ body{
     width: 100%;
     background: #000000;
     text-align: left;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   figure.snip0044 * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;

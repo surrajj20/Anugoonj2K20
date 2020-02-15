@@ -1,0 +1,531 @@
+@font-face
+{
+  font-family: ikaros-sans;
+  src: url("..\\fonts\\Ikaros sans\\Ikaros Regular.otf");
+  font-weight: normal;
+}
+@font-face
+{
+  font-family: ikaros-sans-light;
+  src: url("..\\fonts\\Ikaros sans\\Ikaros Light.otf");
+  font-weight: lighter;
+} 
+
+
+@font-face
+{
+  font-family: 'Typold Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Typold Book'), url('..\\fonts\\Typold\\The Northern Block Ltd - Typold Book.woff') format('woff');
+}
+
+
+/* Colors */
+
+:root
+{
+  --pink-color : #c9108c;
+  --blue-color : #3636b3;
+  --background-black : #08080a;
+  --dark-grey :  #393939;
+  --light-grey : #cfcfcf;
+  --background-gradient : Linear-gradient(to right bottom, #19191a, #1e1f1f);  
+}
+
+
+
+/* MAIN CONTENT */
+body{
+  background: var(--background-gradient);
+  color: white;
+  overflow-x: hidden;
+}
+
+
+.heading{
+  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size :40px;
+  color: #08080a;
+  margin-left: 25px;
+  font-family: 'Ikaros-sans';
+  letter-spacing: 2px;
+  background: none;
+}
+
+.heading span{
+  color: #c9108c;
+}
+
+
+@media(min-width:900px){
+  .heading
+  {
+    margin-left:5%;
+    font-size: 55px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+.dark
+{
+    color:#d1d1d1;
+}
+
+
+/* display: flex for li, ul pe lagana hoga, not on outer div */
+.days-list-ul{  
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  color:#606060;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.day-button.active .day-number, .day-button.active .subscript
+{
+  color: #d8d8d8;
+  transition: color .1s ease-in-out ;
+}
+
+.day-button.active .month{
+  color: var(--pink-color);
+  transition: color .3s ease-in-out .3s;
+}
+
+.day-number
+{
+  font-size: 80px;
+  font-family: roboto;
+  line-height: 1;
+  transition: color .5s ease-in-out ;
+  
+}
+.day-number:active{
+  outline: none;
+}
+
+
+
+.day-button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #606060;
+  padding: 0px 50px;
+  margin: 10px;
+  position: relative;
+}
+.day-button:focus
+{
+  outline: none;
+}
+
+.day-button .subscript
+{
+  margin-left: -7px;
+  display: inline-block;
+  font-size : 32px;
+  transition: color .5s ease-in-out ;
+}
+.day-button .month
+{
+  position: absolute;
+  top: 18px;
+  right: 42px;
+  color:transparent;
+  transition: color .2s ease-in-out ;
+}
+
+
+.timing-container::after {
+  
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 150px;
+  background-color: #ff00aa;
+  top: 0;
+  box-shadow: #ff00aa 40px 0px 50px 20px;
+  height: 100%;
+}
+.timing-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #ff00aa;
+}
+
+.timing-list{
+  list-style: none;
+  display: none;
+  padding-left: 300px;
+  background: rgb(255, 0, 170) ;
+  
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(10,240px);
+  margin-bottom: 0;
+}
+.timing-list.active 
+{
+  display: grid;
+}
+.timing-li{
+  background: rgb(255, 0, 170);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  animation: .3s fade-in-left ease-out;
+}
+
+
+
+@keyframes fade-in-left
+{
+  from{opacity: 0; transform: translateX(30px);}
+  to{opacity: 1; transform: translateX(0px);}
+}
+
+.timing-li span{
+  transform : translateX(-50%);
+  display: inline-block;
+}
+
+table{
+  
+  color: white !important;
+}
+tr{
+  height: 120.8px;
+  border-bottom: 1px solid #ffffff08;
+  /* margin-bottom: 15px; */
+}
+/* to make only columns-lines appear */
+/* td {
+  /* border-right: dotted 1px grey !important;  */
+  /* border-left: solid 1px grey !important; */
+  /* } */ 
+
+
+  .container-schedule
+  {
+    display: flex;
+    width: auto;
+    position: relative;
+    width: calc(100vw - 20px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .container-schedule::-webkit-scrollbar
+  {
+    display: none;
+  }
+
+  .venue-header
+  {
+    padding: 0;
+    width: 295px;
+    /* border-right: solid #fff5 1px; */
+    flex-shrink:0;
+    margin-right: 5px;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: #1c1d1d;
+    box-shadow: #1c1d1d 2px 1px 8px 0px;
+    margin-right: 10px;
+  }
+
+  .venue-header li
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 90px;
+    padding-right:  20px;
+    justify-content: center;
+    list-style: none;
+    height: 120.8px;
+    font-size: 18px;
+    color: #e3e3e3;
+    font-family: "typold book";
+    border-bottom: 1px solid #ffffff03;
+  }
+
+  .schedule-table
+  {
+    height: 100%;
+    /* min-width: 100vw; */
+    cursor: grab;
+    opacity: 0;
+    animation: .4s fade-in-left ease-out forwards;
+  }
+
+
+  .schedule-table td
+  {
+    padding-right: 5px;
+  }
+
+  .time-grid
+  {
+    height: 100%;
+    position: absolute;
+    left: 300px;
+    display: flex;
+    z-index: -1;
+  }
+  .time-grid > div
+  {
+    width: 240px;
+    height: 90%;
+    /* border-right: 1px solid grey; */
+    display: inline-block;
+    position: relative;
+  }
+  .time-grid > div::after
+  {
+    margin-top: -20px;
+    content:"";
+    position: absolute;
+    /* right: -5px; */
+    left:0;
+    top:0;
+    width: 1.5px;
+    height: 110%;
+    background-image: linear-gradient(to bottom, transparent 50%, #272728 50%);
+    background-size: 20px 2.5%;
+
+  }
+
+
+  .tile
+  {
+    background-color: #545455;
+    border-radius: 2px;
+    height: 100px;
+    width: 200px;
+    margin-left :calc(5px + 25px);
+    margin-right: 5px;
+    position: relative;
+    margin-top:7px;
+    margin-bottom: 7px;
+  }
+  .blank-tile
+  {
+    opacity: 0;
+  }
+
+  .half-left-tile
+  {
+    position: relative;
+    left: -52%;
+  }
+
+  
+
+  .half-right-tile
+  {
+    position: relative;
+    left: 50%;
+  }
+
+  .tile::before
+  {
+    content: url('..\\images\\Subtraction 1.svg');
+    position: absolute;
+    left:-25px;
+  }
+  .tile::after
+  {
+    content:"";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    background-color: var(--pink-color);
+    left : -30px;
+    top  : -5px;
+  }
+
+  .tile-content
+  {
+    height: 100%;
+    margin-left: -7px;
+  }
+
+  .tile-content h4
+  {
+    
+    position: absolute;
+    font-size: 18px;
+    top: 27px;
+    color : #e3e3e3;
+  }
+  .tile-content span
+  {
+    font-family: 'roboto';
+    position: absolute;
+    color : #a6a6a6;
+    bottom: 14px;
+    font-size: 14px;
+  }
+  .venue-td{
+    width: 30%;
+  }
+  .venue{
+    width: 40%;
+    padding-top: 25px;
+    padding-left: 10%;
+    padding-right: 0px;
+  }
+  .event-details{
+    background: rgb(75, 73, 72);
+    padding: 10px 10% 4px 4px;
+    height:100px;
+    border-radius: 4px;
+  }
+  
+  .event-name{
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .event-timing{
+    font-size: 13px;
+    padding-top: 18px;
+    padding-bottom: 2px;
+  }
+  
+ .tile-content span.higlight {
+    position: static;
+    color: #ff97dd;
+}
+
+  .half-tile {
+    height: 50px;
+  }
+  .half-tile::before
+  {
+    content: url('../images/Subtract-half.svg');
+  }
+
+  .half-tile::after
+  {
+    left: -28px;
+    top: -3px;
+  }
+
+  .half-tile .tile-content
+  {
+    margin-left: 5px;
+  }
+  .half-tile h4
+  {
+    top: 5px;
+    font-size : 16px;
+  }
+  .half-tile span
+  {
+    bottom: 6px;
+  }
+
+
+@media(max-width: 800px)
+{
+  ul
+  {
+    margin-top: 0!important;
+  }
+  .day-button
+  {
+    padding:0 10px;
+
+  }
+  .day-number{
+    font-size: 60px;
+  }
+  .day-button .subscript
+  {
+    font-size: 20px;
+  }
+  .day-button .month
+  {
+    right: -6px;
+    font-size: 13px;
+  }
+  .venue-header li
+  {
+    writing-mode: vertical-lr;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .venue-header
+  {
+    width: unset;
+    margin-top: -10px!important;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    box-shadow: #000000 2px 1px 8px 0px;
+  }
+  .timing-container
+  {
+    margin-bottom: 0px;
+  }
+  .timing-container::after{
+    box-shadow: #ff00aa -10px -2px 20px 20px;
+    width:0px;
+  }
+  .container-schedule
+  {
+    padding-top: 10px;
+    width: 100vw;
+  }
+  .tile{
+    width:140px;
+  }
+  .tile h4
+  {
+    font-size:16px;
+  }
+
+  .tile span
+  {
+    font-size:12px;
+  }
+
+  .timing-list
+  {
+    padding-left: 60px;
+    font-size: 15px;
+    grid-template-columns: repeat(10,180px);
+  }
+  .time-grid > div
+  {
+    width: 180px;
+  }
+  .time-grid
+  {
+    left:49px;
+  }
+
+  .half-tile span
+  {
+    white-space: nowrap;
+    font-size: 11px;
+  }
+  .tile.lil-exp 
+  {
+    width: 150px;
+    margin-right: -10px;
+  }
+
+  .tile.exp
+  {
+    width: 210px;
+    margin-right: -70px;
+  }
+
+}
