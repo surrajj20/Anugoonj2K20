@@ -170,7 +170,7 @@
   height: 400px;
   object-fit: contain;
   object-position: center;
-  border: 3px solid #fbfafa;
+  border: 3px solid #f2f2f2c2;
   padding: 30px;
 }
 
@@ -186,7 +186,7 @@
   height: 300px;
   object-fit: contain;
   object-position: center;
-  border: 3px solid #fbfafa;
+  border: 3px solid #f2f2f2c2;
   padding: 30px;
 }
 
@@ -204,7 +204,7 @@
   height: 200px;
   object-fit: contain;
   object-position: center;
-  border: 3px solid #fbfafa;
+  border: 3px solid #f2f2f2c2;
   padding: 30px;
 }
 
