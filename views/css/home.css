@@ -1469,3 +1469,8 @@ span.colorlib-counter.js-counter::after {
     
   }
 }
+
+.vjs-tech {
+  height: 100%!important;
+  width: unset;
+}
