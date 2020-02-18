@@ -63,7 +63,7 @@
     <script src="js/afterglow.min.js"></script>
 </head>
 
-<body onload="preloader(),showTime(), videoSec()">
+<body onload="preloader(), videoSec()">
     <main style="overflow-x: hidden;">
         <nav class="preloader pre-preloader">
             <div class="nav-overlay"></div>
@@ -707,7 +707,7 @@
                     document.querySelector('.right-arrow').classList.add('deactive-btn');
             }
 
-            let isDevCollapsed = true;
+            let isDevCollapsed = false;
             function Developer() {
                 let devRow = document.querySelector('#team .row');
                 let devSection = document.querySelector("#team");
